@@ -13,7 +13,7 @@ export default function Home() {
             <div className="relative z-10">
               <p className="text-[#EF290E] font-medium mb-4">Part of SVS Schweisstechnik GmbH, Germany</p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Your Partner for Welding and Manufacturing Solutions
+                Your Partner for Welding, Flexible Busbars and CNC Manufacturing Solutions
               </h1>
               <p className="text-xl text-[#B8BFC4] mb-8 max-w-lg">
                 Over 100 years of expertise in electrical resistance welding consumables, copper alloys, and diffusion-welded flexible busbars.
