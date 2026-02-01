@@ -292,11 +292,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="mt-8 pt-8 border-t border-[#E5E4DF]">
-            <p className="text-[#6F7B83]">
-              <strong>Email:</strong> <a href="mailto:sales@svsmav.com" className="text-[#EF290E]">sales@svsmav.com</a>
-              <span className="mx-4">|</span>
-              <strong>Phone:</strong> <a href="tel:+917204057172" className="text-[#EF290E]">+91 72040 57172</a>
-            </p>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-center gap-2 sm:gap-0 text-[#6F7B83]">
+              <span><strong>Email:</strong> <a href="mailto:sales@svsmav.com" className="text-[#EF290E]">sales@svsmav.com</a></span>
+              <span className="hidden sm:inline mx-4">|</span>
+              <span><strong>Phone:</strong> <a href="tel:+917204057172" className="text-[#EF290E] whitespace-nowrap">+91 72040 57172</a></span>
+            </div>
           </div>
         </div>
       </section>

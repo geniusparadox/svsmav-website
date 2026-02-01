@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --gunmetal: #1D2931;
@@ -9,19 +11,6 @@
   --dark-border: #2A3B46;
   --background: #ffffff;
   --foreground: #1D2931;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-gunmetal: var(--gunmetal);
-  --color-accent-red: var(--accent-red);
-  --color-light-text: var(--light-text);
-  --color-muted-gray: var(--muted-gray);
-  --color-porcelain: var(--porcelain);
-  --color-dark-border: var(--dark-border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 * {
