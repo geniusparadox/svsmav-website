@@ -69,30 +69,30 @@ export default function SpotWeldingElectrodeCapPage() {
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12 flex flex-wrap gap-1">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/products/welding-technique/spot-welding" className="text-[#6F7B83] hover:text-[#1D2931]">SPOT WELDING</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <span className="text-[#1D2931] font-medium">ELECTRODE CAPS</span>
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Spot Welding Electrode Caps
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-4xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-4xl">
               Premium replaceable electrode caps engineered for high-volume spot welding operations.
               Our caps deliver exceptional weld quality, extended service life, and consistent performance
               across thousands of welds.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 mb-16">
+            <div className="flex flex-wrap gap-3 sm:gap-4 mb-10 sm:mb-16">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#EF290E] text-white font-semibold rounded hover:bg-[#D42208] transition-colors"
@@ -108,12 +108,12 @@ export default function SpotWeldingElectrodeCapPage() {
             </div>
 
             {/* Features & Benefits */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Features & Benefits</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Features & Benefits</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 Designed for demanding production environments where reliability and performance are critical.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded flex items-center justify-center mb-4">
@@ -129,13 +129,13 @@ export default function SpotWeldingElectrodeCapPage() {
             </div>
 
             {/* Premium WIRBALIT Copper Alloys */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Premium WIRBALIT Copper Alloys</h2>
-              <p className="text-[#6F7B83] text-lg mb-8 max-w-3xl">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Premium WIRBALIT Copper Alloys</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8 max-w-3xl">
                 Our electrode caps are manufactured from WIRBALIT copper alloys, specifically engineered
                 for resistance welding applications. Select the optimal material for your specific welding requirements.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {materials.map((material, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-bold text-[#EF290E] mb-2">{material.name}</h3>
@@ -155,10 +155,10 @@ export default function SpotWeldingElectrodeCapPage() {
             </div>
 
             {/* Technical Specifications */}
-            <div id="specifications" className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
-              <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                <table className="w-full">
+            <div id="specifications" className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Technical Specifications</h2>
+              <div className="border border-gray-200 rounded-lg bg-white overflow-x-auto">
+                <table className="w-full min-w-[350px]">
                   <tbody>
                     {specifications.map((spec, index) => (
                       <tr key={index} className={index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}>
@@ -172,9 +172,9 @@ export default function SpotWeldingElectrodeCapPage() {
             </div>
 
             {/* Applications */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                 {applications.map((app, index) => (
                   <div key={index} className="flex items-start">
                     <span className="text-[#EF290E] mr-3 mt-1">
@@ -189,10 +189,10 @@ export default function SpotWeldingElectrodeCapPage() {
             </div>
 
             {/* CTA Section */}
-            <div className="border border-gray-200 rounded-lg bg-white p-8 mb-16">
-              <div className="flex flex-col md:flex-row items-center justify-between">
-                <div className="mb-6 md:mb-0">
-                  <h3 className="text-xl font-bold text-[#1D2931] mb-2">
+            <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-8 mb-10 sm:mb-16">
+              <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+                <div className="mb-4 md:mb-0">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-2">
                     Ready to Optimize Your Spot Welding Process?
                   </h3>
                   <p className="text-[#6F7B83]">
@@ -218,8 +218,8 @@ export default function SpotWeldingElectrodeCapPage() {
             </div>
 
             {/* Request Quote */}
-            <div className="border-t border-gray-200 pt-12">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
               <p className="text-[#6F7B83] mb-6">
                 Contact us for pricing and availability of spot welding electrode caps in your required specifications and quantity.
               </p>

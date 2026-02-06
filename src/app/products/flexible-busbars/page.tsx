@@ -66,30 +66,30 @@ export default function FlexibleBusbarsPage() {
         <MaterialsSidebar />
 
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12 flex flex-wrap gap-1">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <span className="text-[#1D2931] font-medium">FLEXIBLE BUSBARS</span>
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Flexible Busbars
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               High-performance laminated copper connectors engineered for reliable power transmission
               in demanding applications. Our flexible busbars provide the perfect balance of
               electrical conductivity, mechanical flexibility, and thermal performance.
             </p>
 
             {/* What Are Flexible Busbars */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">What Are Flexible Busbars?</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">What Are Flexible Busbars?</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     Flexible busbars, also known as laminated busbars or flexible copper connectors,
@@ -131,9 +131,9 @@ export default function FlexibleBusbarsPage() {
             </section>
 
             {/* Applications */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Applications</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {applications.map((app) => (
                   <Link
                     key={app.title}
@@ -158,9 +158,9 @@ export default function FlexibleBusbarsPage() {
             </section>
 
             {/* Advantages */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Key Advantages</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Advantages</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {advantages.map((advantage, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{advantage.title}</h3>
@@ -171,10 +171,10 @@ export default function FlexibleBusbarsPage() {
             </section>
 
             {/* Technical Specifications */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
-              <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                <table className="w-full">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Technical Specifications</h2>
+              <div className="border border-gray-200 rounded-lg bg-white overflow-x-auto">
+                <table className="w-full min-w-[400px]">
                   <tbody>
                     {specifications.map((spec, index) => (
                       <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-[#F4F3EE]'}>
@@ -188,9 +188,9 @@ export default function FlexibleBusbarsPage() {
             </section>
 
             {/* Industries */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Industries Served</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Industries Served</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
                 {[
                   'Power Distribution',
                   'Electric Vehicles',
@@ -209,9 +209,9 @@ export default function FlexibleBusbarsPage() {
             </section>
 
             {/* Materials */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Material Options</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Material Options</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link
                   href="/materials/copper-materials/cucr1zr"
                   className="border border-gray-200 rounded-lg bg-white p-6 hover:border-[#EF290E] transition-colors group"
@@ -249,8 +249,8 @@ export default function FlexibleBusbarsPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12 text-center">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Custom Flexible Busbar Solutions</h2>
+            <section className="border border-gray-200 rounded-lg bg-white p-6 sm:p-8 lg:p-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Custom Flexible Busbar Solutions</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Every application is unique. Contact our engineering team to discuss your specific
                 requirements and receive a custom solution designed for your exact specifications.

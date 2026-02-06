@@ -15,28 +15,28 @@ export default function CuCr1ZrPage() {
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12 flex flex-wrap gap-1">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/materials/copper-materials" className="text-[#6F7B83] hover:text-[#1D2931]">COPPER MATERIALS</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
-              <span className="text-[#1D2931] font-medium">WIRBALIT® HF/N/G (CUCR1ZR)</span>
+              <span className="text-[#6F7B83]">&gt;</span>
+              <span className="text-[#1D2931] font-medium">WIRBALIT® HF/N/G</span>
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-4">
-              WIRBALIT<sup className="text-3xl">®</sup> HF/N/G
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-2 sm:mb-4">
+              WIRBALIT<sup className="text-xl sm:text-2xl lg:text-3xl">®</sup> HF/N/G
             </h1>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#1D2931] mb-6">(CuCr1Zr)</h2>
-            <p className="text-xl text-[#1D2931] mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#1D2931] mb-4 sm:mb-6">(CuCr1Zr)</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-8 sm:mb-12">
               Copper-Chromium-Zirconium Semi-Finished, Finished and Drawing Parts
             </p>
 
             {/* Standards Table */}
-            <div className="mb-16 overflow-x-auto">
-              <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16 overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+              <table className="w-full border-collapse min-w-[600px]">
                 <thead>
                   <tr className="border-b border-gray-200">
                     <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Alloy</th>
@@ -63,9 +63,9 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Description */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Semi-Finished Products & Custom Parts</h3>
-              <p className="text-[#6F7B83] text-lg mb-4">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Semi-Finished Products & Custom Parts</h3>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4">
                 CuCr1Zr is the most widely used copper alloy for resistance welding electrodes. We supply semi-finished stock or custom-made parts tailored to your specific technical requirements.
               </p>
               <p className="text-[#6F7B83] text-lg mb-4">
@@ -77,12 +77,12 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Material Variants */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Material Variants</h3>
-              <p className="text-[#6F7B83] text-lg mb-6">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Material Variants</h3>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4 sm:mb-6">
                 WIRBALIT® HF/N/G is available in three variants, each optimized for specific applications:
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <div className="border border-gray-200 p-6 rounded">
                   <h4 className="text-lg font-bold text-[#EF290E] mb-2">WIRBALIT® HF</h4>
                   <p className="text-[#1D2931] font-medium mb-2">High-strength age-hardened electrode material</p>
@@ -102,10 +102,10 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Key Properties */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Key Properties</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Properties</h3>
+              <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+                <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Property</th>
@@ -139,11 +139,11 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Typical Applications */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Typical Applications</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Typical Applications</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <h4 className="text-lg font-bold text-[#1D2931] mb-4">Welding Applications</h4>
+                  <h4 className="text-base sm:text-lg font-bold text-[#1D2931] mb-3 sm:mb-4">Welding Applications</h4>
                   <ul className="space-y-2">
                     {[
                       'Spot welding electrodes and electrode caps',
@@ -180,12 +180,12 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Available Forms */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Available Forms</h3>
-              <p className="text-[#6F7B83] text-lg mb-6">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Available Forms</h3>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4 sm:mb-6">
                 We supply WIRBALIT® HF/N/G in a wide range of standard and custom forms:
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
                 {['Round Bars', 'Flat Bars', 'Plates', 'Tubes', 'Rings', 'Discs', 'Profiles', 'Custom Parts'].map((form) => (
                   <div key={form} className="border border-gray-200 p-4 rounded text-center">
                     <span className="text-[#1D2931] font-medium">{form}</span>
@@ -195,8 +195,8 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Processing Guidelines */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Processing Guidelines</h3>
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Processing Guidelines</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-[#EF290E] mr-3">•</span>
@@ -218,9 +218,9 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* Technical Data Link */}
-            <div className="mb-16 flex flex-col md:flex-row items-center justify-between border border-gray-200 rounded p-8">
-              <div className="mb-4 md:mb-0">
-                <h3 className="text-xl font-bold text-[#1D2931] mb-2">Technical Data Sheet</h3>
+            <div className="mb-10 sm:mb-16 flex flex-col md:flex-row items-center justify-between border border-gray-200 rounded p-4 sm:p-8">
+              <div className="mb-4 md:mb-0 text-center md:text-left">
+                <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-2">Technical Data Sheet</h3>
                 <p className="text-[#6F7B83]">Download detailed specifications and chemical composition data.</p>
               </div>
               <Link
@@ -232,8 +232,8 @@ export default function CuCr1ZrPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
               <p className="text-[#6F7B83] mb-6">
                 Contact us for pricing and availability of WIRBALIT® HF/N/G (CuCr1Zr) materials in your required form and quantity.
               </p>

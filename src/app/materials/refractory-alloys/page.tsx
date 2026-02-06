@@ -70,31 +70,31 @@ export default function RefractoryAlloysPage() {
         {/* Main Content */}
         <main className="flex-1">
           {/* Header Section */}
-          <section className="px-8 lg:px-16 py-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-8 flex flex-wrap gap-1">
               <Link href="/" className="text-gray-500 hover:text-[#1D2931]">HOME</Link>
-              <span className="mx-2 text-gray-400">/</span>
+              <span className="text-gray-400">/</span>
               <Link href="/materials" className="text-gray-500 hover:text-[#1D2931]">SEMI-FINISHED PARTS</Link>
-              <span className="mx-2 text-gray-400">/</span>
+              <span className="text-gray-400">/</span>
               <span className="text-[#1D2931] font-medium">REFRACTORY ALLOYS</span>
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Refractory Alloys
             </h1>
-            <p className="text-xl text-[#6F7B83] max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] max-w-3xl">
               High-performance refractory metals for extreme temperature applications, radiation shielding, and specialized industrial uses.
             </p>
           </section>
 
           {/* Introduction */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Semi-Finished Materials & Custom Parts</h2>
-                <p className="text-[#6F7B83] text-lg mb-6">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Semi-Finished Materials & Custom Parts</h2>
+                <p className="text-[#6F7B83] text-base sm:text-lg mb-4 sm:mb-6">
                   Refractory metals are characterized by their extremely high melting points, excellent high-temperature strength, and resistance to wear and corrosion. These materials are essential for applications where conventional metals cannot survive.
                 </p>
                 <p className="text-[#6F7B83] text-lg mb-6">
@@ -119,9 +119,9 @@ export default function RefractoryAlloysPage() {
           </section>
 
           {/* Key Features */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Key Material Advantages</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Key Material Advantages</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {keyFeatures.map((feature) => (
                 <div key={feature.title} className="border border-gray-200 p-6 rounded-lg">
                   <div className="flex items-start">
@@ -137,28 +137,28 @@ export default function RefractoryAlloysPage() {
           </section>
 
           {/* Materials List */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Refractory Materials Range</h2>
-            <p className="text-[#6F7B83] text-lg mb-12 max-w-3xl">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Refractory Materials Range</h2>
+            <p className="text-[#6F7B83] text-base sm:text-lg mb-8 sm:mb-12 max-w-3xl">
               Each material offers unique properties for specific high-temperature and specialized applications.
             </p>
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {refractoryMaterials.map((material) => (
                 <Link
                   key={material.formula}
                   href={material.href}
-                  className="group block border border-gray-200 rounded-lg p-6 lg:p-8 hover:shadow-lg transition-all hover:border-gray-300"
+                  className="group block border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-8 hover:shadow-lg transition-all hover:border-gray-300"
                 >
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                     <div className="flex-1">
-                      <div className="flex items-center gap-4 mb-3">
-                        <h3 className="text-xl font-bold text-[#1D2931] group-hover:text-[#EF290E] transition-colors">
+                      <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-2 sm:mb-3">
+                        <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] group-hover:text-[#EF290E] transition-colors">
                           {material.name}
                         </h3>
-                        <span className="text-[#EF290E] font-mono text-lg">{material.formula}</span>
-                        <span className="text-[#6F7B83] text-sm hidden md:inline">({material.standard})</span>
+                        <span className="text-[#EF290E] font-mono text-base sm:text-lg">{material.formula}</span>
+                        <span className="text-[#6F7B83] text-xs sm:text-sm hidden md:inline">({material.standard})</span>
                       </div>
-                      <p className="text-[#6F7B83]">{material.description}</p>
+                      <p className="text-sm sm:text-base text-[#6F7B83]">{material.description}</p>
                     </div>
                     <div className="mt-4 lg:mt-0 lg:ml-8">
                       <span className="inline-flex items-center text-[#EF290E] font-semibold">
@@ -175,9 +175,9 @@ export default function RefractoryAlloysPage() {
           </section>
 
           {/* Key Industries */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Key Industries</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Key Industries</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
               {[
                 'Aerospace & Defense',
                 'Medical Technology',
@@ -196,9 +196,9 @@ export default function RefractoryAlloysPage() {
           </section>
 
           {/* Typical Applications */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Typical Applications</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Typical Applications</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6">
               {[
                 'Resistance Welding Electrodes',
                 'EDM Electrodes',
@@ -217,9 +217,9 @@ export default function RefractoryAlloysPage() {
           </section>
 
           {/* CTA */}
-          <section className="px-8 lg:px-16 py-16 border-t border-gray-200">
-            <div className="border border-gray-200 rounded-lg p-8 lg:p-12 text-center">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need Custom Parts or Material Selection Help?</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-12 sm:py-16 border-t border-gray-200">
+            <div className="border border-gray-200 rounded-lg p-6 sm:p-8 lg:p-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Need Custom Parts or Material Selection Help?</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Our materials experts can help you choose the optimal refractory metal or alloy for your specific application and produce custom parts to your specifications.
               </p>

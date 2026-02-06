@@ -40,29 +40,29 @@ export default function TipDressingUnitsPage() {
         <MaterialsSidebar />
 
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12 flex flex-wrap gap-1">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <span className="text-[#1D2931] font-medium">TIP DRESSING UNITS</span>
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Tip Dressing Units
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               Your partner for tip dressers and cap changers in resistance welding.
               Remove buildup, restore precision, cycle by cycle.
             </p>
 
             {/* Why Tip Dressing */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Why Tip Dressing Matters</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Why Tip Dressing Matters</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     Regular electrode tip dressing is essential for maintaining consistent weld quality
@@ -106,9 +106,9 @@ export default function TipDressingUnitsPage() {
             </section>
 
             {/* Products Grid */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Our Product Range</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Our Product Range</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {products.map((product) => (
                   <Link
                     key={product.title}
@@ -133,9 +133,9 @@ export default function TipDressingUnitsPage() {
             </section>
 
             {/* Applications */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Industry Applications</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Industry Applications</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
                 {[
                   { name: 'Automotive', desc: 'Body-in-white' },
                   { name: 'EV Battery', desc: 'Cell assembly' },
@@ -153,8 +153,8 @@ export default function TipDressingUnitsPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12 text-center">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Ready to Optimize Your Welding Process?</h2>
+            <section className="border border-gray-200 rounded-lg bg-white p-6 sm:p-8 lg:p-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Ready to Optimize Your Welding Process?</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Contact our team for expert guidance on selecting the right tip dressing equipment
                 for your application.

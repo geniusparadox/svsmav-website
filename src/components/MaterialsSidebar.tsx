@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState, createContext, useContext } from 'react';
+import { useState, createContext, useContext, useEffect } from 'react';
 
 interface SidebarItem {
   label: string;
@@ -282,6 +282,7 @@ function SidebarAccordionGroup({ items, level, parentKey }: { items: SidebarItem
 
 export default function MaterialsSidebar() {
   const pathname = usePathname();
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   // Find which top-level item should be open by default
   const defaultOpen = sidebarData.findIndex(item => checkPathMatch(item.children, pathname));
@@ -289,38 +290,93 @@ export default function MaterialsSidebar() {
     defaultOpen >= 0 ? `root-${defaultOpen}` : null
   );
 
-  return (
-    <aside className="w-80 flex-shrink-0 bg-[#F4F3EE] min-h-screen">
-      <nav className="sticky top-20 p-6">
-        <AccordionContext.Provider value={{ openItem, setOpenItem }}>
-          <ul className="space-y-4">
-            {sidebarData.map((item, index) => (
-              <SidebarSection key={index} item={item} itemKey={`root-${index}`} />
-            ))}
-          </ul>
-        </AccordionContext.Provider>
+  // Close mobile sidebar when route changes
+  useEffect(() => {
+    setIsMobileOpen(false);
+  }, [pathname]);
 
-        {/* Ask Our Experts Button */}
-        <Link
-          href="/contact"
-          className="mt-8 flex items-center justify-center gap-2 bg-[#EF290E] text-white px-6 py-4 rounded font-semibold hover:bg-[#d42410] transition-colors"
+  // Prevent body scroll when mobile sidebar is open
+  useEffect(() => {
+    if (isMobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileOpen]);
+
+  return (
+    <>
+      {/* Mobile Toggle Button */}
+      <button
+        onClick={() => setIsMobileOpen(true)}
+        className="lg:hidden fixed bottom-6 right-6 z-40 bg-[#EF290E] text-white p-4 rounded-full shadow-lg hover:bg-[#d42410] transition-colors"
+        aria-label="Open navigation menu"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      {/* Mobile Overlay */}
+      {isMobileOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black/50 z-40"
+          onClick={() => setIsMobileOpen(false)}
+        />
+      )}
+
+      {/* Sidebar */}
+      <aside className={`
+        fixed lg:relative inset-y-0 left-0 z-50
+        w-80 flex-shrink-0 bg-[#F4F3EE] min-h-screen
+        transform transition-transform duration-300 ease-in-out
+        ${isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+      `}>
+        {/* Mobile Close Button */}
+        <button
+          onClick={() => setIsMobileOpen(false)}
+          className="lg:hidden absolute top-4 right-4 p-2 text-[#6F7B83] hover:text-[#1D2931]"
+          aria-label="Close navigation menu"
         >
-          <svg
-            className="w-5 h-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-            />
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
-          ASK OUR EXPERTS
-        </Link>
-      </nav>
-    </aside>
+        </button>
+
+        <nav className="sticky top-20 p-6 pt-14 lg:pt-6 h-screen overflow-y-auto">
+          <AccordionContext.Provider value={{ openItem, setOpenItem }}>
+            <ul className="space-y-4">
+              {sidebarData.map((item, index) => (
+                <SidebarSection key={index} item={item} itemKey={`root-${index}`} />
+              ))}
+            </ul>
+          </AccordionContext.Provider>
+
+          {/* Ask Our Experts Button */}
+          <Link
+            href="/contact"
+            className="mt-8 flex items-center justify-center gap-2 bg-[#EF290E] text-white px-6 py-4 rounded font-semibold hover:bg-[#d42410] transition-colors"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+              />
+            </svg>
+            ASK OUR EXPERTS
+          </Link>
+        </nav>
+      </aside>
+    </>
   );
 }

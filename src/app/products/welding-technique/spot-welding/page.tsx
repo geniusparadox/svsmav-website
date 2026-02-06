@@ -15,30 +15,30 @@ export default function SpotWeldingPage() {
 
         {/* Main Content */}
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12 flex flex-wrap gap-1">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <Link href="/products/welding-products" className="text-[#6F7B83] hover:text-[#1D2931]">WELDING PRODUCTS</Link>
-              <span className="mx-2 text-[#6F7B83]">&gt;</span>
+              <span className="text-[#6F7B83]">&gt;</span>
               <span className="text-[#1D2931] font-medium">SPOT WELDING</span>
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Spot Welding
             </h1>
-            <p className="text-xl text-[#1D2931] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-8 sm:mb-12 max-w-3xl">
               The most widely used resistance welding process for joining overlapping metal sheets with high speed and precision.
             </p>
 
             {/* Process Description */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">How Spot Welding Works</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">How Spot Welding Works</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     Spot welding, also known as Resistance Spot Welding (RSW), joins two or more overlapping
@@ -80,32 +80,32 @@ export default function SpotWeldingPage() {
             </section>
 
             {/* Key Parameters */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Key Parameters</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="border border-gray-200 rounded-lg p-6 bg-white text-center">
-                  <p className="text-sm text-[#6F7B83] mb-2">Weld Current</p>
-                  <p className="text-xl font-semibold text-[#1D2931]">5,000 - 50,000 A</p>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Parameters</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-6 bg-white text-center">
+                  <p className="text-xs sm:text-sm text-[#6F7B83] mb-1 sm:mb-2">Weld Current</p>
+                  <p className="text-base sm:text-xl font-semibold text-[#1D2931]">5,000 - 50,000 A</p>
                 </div>
-                <div className="border border-gray-200 rounded-lg p-6 bg-white text-center">
-                  <p className="text-sm text-[#6F7B83] mb-2">Weld Time</p>
-                  <p className="text-xl font-semibold text-[#1D2931]">0.1 - 0.5 sec</p>
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-6 bg-white text-center">
+                  <p className="text-xs sm:text-sm text-[#6F7B83] mb-1 sm:mb-2">Weld Time</p>
+                  <p className="text-base sm:text-xl font-semibold text-[#1D2931]">0.1 - 0.5 sec</p>
                 </div>
-                <div className="border border-gray-200 rounded-lg p-6 bg-white text-center">
-                  <p className="text-sm text-[#6F7B83] mb-2">Electrode Force</p>
-                  <p className="text-xl font-semibold text-[#1D2931]">1 - 10 kN</p>
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-6 bg-white text-center">
+                  <p className="text-xs sm:text-sm text-[#6F7B83] mb-1 sm:mb-2">Electrode Force</p>
+                  <p className="text-base sm:text-xl font-semibold text-[#1D2931]">1 - 10 kN</p>
                 </div>
-                <div className="border border-gray-200 rounded-lg p-6 bg-white text-center">
-                  <p className="text-sm text-[#6F7B83] mb-2">Sheet Thickness</p>
-                  <p className="text-xl font-semibold text-[#1D2931]">0.5 - 4 mm</p>
+                <div className="border border-gray-200 rounded-lg p-3 sm:p-6 bg-white text-center">
+                  <p className="text-xs sm:text-sm text-[#6F7B83] mb-1 sm:mb-2">Sheet Thickness</p>
+                  <p className="text-base sm:text-xl font-semibold text-[#1D2931]">0.5 - 4 mm</p>
                 </div>
               </div>
             </section>
 
             {/* Advantages */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Advantages</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Advantages</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {[
                   { title: 'High Speed', desc: 'Weld cycles typically complete in milliseconds, enabling high-volume production.' },
                   { title: 'No Filler Material', desc: 'Creates strong joints without additional consumables like wire or flux.' },
@@ -123,11 +123,11 @@ export default function SpotWeldingPage() {
             </section>
 
             {/* Applications */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Applications</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#1D2931] mb-4">Industries</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#1D2931] mb-3 sm:mb-4">Industries</h3>
                   <ul className="space-y-3">
                     {['Automotive', 'EV & Battery', 'Home Appliance', 'HVAC', 'Aerospace', 'Electronics'].map((industry, index) => (
                       <li key={index} className="flex items-center text-[#6F7B83]">
@@ -152,9 +152,9 @@ export default function SpotWeldingPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {[
                   { name: 'Spot Welding Electrode Caps', href: '/products/spot-welding-electrode-caps', desc: 'Precision-machined electrode caps in various shapes and materials.' },
                   { name: 'Electrode Shanks & Holders', href: '/products/spot-welding-electrode-shanks-and-holders', desc: 'Complete range of holders and adapters for spot welding equipment.' },
@@ -176,8 +176,8 @@ export default function SpotWeldingPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg p-8 lg:p-12 text-center bg-white">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need Spot Welding Solutions?</h2>
+            <section className="border border-gray-200 rounded-lg p-6 sm:p-8 lg:p-12 text-center bg-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Need Spot Welding Solutions?</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Our experts can help you select the right electrodes, materials, and equipment for your spot welding applications.
               </p>
