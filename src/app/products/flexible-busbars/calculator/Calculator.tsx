@@ -12,60 +12,54 @@ const DENSITY_PRESETS = [
 
 const FOIL_THICKNESSES = [0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5];
 
-type Mode = 'solve' | 'check';
-
 function fmt(n: number, digits = 1): string {
   return n.toLocaleString('en-US', { maximumFractionDigits: digits });
 }
 
 export default function Calculator() {
-  const [mode, setMode] = useState<Mode>('solve');
-  const [current, setCurrent] = useState(30);
+  const [width, setWidth] = useState(20);
+  const [thickness, setThickness] = useState(2);
+  const [foil, setFoil] = useState(0.2);
   const [presetIndex, setPresetIndex] = useState(1);
   const [customDensity, setCustomDensity] = useState(2.0);
-  const [width, setWidth] = useState(20);
-  const [foil, setFoil] = useState(0.2);
-  const [layers, setLayers] = useState(4);
+  const [targetCurrent, setTargetCurrent] = useState(30);
 
   const density = DENSITY_PRESETS[presetIndex].value || customDensity;
-  const requiredSection = density > 0 ? current / density : 0;
 
-  // In solve mode, compute the laminations needed; in check mode, use the slider value
-  const solvedLayers =
-    width > 0 && foil > 0 ? Math.max(1, Math.ceil(requiredSection / (width * foil))) : 1;
-  const effectiveLayers = mode === 'solve' ? solvedLayers : layers;
+  // Core results from geometry
+  const crossSection = width * thickness;
+  const capacity = crossSection * density;
+  const laminations = Math.max(1, Math.round(thickness / foil));
+  const actualStack = laminations * foil;
+  const actualSection = width * actualStack;
+  const actualCapacity = actualSection * density;
 
-  const actualSection = width * foil * effectiveLayers;
-  const capacity = actualSection * density;
-  const utilization = capacity > 0 ? (current / capacity) * 100 : 0;
-  const actualDensity = actualSection > 0 ? current / actualSection : 0;
-  const stackHeight = foil * effectiveLayers;
+  // Target comparison (optional)
+  const hasTarget = targetCurrent > 0;
+  const utilization = actualCapacity > 0 ? (targetCurrent / actualCapacity) * 100 : 0;
+  const densityAtTarget = actualSection > 0 ? targetCurrent / actualSection : 0;
 
-  let status: { text: string; color: string; bg: string };
-  if (capacity < current) {
-    status = {
-      text: 'Undersized - increase width, thickness, or layers',
-      color: '#B91C1C',
-      bg: '#FEF2F2',
-    };
-  } else if (utilization >= 70) {
-    status = {
-      text:
-        mode === 'solve'
-          ? `${effectiveLayers} lamination${effectiveLayers > 1 ? 's' : ''} of ${foil.toFixed(2)} mm foil carry ${fmt(current, 0)} A at this width`
-          : 'Good fit - carries the target current with sensible margin',
-      color: '#15803D',
-      bg: '#F0FDF4',
-    };
-  } else {
-    status = {
-      text:
-        mode === 'solve'
-          ? `${effectiveLayers} lamination${effectiveLayers > 1 ? 's' : ''} needed - generous margin at this width and foil`
-          : 'Oversized - works, but you may be using more copper than needed',
-      color: mode === 'solve' ? '#15803D' : '#B45309',
-      bg: mode === 'solve' ? '#F0FDF4' : '#FFFBEB',
-    };
+  let status: { text: string; color: string; bg: string } | null = null;
+  if (hasTarget) {
+    if (actualCapacity < targetCurrent) {
+      status = {
+        text: `Undersized for ${fmt(targetCurrent, 0)} A - increase width or thickness`,
+        color: '#B91C1C',
+        bg: '#FEF2F2',
+      };
+    } else if (utilization >= 70) {
+      status = {
+        text: `Good fit for ${fmt(targetCurrent, 0)} A with sensible margin`,
+        color: '#15803D',
+        bg: '#F0FDF4',
+      };
+    } else {
+      status = {
+        text: `Carries ${fmt(targetCurrent, 0)} A easily - generous margin (or more copper than needed)`,
+        color: '#B45309',
+        bg: '#FFFBEB',
+      };
+    }
   }
 
   const inputClass =
@@ -73,204 +67,170 @@ export default function Calculator() {
   const labelClass = 'block text-sm font-medium text-[#1D2931] mb-1';
 
   return (
-    <div>
-      {/* Mode Toggle */}
-      <div className="flex flex-col sm:flex-row gap-2 mb-6">
-        <button
-          onClick={() => setMode('solve')}
-          className={`px-5 py-3 rounded font-semibold text-sm transition-colors ${
-            mode === 'solve'
-              ? 'bg-[#EF290E] text-white'
-              : 'bg-white text-[#1D2931] border border-gray-300 hover:border-[#EF290E]'
-          }`}
-        >
-          Solve for laminations
-        </button>
-        <button
-          onClick={() => setMode('check')}
-          className={`px-5 py-3 rounded font-semibold text-sm transition-colors ${
-            mode === 'check'
-              ? 'bg-[#EF290E] text-white'
-              : 'bg-white text-[#1D2931] border border-gray-300 hover:border-[#EF290E]'
-          }`}
-        >
-          Check a geometry
-        </button>
-      </div>
-      <p className="text-sm text-[#6F7B83] mb-6">
-        {mode === 'solve'
-          ? 'Set your current, width, and foil thickness - the calculator works out how many laminations you need and the resulting stack height.'
-          : 'Set all dimensions of an existing or proposed busbar - the calculator shows what current it carries.'}
-      </p>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      {/* Inputs */}
+      <div className="border border-gray-200 rounded-lg bg-white p-6 sm:p-8">
+        <h3 className="text-xl font-bold text-[#1D2931] mb-6">1. Set Width &amp; Thickness</h3>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Inputs */}
-        <div className="border border-gray-200 rounded-lg bg-white p-6 sm:p-8">
-          <h3 className="text-xl font-bold text-[#1D2931] mb-6">1. Your Requirement</h3>
+        <div className="mb-5">
+          <label className={labelClass} htmlFor="width">
+            Width: <span className="text-[#EF290E] font-bold">{fmt(width)} mm</span>
+          </label>
+          <input
+            id="width"
+            type="range"
+            min={5}
+            max={200}
+            step={1}
+            value={width}
+            onChange={(e) => setWidth(Number(e.target.value))}
+            className="w-full accent-[#EF290E]"
+          />
+        </div>
 
-          <div className="mb-5">
-            <label className={labelClass} htmlFor="current">
-              Continuous current (A)
-            </label>
+        <div className="mb-5">
+          <label className={labelClass} htmlFor="thickness">
+            Overall thickness: <span className="text-[#EF290E] font-bold">{fmt(thickness, 1)} mm</span>
+          </label>
+          <input
+            id="thickness"
+            type="range"
+            min={0.5}
+            max={40}
+            step={0.5}
+            value={thickness}
+            onChange={(e) => setThickness(Number(e.target.value))}
+            className="w-full accent-[#EF290E]"
+          />
+        </div>
+
+        <div className="mb-8">
+          <label className={labelClass} htmlFor="foil">
+            Foil thickness (mm)
+          </label>
+          <select
+            id="foil"
+            value={foil}
+            onChange={(e) => setFoil(Number(e.target.value))}
+            className={inputClass}
+          >
+            {FOIL_THICKNESSES.map((t) => (
+              <option key={t} value={t}>
+                {t.toFixed(2)} mm {t <= 0.15 ? '- most flexible' : t >= 0.4 ? '- stiffer, mostly static' : ''}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <h3 className="text-xl font-bold text-[#1D2931] mb-6">2. Operating Assumptions</h3>
+
+        <div className="mb-5">
+          <label className={labelClass} htmlFor="density">
+            Current density assumption (A/mm²)
+          </label>
+          <select
+            id="density"
+            value={presetIndex}
+            onChange={(e) => setPresetIndex(Number(e.target.value))}
+            className={inputClass}
+          >
+            {DENSITY_PRESETS.map((p, i) => (
+              <option key={p.label} value={i}>
+                {p.value > 0 ? `${p.label} (${p.value} A/mm²)` : p.label}
+              </option>
+            ))}
+          </select>
+          {DENSITY_PRESETS[presetIndex].value === 0 && (
             <input
-              id="current"
               type="number"
-              min={1}
-              max={20000}
-              value={current}
-              onChange={(e) => setCurrent(Math.max(0, Number(e.target.value)))}
-              className={inputClass}
+              step={0.1}
+              min={0.5}
+              max={5}
+              value={customDensity}
+              onChange={(e) => setCustomDensity(Math.max(0.1, Number(e.target.value)))}
+              className={`${inputClass} mt-2`}
+              aria-label="Custom current density in amperes per square millimetre"
             />
-          </div>
-
-          <div className="mb-5">
-            <label className={labelClass} htmlFor="density">
-              Current density assumption (A/mm²)
-            </label>
-            <select
-              id="density"
-              value={presetIndex}
-              onChange={(e) => setPresetIndex(Number(e.target.value))}
-              className={inputClass}
-            >
-              {DENSITY_PRESETS.map((p, i) => (
-                <option key={p.label} value={i}>
-                  {p.value > 0 ? `${p.label} (${p.value} A/mm²)` : p.label}
-                </option>
-              ))}
-            </select>
-            {DENSITY_PRESETS[presetIndex].value === 0 && (
-              <input
-                type="number"
-                step={0.1}
-                min={0.5}
-                max={5}
-                value={customDensity}
-                onChange={(e) => setCustomDensity(Math.max(0.1, Number(e.target.value)))}
-                className={`${inputClass} mt-2`}
-                aria-label="Custom current density in amperes per square millimetre"
-              />
-            )}
-          </div>
-
-          <div className="bg-[#F4F3EE] rounded-lg p-4 mb-8">
-            <div className="text-sm text-[#6F7B83]">Required copper cross-section</div>
-            <div className="text-2xl font-bold text-[#1D2931]">
-              {fmt(requiredSection)} mm²
-            </div>
-            <div className="text-xs text-[#6F7B83] mt-1">
-              = {fmt(current, 0)} A ÷ {fmt(density, 1)} A/mm²
-            </div>
-          </div>
-
-          <h3 className="text-xl font-bold text-[#1D2931] mb-6">2. Set the Geometry</h3>
-
-          <div className="mb-5">
-            <label className={labelClass} htmlFor="width">
-              Width: <span className="text-[#EF290E] font-bold">{fmt(width)} mm</span>
-            </label>
-            <input
-              id="width"
-              type="range"
-              min={5}
-              max={200}
-              step={1}
-              value={width}
-              onChange={(e) => setWidth(Number(e.target.value))}
-              className="w-full accent-[#EF290E]"
-            />
-          </div>
-
-          <div className="mb-5">
-            <label className={labelClass} htmlFor="foil">
-              Foil thickness (mm)
-            </label>
-            <select
-              id="foil"
-              value={foil}
-              onChange={(e) => setFoil(Number(e.target.value))}
-              className={inputClass}
-            >
-              {FOIL_THICKNESSES.map((t) => (
-                <option key={t} value={t}>
-                  {t.toFixed(2)} mm {t <= 0.15 ? '- most flexible' : t >= 0.4 ? '- stiffer, mostly static' : ''}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {mode === 'check' && (
-            <div className="mb-2">
-              <label className={labelClass} htmlFor="layers">
-                Number of laminations: <span className="text-[#EF290E] font-bold">{layers}</span>
-              </label>
-              <input
-                id="layers"
-                type="range"
-                min={1}
-                max={200}
-                step={1}
-                value={layers}
-                onChange={(e) => setLayers(Number(e.target.value))}
-                className="w-full accent-[#EF290E]"
-              />
-            </div>
           )}
         </div>
 
-        {/* Results */}
-        <div className="border border-gray-200 rounded-lg bg-white p-6 sm:p-8">
-          <h3 className="text-xl font-bold text-[#1D2931] mb-6">3. Result</h3>
+        <div className="mb-2">
+          <label className={labelClass} htmlFor="target">
+            Target current (A) <span className="font-normal text-[#6F7B83]">- optional, for comparison</span>
+          </label>
+          <input
+            id="target"
+            type="number"
+            min={0}
+            max={20000}
+            value={targetCurrent}
+            onChange={(e) => setTargetCurrent(Math.max(0, Number(e.target.value)))}
+            className={inputClass}
+          />
+        </div>
+      </div>
 
-          {mode === 'solve' && (
-            <div className="bg-[#1D2931] rounded-lg p-6 mb-6 text-center">
-              <div className="text-sm text-[#B8BFC4] mb-1">Laminations needed</div>
-              <div className="text-5xl font-bold text-white">{effectiveLayers}</div>
-              <div className="text-sm text-[#B8BFC4] mt-2">
-                × {foil.toFixed(2)} mm foil at {fmt(width)} mm width
-              </div>
-            </div>
-          )}
+      {/* Results */}
+      <div className="border border-gray-200 rounded-lg bg-white p-6 sm:p-8">
+        <h3 className="text-xl font-bold text-[#1D2931] mb-6">3. Result</h3>
 
+        {/* Headline: capacity */}
+        <div className="bg-[#1D2931] rounded-lg p-6 mb-6 text-center">
+          <div className="text-sm text-[#B8BFC4] mb-1">Current carrying capacity</div>
+          <div className="text-5xl font-bold text-white">{fmt(actualCapacity, 0)} A</div>
+          <div className="text-sm text-[#B8BFC4] mt-2">
+            at {fmt(density, 1)} A/mm² design density
+          </div>
+        </div>
+
+        {status && (
           <div className="rounded-lg p-4 mb-6" style={{ backgroundColor: status.bg }}>
             <div className="font-semibold" style={{ color: status.color }}>
               {status.text}
             </div>
           </div>
+        )}
 
-          <div className="grid grid-cols-2 gap-4 mb-6">
-            <div className="bg-[#F4F3EE] rounded-lg p-4">
-              <div className="text-sm text-[#6F7B83]">
-                {mode === 'solve' ? 'Resulting cross-section' : 'Your cross-section'}
-              </div>
-              <div className="text-2xl font-bold text-[#1D2931]">{fmt(actualSection)} mm²</div>
-              <div className="text-xs text-[#6F7B83] mt-1">
-                {fmt(width)} × {foil.toFixed(2)} × {effectiveLayers}
-              </div>
-            </div>
-            <div className="bg-[#F4F3EE] rounded-lg p-4">
-              <div className="text-sm text-[#6F7B83]">Carries approximately</div>
-              <div className="text-2xl font-bold text-[#EF290E]">{fmt(capacity, 0)} A</div>
-              <div className="text-xs text-[#6F7B83] mt-1">at {fmt(density, 1)} A/mm²</div>
-            </div>
-            <div className="bg-[#F4F3EE] rounded-lg p-4">
-              <div className="text-sm text-[#6F7B83]">Stack height</div>
-              <div className="text-2xl font-bold text-[#1D2931]">{fmt(stackHeight, 2)} mm</div>
-              <div className="text-xs text-[#6F7B83] mt-1">
-                overall profile {fmt(width)} × {fmt(stackHeight, 2)} mm
-              </div>
-            </div>
-            <div className="bg-[#F4F3EE] rounded-lg p-4">
-              <div className="text-sm text-[#6F7B83]">Density at {fmt(current, 0)} A</div>
-              <div className="text-2xl font-bold text-[#1D2931]">{fmt(actualDensity, 2)} A/mm²</div>
-              <div className="text-xs text-[#6F7B83] mt-1">through this section</div>
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          <div className="bg-[#F4F3EE] rounded-lg p-4">
+            <div className="text-sm text-[#6F7B83]">Cross-section</div>
+            <div className="text-2xl font-bold text-[#1D2931]">{fmt(actualSection)} mm²</div>
+            <div className="text-xs text-[#6F7B83] mt-1">
+              {fmt(width)} × {fmt(actualStack, 2)} mm
             </div>
           </div>
+          <div className="bg-[#F4F3EE] rounded-lg p-4">
+            <div className="text-sm text-[#6F7B83]">Laminations</div>
+            <div className="text-2xl font-bold text-[#EF290E]">{laminations}</div>
+            <div className="text-xs text-[#6F7B83] mt-1">
+              × {foil.toFixed(2)} mm foil = {fmt(actualStack, 2)} mm stack
+            </div>
+          </div>
+          <div className="bg-[#F4F3EE] rounded-lg p-4">
+            <div className="text-sm text-[#6F7B83]">Design current density</div>
+            <div className="text-2xl font-bold text-[#1D2931]">{fmt(density, 2)} A/mm²</div>
+            <div className="text-xs text-[#6F7B83] mt-1">
+              = {fmt(actualCapacity, 0)} A ÷ {fmt(actualSection)} mm²
+            </div>
+          </div>
+          <div className="bg-[#F4F3EE] rounded-lg p-4">
+            <div className="text-sm text-[#6F7B83]">
+              {hasTarget ? `Density at ${fmt(targetCurrent, 0)} A` : 'Density at target'}
+            </div>
+            <div className="text-2xl font-bold text-[#1D2931]">
+              {hasTarget ? `${fmt(densityAtTarget, 2)} A/mm²` : '-'}
+            </div>
+            <div className="text-xs text-[#6F7B83] mt-1">
+              {hasTarget ? 'actual loading through this section' : 'enter a target current'}
+            </div>
+          </div>
+        </div>
 
-          {/* Utilization bar */}
+        {/* Utilization bar */}
+        {hasTarget && (
           <div className="mb-6">
             <div className="flex justify-between text-sm text-[#6F7B83] mb-1">
-              <span>Utilization at target current</span>
+              <span>Utilization at {fmt(targetCurrent, 0)} A</span>
               <span className="font-semibold text-[#1D2931]">{fmt(Math.min(utilization, 999), 0)}%</span>
             </div>
             <div className="w-full h-3 bg-[#F4F3EE] rounded-full overflow-hidden">
@@ -286,26 +246,24 @@ export default function Calculator() {
               70-95% is a typical design target, leaving margin for ambient and aging.
             </p>
           </div>
+        )}
 
-          {mode === 'solve' && (
-            <p className="text-sm text-[#6F7B83] mb-6">
-              Tip: a tall, narrow stack (many laminations) is stiffer than a wide, thin one of the
-              same cross-section. If the stack height is too tall for your space, increase the
-              width; if you need more flexibility, choose a thinner foil.
-            </p>
-          )}
+        <p className="text-sm text-[#6F7B83] mb-6">
+          Tip: the same cross-section can be wide and thin (more flexible, better cooling) or
+          narrow and thick (fits tighter widths, stiffer). Thinner foils make the stack more
+          flexible at the same overall thickness.
+        </p>
 
-          <div className="border-t border-gray-200 pt-4">
-            <p className="text-xs text-[#6F7B83]">
-              Indicative sizing only, based on a simple current-density rule for bare copper at
-              35-40°C ambient. Actual ampacity depends on temperature-rise limits, enclosure,
-              insulation, duty cycle, and joint design. For a guaranteed rating,{' '}
-              <a href="/contact/" className="text-[#EF290E] font-medium hover:underline">
-                request a sized quotation
-              </a>{' '}
-              from our engineers.
-            </p>
-          </div>
+        <div className="border-t border-gray-200 pt-4">
+          <p className="text-xs text-[#6F7B83]">
+            Indicative sizing only, based on a simple current-density rule for bare copper at
+            35-40°C ambient. Actual ampacity depends on temperature-rise limits, enclosure,
+            insulation, duty cycle, and joint design. For a guaranteed rating,{' '}
+            <a href="/contact/" className="text-[#EF290E] font-medium hover:underline">
+              request a sized quotation
+            </a>{' '}
+            from our engineers.
+          </p>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ const faqs = [
   {
     question: 'How does this busbar calculator work?',
     answer:
-      'It uses the standard current-density sizing rule: required cross-section (mm²) = current (A) ÷ current density (A/mm²). You choose a density matching your installation (1.5-2.5 A/mm² covers most cases), and the calculator shows the copper area you need. You then adjust width, foil thickness, and number of laminations until width × thickness × laminations meets or exceeds that area.',
+      'You set the busbar width and overall thickness; the calculator computes the copper cross-section (width × thickness) and multiplies it by a current density appropriate to your installation (1.5-2.5 A/mm² covers most cases) to give the current carrying capacity. Choosing a foil thickness also shows how many laminations build up that stack. Enter a target current to see utilization and the actual current density at that load.',
   },
   {
     question: 'What current density should I use?',
@@ -123,10 +123,10 @@ export default function BusbarCalculatorPage() {
               Busbar Ampacity Calculator
             </h1>
             <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
-              Enter the current your connection must carry, and the calculator shows the copper
-              cross-section you need. Then play with width, foil thickness, and number of
-              laminations until the geometry fits your space - or work in reverse from dimensions
-              to ampacity.
+              Set the width and thickness of a copper busbar and instantly see its cross-section,
+              current carrying capacity, and current density. Pick a foil thickness and the
+              calculator also tells you how many laminations make up that stack - and how the
+              geometry compares against your target current.
             </p>
 
             {/* Calculator */}
