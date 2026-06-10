@@ -123,6 +123,10 @@ const sidebarData: SidebarItem[] = [
       { label: 'Overview', href: '/products/flexible-busbars' },
       { label: 'Switchgear', href: '/products/flexible-busbars/switchgear' },
       { label: 'EV Battery Packs', href: '/products/flexible-busbars/ev-battery-pack' },
+      { label: 'Laminated vs Braided', href: '/products/flexible-busbars/laminated-vs-braided' },
+      { label: 'Sizing Guide', href: '/products/flexible-busbars/sizing-guide' },
+      { label: 'Ampacity Calculator', href: '/products/flexible-busbars/calculator' },
+      { label: 'FAQ', href: '/products/flexible-busbars/faq' },
     ],
   },
 ];

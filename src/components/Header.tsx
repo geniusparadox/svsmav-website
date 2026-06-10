@@ -164,6 +164,10 @@ export default function Header() {
                   <li><Link href="/products/flexible-busbars" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">Overview</Link></li>
                   <li><Link href="/products/flexible-busbars/switchgear" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">Switchgear & Transformers</Link></li>
                   <li><Link href="/products/flexible-busbars/ev-battery-pack" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">EV Battery Packs</Link></li>
+                  <li><Link href="/products/flexible-busbars/laminated-vs-braided" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">Laminated vs Braided</Link></li>
+                  <li><Link href="/products/flexible-busbars/sizing-guide" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">Sizing Guide</Link></li>
+                  <li><Link href="/products/flexible-busbars/calculator" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">Ampacity Calculator</Link></li>
+                  <li><Link href="/products/flexible-busbars/faq" className="text-[#6F7B83] hover:text-[#1D2931] text-sm">FAQ</Link></li>
                 </ul>
               </div>
 
@@ -366,6 +370,10 @@ export default function Header() {
                   <Link href="/products/flexible-busbars" onClick={closeMenu} className="block text-[#6F7B83] py-1">Overview</Link>
                   <Link href="/products/flexible-busbars/switchgear" onClick={closeMenu} className="block text-[#6F7B83] py-1">Switchgear & Transformers</Link>
                   <Link href="/products/flexible-busbars/ev-battery-pack" onClick={closeMenu} className="block text-[#6F7B83] py-1">EV Battery Packs</Link>
+                  <Link href="/products/flexible-busbars/laminated-vs-braided" onClick={closeMenu} className="block text-[#6F7B83] py-1">Laminated vs Braided</Link>
+                  <Link href="/products/flexible-busbars/sizing-guide" onClick={closeMenu} className="block text-[#6F7B83] py-1">Sizing Guide</Link>
+                  <Link href="/products/flexible-busbars/calculator" onClick={closeMenu} className="block text-[#6F7B83] py-1">Ampacity Calculator</Link>
+                  <Link href="/products/flexible-busbars/faq" onClick={closeMenu} className="block text-[#6F7B83] py-1">FAQ</Link>
                 </div>
               )}
             </div>
