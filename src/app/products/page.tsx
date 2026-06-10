@@ -9,11 +9,11 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Products</h1>
-            <p className="text-xl text-[#B8BFC4]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Our Products</h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[#B8BFC4]">
               Electrical resistance welding consumables, copper alloys, and diffusion-welded flexible busbars
               for automotive, EV, electrical, and industrial sectors.
             </p>
@@ -22,24 +22,24 @@ export default function ProductsPage() {
       </section>
 
       {/* Product Categories */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 gap-8 lg:gap-12">
             {/* Copper Materials & WIRBALIT */}
-            <div className="bg-[#F4F3EE] rounded-2xl overflow-hidden">
+            <div className="bg-[#F4F3EE] rounded-xl sm:rounded-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="p-10 lg:p-16">
+                <div className="p-6 sm:p-10 lg:p-16">
                   <div className="inline-block px-3 py-1 bg-[#EF290E] text-white text-sm font-medium rounded-full mb-4">
                     Premium Range
                   </div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                     Copper Materials & WIRBALIT®
                   </h2>
-                  <p className="text-[#6F7B83] mb-6">
+                  <p className="text-[#6F7B83] mb-4 sm:mb-6">
                     Our flagship WIRBALIT® product line offers premium copper alloys engineered for
                     resistance welding and high-performance electrical applications.
                   </p>
-                  <ul className="space-y-3 mb-8 text-[#6F7B83]">
+                  <ul className="space-y-3 mb-6 sm:mb-8 text-[#6F7B83]">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 mr-3 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -75,7 +75,7 @@ export default function ProductsPage() {
                     </svg>
                   </Link>
                 </div>
-                <div className="bg-gradient-to-br from-[#E5E4DF] to-[#D5D4CF] flex items-center justify-center p-10">
+                <div className="bg-gradient-to-br from-[#E5E4DF] to-[#D5D4CF] flex items-center justify-center p-6 sm:p-10">
                   <div className="text-center">
                     <div className="text-6xl font-bold text-[#1D2931] opacity-30 mb-2">WIRBALIT®</div>
                     <p className="text-[#6F7B83]">Premium Copper Alloys</p>
@@ -85,22 +85,22 @@ export default function ProductsPage() {
             </div>
 
             {/* Spot Welding Components */}
-            <div className="bg-[#1D2931] text-white rounded-2xl overflow-hidden">
+            <div className="bg-[#1D2931] text-white rounded-xl sm:rounded-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="bg-gradient-to-br from-[#2A3B46] to-[#1D2931] flex items-center justify-center p-10 order-2 lg:order-1">
+                <div className="bg-gradient-to-br from-[#2A3B46] to-[#1D2931] flex items-center justify-center p-6 sm:p-10 order-2 lg:order-1">
                   <svg className="w-48 h-48 text-[#EF290E] opacity-20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <div className="p-10 lg:p-16 order-1 lg:order-2">
-                  <h2 className="text-3xl font-bold mb-4">
+                <div className="p-6 sm:p-10 lg:p-16 order-1 lg:order-2">
+                  <h2 className="text-2xl sm:text-3xl font-bold mb-4">
                     Spot Welding Components
                   </h2>
-                  <p className="text-[#B8BFC4] mb-6">
+                  <p className="text-[#B8BFC4] mb-4 sm:mb-6">
                     Complete range of precision-engineered spot welding electrodes, caps, holders, and accessories
                     for automotive and industrial applications.
                   </p>
-                  <ul className="space-y-3 mb-8 text-[#B8BFC4]">
+                  <ul className="space-y-3 mb-6 sm:mb-8 text-[#B8BFC4]">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 mr-3 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -140,20 +140,20 @@ export default function ProductsPage() {
             </div>
 
             {/* Flexible Busbars */}
-            <div className="bg-[#F4F3EE] rounded-2xl overflow-hidden">
+            <div className="bg-[#F4F3EE] rounded-xl sm:rounded-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="p-10 lg:p-16">
+                <div className="p-6 sm:p-10 lg:p-16">
                   <div className="inline-block px-3 py-1 bg-[#1D2931] text-white text-sm font-medium rounded-full mb-4">
                     EV & Power Distribution
                   </div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                     Flexible Busbars
                   </h2>
-                  <p className="text-[#6F7B83] mb-6">
+                  <p className="text-[#6F7B83] mb-4 sm:mb-6">
                     Diffusion-welded and laminated busbars engineered for switchgear, EV battery packs,
                     and power distribution systems with superior conductivity and flexibility.
                   </p>
-                  <ul className="space-y-3 mb-8 text-[#6F7B83]">
+                  <ul className="space-y-3 mb-6 sm:mb-8 text-[#6F7B83]">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 mr-3 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -189,7 +189,7 @@ export default function ProductsPage() {
                     </svg>
                   </Link>
                 </div>
-                <div className="bg-gradient-to-br from-[#E5E4DF] to-[#D5D4CF] flex items-center justify-center p-10">
+                <div className="bg-gradient-to-br from-[#E5E4DF] to-[#D5D4CF] flex items-center justify-center p-6 sm:p-10">
                   <svg className="w-48 h-48 text-[#1D2931] opacity-20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg>
@@ -198,21 +198,21 @@ export default function ProductsPage() {
             </div>
 
             {/* Gas Shielded/SAW Welding */}
-            <div className="bg-white border-2 border-[#F4F3EE] rounded-2xl overflow-hidden">
+            <div className="bg-white border-2 border-[#F4F3EE] rounded-xl sm:rounded-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="bg-[#F4F3EE] flex items-center justify-center p-10 order-2 lg:order-1">
+                <div className="bg-[#F4F3EE] flex items-center justify-center p-6 sm:p-10 order-2 lg:order-1">
                   <svg className="w-48 h-48 text-[#1D2931] opacity-20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
                 <div className="p-10 lg:p-16 order-1 lg:order-2">
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                     Gas Shielded & SAW Welding
                   </h2>
-                  <p className="text-[#6F7B83] mb-6">
+                  <p className="text-[#6F7B83] mb-4 sm:mb-6">
                     Complete range of consumables and components for MIG/MAG and submerged arc welding processes.
                   </p>
-                  <ul className="space-y-3 mb-8 text-[#6F7B83]">
+                  <ul className="space-y-3 mb-6 sm:mb-8 text-[#6F7B83]">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 mr-3 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -246,17 +246,17 @@ export default function ProductsPage() {
             </div>
 
             {/* Tip Dressing & Milling */}
-            <div className="bg-[#F4F3EE] rounded-2xl overflow-hidden">
+            <div className="bg-[#F4F3EE] rounded-xl sm:rounded-2xl overflow-hidden">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="p-10 lg:p-16">
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+                <div className="p-6 sm:p-10 lg:p-16">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                     Tip Dressing Units
                   </h2>
-                  <p className="text-[#6F7B83] mb-6">
+                  <p className="text-[#6F7B83] mb-4 sm:mb-6">
                     Precision electrode tip dressers for maintaining optimal welding quality
                     in high-volume production environments.
                   </p>
-                  <ul className="space-y-3 mb-8 text-[#6F7B83]">
+                  <ul className="space-y-3 mb-6 sm:mb-8 text-[#6F7B83]">
                     <li className="flex items-center">
                       <svg className="w-5 h-5 mr-3 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -292,7 +292,7 @@ export default function ProductsPage() {
                     </svg>
                   </Link>
                 </div>
-                <div className="bg-gradient-to-br from-[#E5E4DF] to-[#D5D4CF] flex items-center justify-center p-10">
+                <div className="bg-gradient-to-br from-[#E5E4DF] to-[#D5D4CF] flex items-center justify-center p-6 sm:p-10">
                   <svg className="w-48 h-48 text-[#1D2931] opacity-20" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                     <circle cx="12" cy="12" r="3" />
@@ -302,14 +302,14 @@ export default function ProductsPage() {
             </div>
 
             {/* Refractory Alloys & Tools */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {/* Refractory Alloys */}
-              <div className="bg-white border-2 border-[#F4F3EE] rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Refractory Alloys</h3>
-                <p className="text-[#6F7B83] mb-6">
+              <div className="bg-white border-2 border-[#F4F3EE] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Refractory Alloys</h3>
+                <p className="text-[#6F7B83] mb-4 sm:mb-6">
                   High-melting metals for extreme temperature applications.
                 </p>
-                <ul className="space-y-2 mb-6 text-[#6F7B83]">
+                <ul className="space-y-2 mb-4 sm:mb-6 text-[#6F7B83]">
                   <li className="flex items-center">
                     <svg className="w-4 h-4 mr-2 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -335,12 +335,12 @@ export default function ProductsPage() {
               </div>
 
               {/* Tools & Accessories */}
-              <div className="bg-white border-2 border-[#F4F3EE] rounded-2xl p-8">
-                <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Tools & Accessories</h3>
-                <p className="text-[#6F7B83] mb-6">
+              <div className="bg-white border-2 border-[#F4F3EE] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Tools & Accessories</h3>
+                <p className="text-[#6F7B83] mb-4 sm:mb-6">
                   Essential tools and consumables for welding operations.
                 </p>
-                <ul className="space-y-2 mb-6 text-[#6F7B83]">
+                <ul className="space-y-2 mb-4 sm:mb-6 text-[#6F7B83]">
                   <li className="flex items-center">
                     <svg className="w-4 h-4 mr-2 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -370,9 +370,9 @@ export default function ProductsPage() {
       </section>
 
       {/* Industries */}
-      <section className="bg-[#F4F3EE] py-16">
+      <section className="bg-[#F4F3EE] py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#1D2931] mb-8 text-center">Industries We Serve</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6 sm:mb-8 text-center">Industries We Serve</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {['Automotive', 'EV & Battery', 'Electrical Industry', 'Mechanical Engineering', 'Shipbuilding', 'Home Appliance'].map((industry) => (
               <div key={industry} className="bg-white p-6 rounded-xl text-center card-hover">
@@ -384,12 +384,12 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
             Need Help Finding the Right Product?
           </h2>
-          <p className="text-[#B8BFC4] mb-8">
+          <p className="text-[#B8BFC4] mb-6 sm:mb-8">
             Our expert team is ready to help you find the perfect solution for your specific requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

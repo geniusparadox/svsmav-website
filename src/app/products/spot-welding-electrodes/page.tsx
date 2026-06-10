@@ -89,16 +89,16 @@ export default function SpotWeldingElectrodesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -109,17 +109,17 @@ export default function SpotWeldingElectrodesPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Spot Welding Electrodes
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               Complete spot welding electrodes engineered for precision resistance welding.
               From standard configurations to custom solutions, our electrodes deliver consistent,
               high-quality welds in the most demanding production environments.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 mb-16">
+            <div className="flex flex-wrap gap-4 mb-10 sm:mb-16">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#EF290E] text-white font-semibold rounded-lg hover:bg-[#D42208] transition-colors"
@@ -135,14 +135,14 @@ export default function SpotWeldingElectrodesPage() {
             </div>
 
             {/* Features Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Features & Benefits</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Features & Benefits</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 Our spot welding electrodes are manufactured to the highest standards, ensuring optimal performance and longevity.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -156,14 +156,14 @@ export default function SpotWeldingElectrodesPage() {
             </div>
 
             {/* Electrode Types Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Electrode Types</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Electrode Types</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 We offer a complete range of electrode configurations to suit every welding application and part geometry.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {electrodeTypes.map((type, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{type.name}</h3>
                     <p className="text-[#6F7B83] text-sm">{type.description}</p>
                   </div>
@@ -172,15 +172,15 @@ export default function SpotWeldingElectrodesPage() {
             </div>
 
             {/* Materials Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Premium WIRBALIT Copper Alloys</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Premium WIRBALIT Copper Alloys</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 Our electrodes are manufactured from WIRBALIT copper alloys, precision-engineered
                 for resistance welding. Choose the optimal material based on your workpiece materials and production requirements.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {materials.map((material, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-bold text-[#EF290E] mb-2">{material.name}</h3>
                     <p className="text-[#6F7B83] mb-4">{material.description}</p>
                     <Link
@@ -215,8 +215,8 @@ export default function SpotWeldingElectrodesPage() {
             </div>
 
             {/* Industries Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Industries Served</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Industries Served</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {industries.map((industry, index) => (
                   <div key={index} className="flex items-start">
@@ -230,10 +230,10 @@ export default function SpotWeldingElectrodesPage() {
             </div>
 
             {/* Custom Electrodes CTA */}
-            <div className="mb-16 border border-gray-200 rounded-lg bg-white p-8">
+            <div className="mb-10 sm:mb-16 border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="mb-4 md:mb-0">
-                  <h3 className="text-xl font-bold text-[#1D2931] mb-2">Need Custom Spot Welding Electrodes?</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-2">Need Custom Spot Welding Electrodes?</h3>
                   <p className="text-[#6F7B83]">
                     Our engineering team can design and manufacture custom electrodes for your specific application.
                   </p>
@@ -248,9 +248,9 @@ export default function SpotWeldingElectrodesPage() {
             </div>
 
             {/* Bottom CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
-              <p className="text-[#6F7B83] mb-6">
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
+              <p className="text-[#6F7B83] mb-4 sm:mb-6">
                 Contact us for pricing and availability of spot welding electrodes in your required configuration and quantity.
               </p>
               <div className="flex flex-wrap gap-4">

@@ -100,16 +100,16 @@ export default function ProjectionWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -120,10 +120,10 @@ export default function ProjectionWeldingPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Projection Welding
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               Projection welding is a resistance welding process that uses raised sections (projections)
               on one or both workpieces to localize the welding current and force. This technique excels
               at attaching fasteners, creating multiple simultaneous welds, and joining dissimilar
@@ -131,9 +131,9 @@ export default function ProjectionWeldingPage() {
             </p>
 
             {/* Process Description */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">How Projection Welding Works</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">How Projection Welding Works</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] text-lg mb-4">
                     Projection welding uses embossed or machined projections on one workpiece to concentrate
@@ -146,7 +146,7 @@ export default function ProjectionWeldingPage() {
                     significantly increasing production efficiency.
                   </p>
                 </div>
-                <div className="border border-gray-200 rounded-lg bg-white p-6">
+                <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-4">Types of Projections</h3>
                   <ul className="space-y-4">
                     {projectionTypes.map((type) => (
@@ -164,11 +164,11 @@ export default function ProjectionWeldingPage() {
             </div>
 
             {/* Key Parameters */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Key Parameters</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Parameters</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {keyParameters.map((param) => (
-                  <div key={param.label} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={param.label} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <p className="text-sm text-[#6F7B83] mb-1">{param.label}</p>
                     <p className="font-semibold text-[#1D2931] text-lg">{param.value}</p>
                   </div>
@@ -177,14 +177,14 @@ export default function ProjectionWeldingPage() {
             </div>
 
             {/* Advantages */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Advantages of Projection Welding</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Advantages of Projection Welding</h2>
               <p className="text-[#6F7B83] text-lg mb-6">
                 Projection welding offers unique benefits for high-volume fastener and assembly applications.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
                 {advantages.map((advantage) => (
-                  <div key={advantage.title} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={advantage.title} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -198,9 +198,9 @@ export default function ProjectionWeldingPage() {
             </div>
 
             {/* Applications */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] text-lg mb-6">
                     Projection welding is particularly suited for attaching fasteners and
@@ -233,10 +233,10 @@ export default function ProjectionWeldingPage() {
             </div>
 
             {/* Comparison Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Projection vs Spot Welding</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="border border-gray-200 rounded-lg bg-white p-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Projection vs Spot Welding</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-4 sm:p-6">
+                <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <h3 className="text-lg font-bold text-[#EF290E] mb-4">Projection Welding</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
@@ -265,7 +265,7 @@ export default function ProjectionWeldingPage() {
                     </li>
                   </ul>
                 </div>
-                <div className="border border-gray-200 rounded-lg bg-white p-6">
+                <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-4">Spot Welding</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
@@ -298,12 +298,12 @@ export default function ProjectionWeldingPage() {
             </div>
 
             {/* Related Products */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Related Products</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Related Products</h2>
               <p className="text-[#6F7B83] text-lg mb-6">
                 SVS Maverick provides complete solutions for projection welding applications.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {relatedProducts.map((product) => (
                   <Link
                     key={product.name}
@@ -326,8 +326,8 @@ export default function ProjectionWeldingPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Need Projection Welding Solutions?</h2>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Need Projection Welding Solutions?</h2>
               <p className="text-[#6F7B83] mb-6">
                 Our experts can help you select the right electrodes and materials
                 for your projection welding applications.

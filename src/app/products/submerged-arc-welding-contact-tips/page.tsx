@@ -63,16 +63,16 @@ export default function SAWContactTipsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -83,10 +83,10 @@ export default function SAWContactTipsPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Submerged Arc Welding Contact Tips
             </h1>
-            <p className="text-xl text-[#1D2931] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-8 sm:mb-12 max-w-3xl">
               High-performance contact tips engineered for the demanding requirements of submerged arc welding.
               Deliver reliable current transfer and consistent wire feeding for heavy-duty industrial applications.
             </p>
@@ -108,9 +108,9 @@ export default function SAWContactTipsPage() {
             </div>
 
             {/* Product Description */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Engineered for High-Amperage Performance</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Engineered for High-Amperage Performance</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] text-lg mb-4">
                     Submerged arc welding demands contact tips that can handle extreme currents while
@@ -145,9 +145,9 @@ export default function SAWContactTipsPage() {
             </div>
 
             {/* Features Grid */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -158,8 +158,8 @@ export default function SAWContactTipsPage() {
             </div>
 
             {/* Wire Size Table */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Standard Wire Sizes</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Standard Wire Sizes</h2>
               <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                 <table className="w-full">
                   <thead>
@@ -183,9 +183,9 @@ export default function SAWContactTipsPage() {
             </div>
 
             {/* Available Materials */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link href="/materials/copper-materials/cucr1zr" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-2">CuCr1Zr</h3>
                   <p className="text-[#6F7B83] mb-3">Standard choice for most SAW applications with excellent conductivity.</p>
@@ -205,11 +205,11 @@ export default function SAWContactTipsPage() {
             </div>
 
             {/* Specifications and Applications */}
-            <div className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 {/* Technical Specifications */}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                   <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                     {specifications.map((spec, index) => (
                       <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -222,7 +222,7 @@ export default function SAWContactTipsPage() {
 
                 {/* Applications */}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
                   <ul className="space-y-3">
                     {applications.map((app, index) => (
                       <li key={index} className="flex items-start border border-gray-200 rounded-lg bg-white p-4">
@@ -236,8 +236,8 @@ export default function SAWContactTipsPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Optimize Your SAW Operations</h2>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Optimize Your SAW Operations</h2>
               <p className="text-[#6F7B83] mb-6 max-w-2xl">
                 Contact our technical team to discuss your submerged arc welding requirements.
                 We can recommend the optimal contact tip configuration for your specific application.

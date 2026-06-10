@@ -97,13 +97,13 @@ export default function LaserProtectionWindowsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
-        <main className="flex-1 px-8 lg:px-16 py-12">
+        <main className="flex-1 px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
           {/* Breadcrumb */}
-          <nav className="text-sm mb-8">
+          <nav className="text-xs sm:text-sm mb-6 sm:mb-8">
             <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
             <span className="mx-2 text-[#6F7B83]">&gt;</span>
             <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -114,12 +114,12 @@ export default function LaserProtectionWindowsPage() {
           </nav>
 
           {/* Title */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-8">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-6 sm:mb-8">
             Laser Protection Windows
           </h1>
 
           {/* Introduction */}
-          <p className="text-lg text-[#6F7B83] mb-8 max-w-4xl">
+          <p className="text-base sm:text-lg text-[#6F7B83] mb-6 sm:mb-8 max-w-4xl">
             Certified laser safety windows for industrial welding and cutting applications.
             Protect operators from hazardous laser radiation while maintaining clear visibility of the process.
           </p>
@@ -135,7 +135,7 @@ export default function LaserProtectionWindowsPage() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 mb-16">
+          <div className="flex flex-wrap gap-4 mb-10 sm:mb-16">
             <Link
               href="/contact"
               className="inline-block bg-[#EF290E] text-white px-8 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors"
@@ -151,10 +151,10 @@ export default function LaserProtectionWindowsPage() {
           </div>
 
           {/* Product Description Section */}
-          <section className="mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-10 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Certified Laser Safety Solutions</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Certified Laser Safety Solutions</h2>
                 <p className="text-[#6F7B83] mb-4">
                   Industrial laser systems generate concentrated light that can cause severe eye
                   injuries and skin burns. Our laser protection windows provide a critical safety
@@ -190,9 +190,9 @@ export default function LaserProtectionWindowsPage() {
           </section>
 
           {/* Laser Types Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Protection by Laser Type</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Protection by Laser Type</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {laserTypes.map((type, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-2">{type.name}</h3>
@@ -211,9 +211,9 @@ export default function LaserProtectionWindowsPage() {
           </section>
 
           {/* Features Grid */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -224,8 +224,8 @@ export default function LaserProtectionWindowsPage() {
           </section>
 
           {/* Optical Density Guide */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Understanding Optical Density</h2>
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Understanding Optical Density</h2>
             <p className="text-[#6F7B83] mb-8 max-w-3xl">
               Optical Density (OD) indicates the level of laser protection. Higher OD values provide greater
               attenuation of laser power. The required OD depends on your laser wavelength and power output.
@@ -253,10 +253,10 @@ export default function LaserProtectionWindowsPage() {
           </section>
 
           {/* Specifications and Applications */}
-          <section className="mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-10 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
                 <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                   {specifications.map((spec, index) => (
                     <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -267,7 +267,7 @@ export default function LaserProtectionWindowsPage() {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Applications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Applications</h2>
                 <ul className="space-y-3">
                   {applications.map((app, index) => (
                     <li key={index} className="flex items-start border border-gray-200 rounded-lg bg-white p-4">
@@ -283,9 +283,9 @@ export default function LaserProtectionWindowsPage() {
           </section>
 
           {/* Certifications */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Standards & Certifications</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Standards & Certifications</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {certifications.map((cert, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6 text-center">
                   <h3 className="font-bold text-[#1D2931] mb-2">{cert.name}</h3>
@@ -296,9 +296,9 @@ export default function LaserProtectionWindowsPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12">
+          <section className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-12">
             <div className="text-center max-w-2xl mx-auto">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                 Need Laser Safety Expertise?
               </h2>
               <p className="text-[#6F7B83] mb-8">

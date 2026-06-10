@@ -27,23 +27,23 @@ export default function CuAgPage() {
       </section>
 
       {/* Overview */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 sm:py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Semi-Finished Products & Custom Parts</h2>
-              <p className="text-[#6F7B83] text-lg mb-6">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Semi-Finished Products & Custom Parts</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4 sm:mb-6">
                 WIRBALIT® L is a silver-bearing copper alloy that offers excellent electrical conductivity combined with improved softening resistance compared to pure copper. The addition of silver and phosphorus enhances the material&apos;s performance at elevated temperatures.
               </p>
-              <p className="text-[#6F7B83] text-lg mb-6">
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4 sm:mb-6">
                 This material is particularly suited for applications where maximum electrical conductivity is required alongside moderate strength and improved thermal stability.
               </p>
-              <p className="text-[#6F7B83] text-lg">
+              <p className="text-[#6F7B83] text-base sm:text-lg">
                 We supply semi-finished stock or custom-made parts tailored to your specific technical requirements with short lead times.
               </p>
             </div>
-            <div className="bg-[#F4F3EE] rounded-lg p-8">
-              <h3 className="text-xl font-bold text-[#1D2931] mb-6">Key Properties</h3>
+            <div className="bg-[#F4F3EE] rounded-lg p-4 sm:p-6 lg:p-8">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Properties</h3>
               <div className="space-y-4">
                 <div className="flex justify-between py-3 border-b border-gray-300">
                   <span className="text-[#6F7B83]">Electrical Conductivity</span>
@@ -72,24 +72,24 @@ export default function CuAgPage() {
       </section>
 
       {/* Key Features */}
-      <section className="py-16 bg-[#F4F3EE]">
+      <section className="py-12 sm:py-16 bg-[#F4F3EE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Key Features</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-[#F4F3EE] p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-[#EF290E] mb-2">Highest Conductivity</h3>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Key Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-bold text-[#EF290E] mb-2">Highest Conductivity</h3>
               <p className="text-[#6F7B83]">
                 Near-pure copper electrical conductivity (≥98% IACS) for maximum current transfer efficiency.
               </p>
             </div>
-            <div className="bg-[#F4F3EE] p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-[#EF290E] mb-2">Improved Softening Resistance</h3>
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-bold text-[#EF290E] mb-2">Improved Softening Resistance</h3>
               <p className="text-[#6F7B83]">
                 Silver addition raises the softening temperature compared to pure copper, extending service life.
               </p>
             </div>
-            <div className="bg-[#F4F3EE] p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-[#EF290E] mb-2">Excellent Brazeability</h3>
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 rounded-lg">
+              <h3 className="text-lg sm:text-xl font-bold text-[#EF290E] mb-2">Excellent Brazeability</h3>
               <p className="text-[#6F7B83]">
                 Phosphorus content provides self-fluxing properties for easy brazing and joining.
               </p>
@@ -99,12 +99,12 @@ export default function CuAgPage() {
       </section>
 
       {/* Applications */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Typical Applications</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Typical Applications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             <div>
-              <h3 className="text-xl font-bold text-[#1D2931] mb-4">Welding Applications</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-3 sm:mb-4">Welding Applications</h3>
               <ul className="space-y-3">
                 {[
                   'Electrode holders and shanks',
@@ -123,7 +123,7 @@ export default function CuAgPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-[#1D2931] mb-4">Other Applications</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-3 sm:mb-4">Other Applications</h3>
               <ul className="space-y-3">
                 {[
                   'Electrical connectors and terminals',
@@ -146,10 +146,10 @@ export default function CuAgPage() {
       </section>
 
       {/* Chemical Composition */}
-      <section className="py-16 bg-[#F4F3EE]">
+      <section className="py-12 sm:py-16 bg-[#F4F3EE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Chemical Composition</h2>
-          <div className="bg-[#F4F3EE] rounded-lg p-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Chemical Composition</h2>
+          <div className="bg-[#F4F3EE] rounded-lg p-4 sm:p-6 lg:p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center p-4 border border-gray-200 rounded">
                 <span className="text-2xl font-bold text-[#EF290E]">Cu</span>
@@ -173,10 +173,10 @@ export default function CuAgPage() {
       </section>
 
       {/* Available Forms */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Available Forms</h2>
-          <p className="text-[#6F7B83] text-lg mb-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Available Forms</h2>
+          <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
             We supply WIRBALIT® L in a wide range of standard and custom forms:
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -190,10 +190,10 @@ export default function CuAgPage() {
       </section>
 
       {/* Processing Guidelines */}
-      <section className="py-16 bg-[#F4F3EE]">
+      <section className="py-12 sm:py-16 bg-[#F4F3EE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Processing Guidelines</h2>
-          <div className="bg-[#1D2931] rounded-lg p-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Processing Guidelines</h2>
+          <div className="bg-[#1D2931] rounded-lg p-4 sm:p-6 lg:p-8">
             <ul className="space-y-4 text-gray-300">
               <li className="flex items-start">
                 <span className="text-[#EF290E] mr-3 font-bold">*</span>
@@ -217,11 +217,11 @@ export default function CuAgPage() {
       </section>
 
       {/* Technical Data Link */}
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between bg-[#F4F3EE] rounded-lg p-8">
-            <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold text-[#1D2931] mb-2">Technical Data Sheet</h3>
+          <div className="flex flex-col md:flex-row items-center justify-between bg-[#F4F3EE] rounded-lg p-4 sm:p-6 lg:p-8">
+            <div className="mb-4 md:mb-0 text-center md:text-left">
+              <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-2">Technical Data Sheet</h3>
               <p className="text-[#6F7B83]">Download detailed specifications and compare with other WIRBALIT® alloys.</p>
             </div>
             <Link
@@ -235,10 +235,10 @@ export default function CuAgPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-[#1D2931]">
+      <section className="py-12 sm:py-16 bg-[#1D2931]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Request a Quote</h2>
-          <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Request a Quote</h2>
+          <p className="text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Contact us for pricing and availability of WIRBALIT® L (CuAg0.10P) materials in your required form and quantity. Custom parts available with short lead times.
           </p>
           <Link

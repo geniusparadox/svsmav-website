@@ -8,14 +8,14 @@ export const metadata = {
 
 export default function ProductsPortfolioPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -24,10 +24,10 @@ export default function ProductsPortfolioPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4">
               Products Portfolio
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               All SVS Maverick products at a glance. Browse our complete range of semi-finished parts,
               welding products, welding systems, and flexible busbars.
             </p>
@@ -311,7 +311,7 @@ export default function ProductsPortfolioPage() {
             </div>
 
             {/* Additional Product Categories */}
-            <h2 className="text-2xl font-bold text-[#1D2931] mt-16 mb-6">Drawing Parts & Components</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mt-10 sm:mt-16 mb-4 sm:mb-6">Drawing Parts & Components</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Spot Welding Components */}
               <div className="bg-white rounded-xl p-6 border border-gray-200 hover:border-[#EF290E] transition-colors group">
@@ -455,7 +455,7 @@ export default function ProductsPortfolioPage() {
             </div>
 
             {/* CTA */}
-            <section className="mt-16 border border-gray-200 rounded-lg bg-white p-8 lg:p-12 text-center">
+            <section className="mt-10 sm:mt-16 border border-gray-200 rounded-lg bg-white p-8 lg:p-12 text-center">
               <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need a Custom Solution?</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Can&apos;t find what you&apos;re looking for? We offer custom-made products and drawing parts

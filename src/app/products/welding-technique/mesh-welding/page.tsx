@@ -85,15 +85,15 @@ export default function MeshWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
-        <main className="flex-1 p-8 lg:p-12">
+        <main className="flex-1 p-4 sm:p-6 lg:p-12">
           <div className="max-w-5xl">
             {/* Breadcrumb */}
-            <nav className="mb-8">
-              <ol className="flex items-center space-x-2 text-sm text-[#6F7B83]">
+            <nav className="mb-6 sm:mb-8">
+              <ol className="flex items-center space-x-2 text-xs sm:text-sm text-[#6F7B83]">
                 <li><Link href="/" className="hover:text-[#1D2931]">HOME</Link></li>
                 <li>&gt;</li>
                 <li><Link href="/products" className="hover:text-[#1D2931]">PRODUCTS</Link></li>
@@ -105,14 +105,14 @@ export default function MeshWeldingPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-8">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-6 sm:mb-8">
               Mesh Welding
             </h1>
 
             {/* Process Description */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Process Description</h2>
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Process Description</h2>
                 <p className="text-[#6F7B83] mb-6 leading-relaxed">
                   Mesh welding, also known as wire welding or cross-wire welding, is a specialized resistance
                   welding process for joining intersecting wires to create mesh products. This high-speed,
@@ -133,9 +133,9 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* Mesh Welding Systems */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Mesh Welding Systems</h2>
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Mesh Welding Systems</h2>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <span className="w-2 h-2 rounded-full bg-[#EF290E] mr-3 mt-2 flex-shrink-0"></span>
@@ -163,9 +163,9 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* Key Parameters */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Key Parameters</h2>
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Parameters</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {keyParameters.map((param, index) => (
                     <div key={index} className="bg-[#F4F3EE] p-4 rounded-lg">
@@ -178,12 +178,12 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* Advantages */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Advantages</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Advantages</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
                   {advantages.map((advantage, index) => (
-                    <div key={index} className="border border-gray-200 rounded-lg p-6">
+                    <div key={index} className="border border-gray-200 rounded-lg p-4 sm:p-6">
                       <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
                         <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -198,11 +198,11 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* Applications */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-4 sm:p-6 lg:p-8">
                   <div>
-                    <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Applications</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Applications</h2>
                     <p className="text-[#6F7B83] mb-6">
                       Mesh welding produces a wide variety of wire products for construction,
                       agriculture, and consumer goods.
@@ -219,7 +219,7 @@ export default function MeshWeldingPage() {
                     </ul>
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Industries</h2>
+                    <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Industries</h2>
                     <p className="text-[#6F7B83] mb-6">
                       Wire mesh products serve diverse industries from construction
                       to consumer products manufacturing.
@@ -237,9 +237,9 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* Common Mesh Products */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Common Mesh Products</h2>
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Common Mesh Products</h2>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
                     { name: 'Reinforcement Mesh', desc: 'Concrete reinforcing for construction' },
@@ -261,9 +261,9 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-2">Related Products</h2>
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-2">Related Products</h2>
                 <p className="text-[#6F7B83] mb-6">
                   SVS Maverick supplies electrodes and components for mesh welding machines.
                 </p>
@@ -291,7 +291,7 @@ export default function MeshWeldingPage() {
             </section>
 
             {/* CTA */}
-            <section className="mb-12">
+            <section className="mb-8 sm:mb-12">
               <div className="border border-gray-200 rounded-lg bg-[#1D2931] p-8 text-center">
                 <h2 className="text-2xl font-bold text-white mb-4">
                   Need Mesh Welding Solutions?

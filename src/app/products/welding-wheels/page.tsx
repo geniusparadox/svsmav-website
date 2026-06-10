@@ -81,13 +81,13 @@ export default function WeldingWheelsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
-        <main className="flex-1 px-8 lg:px-16 py-12">
+        <main className="flex-1 px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
           {/* Breadcrumb */}
-          <nav className="text-sm mb-8">
+          <nav className="text-xs sm:text-sm mb-6 sm:mb-8">
             <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
             <span className="mx-2 text-[#6F7B83]">&gt;</span>
             <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -98,18 +98,18 @@ export default function WeldingWheelsPage() {
           </nav>
 
           {/* Page Title */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
             Seam Welding Wheels
           </h1>
 
           {/* Intro Text */}
-          <p className="text-lg text-[#6F7B83] mb-8 max-w-3xl">
+          <p className="text-base sm:text-lg text-[#6F7B83] mb-6 sm:mb-8 max-w-3xl">
             High-performance seam welding wheels engineered for continuous resistance welding applications.
             Deliver consistent weld quality for fuel tanks, radiators, drums, and industrial containers.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap gap-4 mb-12">
+          <div className="flex flex-wrap gap-4 mb-8 sm:mb-12">
             <Link
               href="/contact"
               className="inline-block bg-[#EF290E] text-white px-8 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors"
@@ -125,10 +125,10 @@ export default function WeldingWheelsPage() {
           </div>
 
           {/* Product Description Section */}
-          <section className="mb-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-8 sm:mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div className="border border-gray-200 rounded-lg bg-white p-8">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Continuous Welding Excellence</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Continuous Welding Excellence</h2>
                 <p className="text-[#6F7B83] mb-4">
                   Seam welding is a continuous resistance welding process where rotating electrode
                   wheels produce overlapping spot welds to create leak-tight joints. The quality
@@ -166,9 +166,9 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* Wheel Types Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Wheel Types</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="mb-8 sm:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Wheel Types</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               {wheelTypes.map((type, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{type.name}</h3>
@@ -189,9 +189,9 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* Features Grid */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="mb-8 sm:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -202,9 +202,9 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* Profile Types Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Wheel Profile Types</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <section className="mb-8 sm:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Wheel Profile Types</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {profileTypes.map((profile, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6 text-center">
                   <h3 className="font-semibold text-[#1D2931] mb-2">{profile.name}</h3>
@@ -215,9 +215,9 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* Materials Section */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="mb-8 sm:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               <Link href="/materials/copper-materials/cucr1zr" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-[#1D2931] mb-2">CuCr1Zr</h3>
                 <p className="text-[#6F7B83] mb-3">Standard material for most seam welding applications with excellent balance of properties.</p>
@@ -237,10 +237,10 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* Specifications and Applications */}
-          <section className="mb-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-8 sm:mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                 <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                   {specifications.map((spec, index) => (
                     <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -252,7 +252,7 @@ export default function WeldingWheelsPage() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
                 <ul className="space-y-3">
                   {applications.map((app, index) => (
                     <li key={index} className="flex items-start border border-gray-200 rounded-lg bg-white p-4">
@@ -268,9 +268,9 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* Related Products */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Related Products</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="mb-8 sm:mb-12">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Related Products</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <Link href="/products/welding-systems-connection-cables" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-[#1D2931] mb-2">Connection Cables</h3>
                 <p className="text-[#6F7B83] mb-3">Flexible cables for connecting seam welders to power sources.</p>
@@ -285,8 +285,8 @@ export default function WeldingWheelsPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12 text-center">
-            <h2 className="text-2xl font-bold text-[#1D2931] mb-4">
+          <section className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-12 text-center">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">
               Optimize Your Seam Welding Operations
             </h2>
             <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">

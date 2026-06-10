@@ -42,9 +42,9 @@ export default function WeldingProductsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="mb-8">
+          <nav className="mb-6 sm:mb-8">
             <ol className="flex items-center space-x-2 text-sm text-[#B8BFC4]">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li>/</li>
@@ -54,8 +54,8 @@ export default function WeldingProductsPage() {
             </ol>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Welding Products</h1>
-            <p className="text-xl text-[#B8BFC4]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Welding Products</h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[#B8BFC4]">
               Complete range of welding consumables and equipment designed for all welding processes.
             </p>
           </div>
@@ -63,10 +63,10 @@ export default function WeldingProductsPage() {
       </section>
 
       {/* Introduction */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-lg text-[#6F7B83] mb-6">
+            <p className="text-base sm:text-lg text-[#6F7B83] mb-4 sm:mb-6">
               SVS Maverick offers a comprehensive selection of welding consumables and equipment
               for MIG/MAG, TIG, resistance welding, and specialized joining processes. Our products
               are engineered to deliver consistent, high-quality results across a wide range of
@@ -81,12 +81,12 @@ export default function WeldingProductsPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="bg-[#F4F3EE] py-20">
+      <section className="bg-[#F4F3EE] py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-12">Product Range</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8 sm:mb-12">Product Range</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {products.map((product, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl card-hover">
+              <div key={index} className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl card-hover">
                 <h3 className="text-xl font-semibold text-[#1D2931] mb-3">{product.name}</h3>
                 <p className="text-[#6F7B83] mb-4">{product.description}</p>
                 <ul className="space-y-2">
@@ -106,23 +106,23 @@ export default function WeldingProductsPage() {
       </section>
 
       {/* Welding Processes */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-12">Supported Welding Processes</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-[#F4F3EE] p-8 rounded-2xl text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8 sm:mb-12">Supported Welding Processes</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center">
               <div className="text-4xl font-bold text-[#EF290E] mb-2">MIG/MAG</div>
               <p className="text-[#6F7B83]">Gas Metal Arc Welding</p>
             </div>
-            <div className="bg-[#F4F3EE] p-8 rounded-2xl text-center">
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center">
               <div className="text-4xl font-bold text-[#EF290E] mb-2">TIG</div>
               <p className="text-[#6F7B83]">Gas Tungsten Arc Welding</p>
             </div>
-            <div className="bg-[#F4F3EE] p-8 rounded-2xl text-center">
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center">
               <div className="text-4xl font-bold text-[#EF290E] mb-2">RSW</div>
               <p className="text-[#6F7B83]">Resistance Spot Welding</p>
             </div>
-            <div className="bg-[#F4F3EE] p-8 rounded-2xl text-center">
+            <div className="bg-[#F4F3EE] p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl text-center">
               <div className="text-4xl font-bold text-[#EF290E] mb-2">Seam</div>
               <p className="text-[#6F7B83]">Resistance Seam Welding</p>
             </div>
@@ -131,12 +131,12 @@ export default function WeldingProductsPage() {
       </section>
 
       {/* Industries */}
-      <section className="bg-[#F4F3EE] py-20">
+      <section className="bg-[#F4F3EE] py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-12">Industries We Serve</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8 sm:mb-12">Industries We Serve</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
             {['Automotive', 'Aerospace', 'Construction', 'Energy', 'Shipbuilding', 'Rail'].map((industry) => (
-              <div key={industry} className="bg-white p-6 rounded-xl text-center">
+              <div key={industry} className="bg-white p-4 sm:p-6 rounded-xl text-center">
                 <p className="font-medium text-[#1D2931]">{industry}</p>
               </div>
             ))}
@@ -145,12 +145,12 @@ export default function WeldingProductsPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
             Looking for Specific Welding Solutions?
           </h2>
-          <p className="text-[#B8BFC4] mb-8">
+          <p className="text-[#B8BFC4] mb-6 sm:mb-8">
             Our welding specialists can help you find the right products for your application.
           </p>
           <Link

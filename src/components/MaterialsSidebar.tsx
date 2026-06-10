@@ -26,10 +26,10 @@ const sidebarData: SidebarItem[] = [
         label: 'Copper Materials',
         children: [
           { label: 'Overview', href: '/materials/copper-materials' },
-          { label: 'WIRBALIT® HF/N/G (CuCr1Zr)', href: '/materials/copper-materials/cucr1zr' },
-          { label: 'WIRBALIT® B (CuCo2Be)', href: '/materials/copper-materials/cuco2be' },
-          { label: 'WIRBALIT® D (CuNi2.5SiCr)', href: '/materials/copper-materials/cuni2-5sicr' },
-          { label: 'WIRBALIT® CA (CuAl2O3)', href: '/materials/copper-materials/cual2o3' },
+          { label: 'WIRBALIT HF/N/G (CuCr1Zr)', href: '/materials/copper-materials/cucr1zr' },
+          { label: 'WIRBALIT B (CuCo2Be)', href: '/materials/copper-materials/cuco2be' },
+          { label: 'WIRBALIT D (CuNi2.5SiCr)', href: '/materials/copper-materials/cuni2-5sicr' },
+          { label: 'WIRBALIT CA (CuAl2O3)', href: '/materials/copper-materials/cual2o3' },
           { label: 'Material Properties', href: '/materials/copper-materials/technical-properties' },
         ],
       },
@@ -51,10 +51,21 @@ const sidebarData: SidebarItem[] = [
     label: 'Welding Products',
     children: [
       {
-        label: 'Submerged Arc Welding',
+        label: 'Spot Welding',
         children: [
-          { label: 'Overview', href: '/products/welding-technique/submerged-arc-welding' },
-          { label: 'Contact Tips', href: '/products/submerged-arc-welding-contact-tips' },
+          { label: 'Overview', href: '/products/welding-technique/spot-welding' },
+          { label: 'Electrode Caps', href: '/products/spot-welding-electrode-caps' },
+          { label: 'Electrodes', href: '/products/spot-welding-electrodes' },
+          { label: 'Shanks & Holders', href: '/products/spot-welding-electrode-shanks-and-holders' },
+          { label: 'Electrode Arms', href: '/products/spot-welding-electrode-arms' },
+        ],
+      },
+      {
+        label: 'Projection Welding',
+        children: [
+          { label: 'Overview', href: '/products/welding-technique/projection-welding' },
+          { label: 'Replaceable Electrodes', href: '/products/projection-welding-replaceable-electrodes' },
+          { label: 'Centering Pins', href: '/products/projection-welding-centering-and-positioning-pins' },
         ],
       },
       {
@@ -74,24 +85,6 @@ const sidebarData: SidebarItem[] = [
         ],
       },
       {
-        label: 'Projection Welding',
-        children: [
-          { label: 'Overview', href: '/products/welding-technique/projection-welding' },
-          { label: 'Replaceable Electrodes', href: '/products/projection-welding-replaceable-electrodes' },
-          { label: 'Centering & Positioning Pins', href: '/products/projection-welding-centering-and-positioning-pins' },
-        ],
-      },
-      {
-        label: 'Spot Welding',
-        children: [
-          { label: 'Overview', href: '/products/welding-technique/spot-welding' },
-          { label: 'Electrode Caps', href: '/products/spot-welding-electrode-caps' },
-          { label: 'Electrodes', href: '/products/spot-welding-electrodes' },
-          { label: 'Electrode Shanks & Holders', href: '/products/spot-welding-electrode-shanks-and-holders' },
-          { label: 'Electrode Arms', href: '/products/spot-welding-electrode-arms' },
-        ],
-      },
-      {
         label: 'Seam Welding',
         children: [
           { label: 'Overview', href: '/products/welding-technique/seam-welding' },
@@ -107,17 +100,11 @@ const sidebarData: SidebarItem[] = [
         ],
       },
       {
-        label: 'Micro Welding',
+        label: 'Other',
         children: [
-          { label: 'Overview', href: '/products/welding-technique/micro-welding' },
-          { label: 'Electrodes', href: '/products/micro-welding-electrodes' },
-        ],
-      },
-      {
-        label: 'Laser Welding',
-        children: [
-          { label: 'Overview', href: '/products/welding-technique/laser-welding' },
-          { label: 'Protection Windows', href: '/products/laser-protection-windows' },
+          { label: 'Submerged Arc Welding', href: '/products/welding-technique/submerged-arc-welding' },
+          { label: 'Micro Welding', href: '/products/welding-technique/micro-welding' },
+          { label: 'Laser Welding', href: '/products/welding-technique/laser-welding' },
         ],
       },
     ],
@@ -125,30 +112,16 @@ const sidebarData: SidebarItem[] = [
   {
     label: 'Welding Systems',
     children: [
-      {
-        label: 'Tip Dressing Units',
-        children: [
-          { label: 'Overview', href: '/tip-dressing-units' },
-          { label: 'Electrode Tip Dresser', href: '/tip-dressing-units/electrode-cap-dressing-unit' },
-          { label: 'Electrode Cap Changer', href: '/tip-dressing-units/cap-changer' },
-          { label: 'Combi Dresser-Changer', href: '/tip-dressing-units/combi-dresser' },
-          { label: 'Milling Tools', href: '/tip-dressing-units/dressing-tools' },
-        ],
-      },
-      {
-        label: 'Welding Accessories',
-        children: [
-          { label: 'Connection Cables', href: '/products/welding-systems-connection-cables' },
-          { label: 'Lamella Shunts', href: '/products/welding-systems-lamella-shunts' },
-        ],
-      },
+      { label: 'Tip Dressing Units', href: '/tip-dressing-units' },
+      { label: 'Connection Cables', href: '/products/welding-systems-connection-cables' },
+      { label: 'Lamella Shunts', href: '/products/welding-systems-lamella-shunts' },
     ],
   },
   {
     label: 'Flexible Busbars',
     children: [
       { label: 'Overview', href: '/products/flexible-busbars' },
-      { label: 'Switchgear & Transformers', href: '/products/flexible-busbars/switchgear' },
+      { label: 'Switchgear', href: '/products/flexible-busbars/switchgear' },
       { label: 'EV Battery Packs', href: '/products/flexible-busbars/ev-battery-pack' },
     ],
   },
@@ -166,8 +139,6 @@ function SidebarSection({ item, level = 0, itemKey }: { item: SidebarItem; level
   const pathname = usePathname();
   const accordionContext = useContext(AccordionContext);
 
-  // Determine if this section should be open
-  // Only use hasActiveChild as default when no explicit selection has been made
   const hasActiveChild = checkPathMatch(item.children, pathname);
   const isOpen = accordionContext
     ? accordionContext.openItem === itemKey
@@ -178,15 +149,13 @@ function SidebarSection({ item, level = 0, itemKey }: { item: SidebarItem; level
 
   const handleToggle = () => {
     if (accordionContext) {
-      // Toggle: if already open, close it; otherwise open it (and close others)
       accordionContext.setOpenItem(isOpen ? null : itemKey);
     }
   };
 
   if (item.href && !hasChildren) {
-    // Leaf node with link
     return (
-      <li className={`${level > 1 ? 'border-l border-gray-300 pl-4 ml-1' : ''}`}>
+      <li className={`${level > 1 ? 'border-l border-gray-300 pl-3 ml-1' : ''}`}>
         <Link
           href={item.href}
           className={`flex items-center justify-between py-2 text-sm transition-colors ${
@@ -197,29 +166,15 @@ function SidebarSection({ item, level = 0, itemKey }: { item: SidebarItem; level
         >
           <span className="flex items-center">
             {isActive && (
-              <span className="w-2 h-2 bg-[#EF290E] rounded-full mr-2" />
+              <span className="w-2 h-2 bg-[#EF290E] rounded-full mr-2 flex-shrink-0" />
             )}
             {item.label}
           </span>
-          <svg
-            className="w-3 h-3 text-[#EF290E]"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M7 17L17 7M17 7H7M17 7V17"
-            />
-          </svg>
         </Link>
       </li>
     );
   }
 
-  // Section with children - wrap in its own accordion context for nested items
   return (
     <li>
       <button
@@ -227,24 +182,19 @@ function SidebarSection({ item, level = 0, itemKey }: { item: SidebarItem; level
         className={`flex items-center justify-between w-full py-2 text-left transition-colors ${
           level === 0
             ? 'font-semibold text-[#1D2931]'
-            : 'text-[#1D2931] font-medium'
+            : 'text-[#1D2931] font-medium text-sm'
         }`}
       >
         <span>{item.label}</span>
         <svg
-          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''} ${
+          className={`w-4 h-4 transition-transform flex-shrink-0 ${isOpen ? 'rotate-180' : ''} ${
             isOpen ? 'text-[#EF290E]' : 'text-[#6F7B83]'
           }`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
       {isOpen && hasChildren && (
@@ -254,11 +204,9 @@ function SidebarSection({ item, level = 0, itemKey }: { item: SidebarItem; level
   );
 }
 
-// Component that provides accordion context for a group of items
 function SidebarAccordionGroup({ items, level, parentKey }: { items: SidebarItem[]; level: number; parentKey: string }) {
   const pathname = usePathname();
 
-  // Find which item should be open by default (if any has active children)
   const defaultOpen = items.findIndex(item => checkPathMatch(item.children, pathname));
   const [openItem, setOpenItem] = useState<string | null>(
     defaultOpen >= 0 ? `${parentKey}-${defaultOpen}` : null
@@ -284,18 +232,15 @@ export default function MaterialsSidebar() {
   const pathname = usePathname();
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
-  // Find which top-level item should be open by default
   const defaultOpen = sidebarData.findIndex(item => checkPathMatch(item.children, pathname));
   const [openItem, setOpenItem] = useState<string | null>(
     defaultOpen >= 0 ? `root-${defaultOpen}` : null
   );
 
-  // Close mobile sidebar when route changes
   useEffect(() => {
     setIsMobileOpen(false);
   }, [pathname]);
 
-  // Prevent body scroll when mobile sidebar is open
   useEffect(() => {
     if (isMobileOpen) {
       document.body.style.overflow = 'hidden';
@@ -307,72 +252,75 @@ export default function MaterialsSidebar() {
     };
   }, [isMobileOpen]);
 
+  const sidebarContent = (
+    <AccordionContext.Provider value={{ openItem, setOpenItem }}>
+      <ul className="space-y-4">
+        {sidebarData.map((item, index) => (
+          <SidebarSection key={index} item={item} itemKey={`root-${index}`} />
+        ))}
+      </ul>
+    </AccordionContext.Provider>
+  );
+
   return (
     <>
-      {/* Mobile Toggle Button */}
+      {/* Mobile Menu Button - Fixed at bottom */}
       <button
         onClick={() => setIsMobileOpen(true)}
-        className="lg:hidden fixed bottom-6 right-6 z-40 bg-[#EF290E] text-white p-4 rounded-full shadow-lg hover:bg-[#d42410] transition-colors"
-        aria-label="Open navigation menu"
+        className="lg:hidden fixed bottom-4 right-4 z-40 bg-[#EF290E] text-white p-3 rounded-full shadow-lg hover:bg-[#d42410] transition-colors"
+        aria-label="Open menu"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
 
-      {/* Mobile Overlay */}
+      {/* Mobile Full-Screen Menu */}
       {isMobileOpen && (
-        <div
-          className="lg:hidden fixed inset-0 bg-black/50 z-40"
-          onClick={() => setIsMobileOpen(false)}
-        />
+        <div className="lg:hidden fixed inset-0 z-50 bg-[#F4F3EE]">
+          <div className="flex flex-col h-full">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 border-b border-gray-200">
+              <span className="font-bold text-[#1D2931]">Menu</span>
+              <button
+                onClick={() => setIsMobileOpen(false)}
+                className="p-2 text-[#6F7B83] hover:text-[#1D2931]"
+                aria-label="Close menu"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Scrollable Content */}
+            <div className="flex-1 overflow-y-auto p-4">
+              {sidebarContent}
+            </div>
+
+            {/* Footer */}
+            <div className="p-4 border-t border-gray-200">
+              <Link
+                href="/contact"
+                onClick={() => setIsMobileOpen(false)}
+                className="flex items-center justify-center gap-2 bg-[#EF290E] text-white px-6 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors w-full"
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
       )}
 
-      {/* Sidebar */}
-      <aside className={`
-        fixed lg:relative inset-y-0 left-0 z-50
-        w-80 flex-shrink-0 bg-[#F4F3EE] min-h-screen
-        transform transition-transform duration-300 ease-in-out
-        ${isMobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
-      `}>
-        {/* Mobile Close Button */}
-        <button
-          onClick={() => setIsMobileOpen(false)}
-          className="lg:hidden absolute top-4 right-4 p-2 text-[#6F7B83] hover:text-[#1D2931]"
-          aria-label="Close navigation menu"
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+      {/* Desktop Sidebar - Hidden on mobile */}
+      <aside className="hidden lg:block w-72 flex-shrink-0 bg-[#F4F3EE]">
+        <nav className="sticky top-20 p-6 max-h-[calc(100vh-5rem)] overflow-y-auto">
+          {sidebarContent}
 
-        <nav className="sticky top-20 p-6 pt-14 lg:pt-6 h-screen overflow-y-auto">
-          <AccordionContext.Provider value={{ openItem, setOpenItem }}>
-            <ul className="space-y-4">
-              {sidebarData.map((item, index) => (
-                <SidebarSection key={index} item={item} itemKey={`root-${index}`} />
-              ))}
-            </ul>
-          </AccordionContext.Provider>
-
-          {/* Ask Our Experts Button */}
           <Link
             href="/contact"
-            className="mt-8 flex items-center justify-center gap-2 bg-[#EF290E] text-white px-6 py-4 rounded font-semibold hover:bg-[#d42410] transition-colors"
+            className="mt-8 flex items-center justify-center gap-2 bg-[#EF290E] text-white px-4 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors text-sm"
           >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-              />
-            </svg>
             ASK OUR EXPERTS
           </Link>
         </nav>

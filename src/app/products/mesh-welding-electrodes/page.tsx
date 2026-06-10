@@ -72,13 +72,13 @@ export default function MeshWeldingElectrodesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
-        <main className="flex-1 p-8 lg:p-12">
+        <main className="flex-1 p-4 sm:p-6 lg:p-12">
           {/* Breadcrumb */}
-          <nav className="text-sm mb-8">
+          <nav className="text-xs sm:text-sm mb-6 sm:mb-8">
             <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
             <span className="mx-2 text-[#6F7B83]">&gt;</span>
             <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -89,11 +89,11 @@ export default function MeshWeldingElectrodesPage() {
           </nav>
 
           {/* Page Title */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
             Mesh Welding Electrodes
           </h1>
 
-          <p className="text-xl text-[#6F7B83] mb-8 max-w-3xl">
+          <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-6 sm:mb-8 max-w-3xl">
             Purpose-built electrodes for wire mesh and reinforcement welding applications.
             Designed to deliver consistent weld quality and maximum productivity in automated mesh production lines.
           </p>
@@ -115,7 +115,7 @@ export default function MeshWeldingElectrodesPage() {
           </div>
 
           {/* Product Description */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
             <div className="border border-gray-200 rounded-lg bg-white p-8">
               <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Precision Electrodes for Mesh Production</h2>
               <p className="text-[#6F7B83] mb-4">
@@ -152,9 +152,9 @@ export default function MeshWeldingElectrodesPage() {
           </div>
 
           {/* Electrode Types */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Electrode Types</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Electrode Types</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               {electrodeTypes.map((type, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{type.name}</h3>
@@ -175,9 +175,9 @@ export default function MeshWeldingElectrodesPage() {
           </section>
 
           {/* Product Features */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -188,9 +188,9 @@ export default function MeshWeldingElectrodesPage() {
           </section>
 
           {/* Available Materials */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               <Link href="/materials/copper-materials/cucr1zr" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-[#1D2931] mb-2">CuCr1Zr</h3>
                 <p className="text-[#6F7B83] mb-3">Standard material for general mesh welding with excellent conductivity.</p>
@@ -210,9 +210,9 @@ export default function MeshWeldingElectrodesPage() {
           </section>
 
           {/* Technical Specifications & Applications */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
             <div>
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
               <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                 {specifications.map((spec, index) => (
                   <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -224,7 +224,7 @@ export default function MeshWeldingElectrodesPage() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Applications</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Applications</h2>
               <div className="border border-gray-200 rounded-lg bg-white p-6">
                 <ul className="space-y-4">
                   {applications.map((app, index) => (
@@ -241,9 +241,9 @@ export default function MeshWeldingElectrodesPage() {
           </div>
 
           {/* Related Products */}
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Related Products</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Related Products</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <Link href="/products/mesh-welding-electrode-holders" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-[#1D2931] mb-2">Mesh Welding Electrode Holders</h3>
                 <p className="text-[#6F7B83] mb-3">Complete holder systems designed to work with our mesh welding electrodes.</p>
@@ -259,7 +259,7 @@ export default function MeshWeldingElectrodesPage() {
 
           {/* CTA Section */}
           <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12 text-center">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
               Maximize Your Mesh Production Efficiency
             </h2>
             <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">

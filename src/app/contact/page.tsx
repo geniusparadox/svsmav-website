@@ -29,11 +29,11 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-[#B8BFC4]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Contact Us</h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[#B8BFC4]">
               Get in touch with our team. We&apos;re here to help with your welding and manufacturing needs.
             </p>
           </div>
@@ -41,22 +41,22 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-1">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Get in Touch</h2>
-              <p className="text-[#6F7B83] mb-8">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Get in Touch</h2>
+              <p className="text-[#6F7B83] mb-6 sm:mb-8">
                 Have questions about our products or services? We&apos;d love to hear from you.
                 Send us a message and we&apos;ll respond as soon as possible.
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {/* Address */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
@@ -74,9 +74,9 @@ export default function ContactPage() {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
@@ -89,9 +89,9 @@ export default function ContactPage() {
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
@@ -104,9 +104,9 @@ export default function ContactPage() {
                 </div>
 
                 {/* Business Hours */}
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-start space-x-3 sm:space-x-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#F4F3EE] rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Parent Company */}
-                <div className="mt-8 p-4 bg-[#F4F3EE] rounded-lg">
+                <div className="mt-6 sm:mt-8 p-4 bg-[#F4F3EE] rounded-lg">
                   <p className="text-sm text-[#6F7B83]">
                     <span className="font-semibold text-[#1D2931]">Part of SVS Schweisstechnik GmbH</span><br />
                     Germany - Global welding technology leader with over 100 years of expertise
@@ -132,10 +132,10 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-[#F4F3EE] p-8 md:p-12 rounded-2xl">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Send us a Message</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-[#F4F3EE] p-6 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Send us a Message</h2>
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                     {/* Name */}
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-[#1D2931] mb-2">
@@ -261,10 +261,10 @@ export default function ContactPage() {
 
       {/* Map Section */}
       <section className="bg-[#F4F3EE]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <h2 className="text-2xl font-bold text-[#1D2931] mb-6 text-center">Our Location</h2>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6 text-center">Our Location</h2>
         </div>
-        <div className="h-96">
+        <div className="h-64 sm:h-80 lg:h-96">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0066744842454!2d77.51!3d13.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDAyJzAwLjAiTiA3N8KwMzAnMzYuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
             width="100%"
@@ -279,13 +279,13 @@ export default function ContactPage() {
       </section>
 
       {/* Industries We Serve */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[#1D2931] mb-8 text-center">Industries We Serve</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6 sm:mb-8 text-center">Industries We Serve</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
             {['Automotive', 'Electrical Industry', 'Mechanical Engineering', 'Shipbuilding', 'Home Appliance', 'Structural Steel'].map((industry) => (
-              <div key={industry} className="bg-[#F4F3EE] p-4 rounded-xl text-center">
-                <p className="font-medium text-[#1D2931] text-sm">{industry}</p>
+              <div key={industry} className="bg-[#F4F3EE] p-3 sm:p-4 rounded-lg sm:rounded-xl text-center">
+                <p className="font-medium text-[#1D2931] text-xs sm:text-sm">{industry}</p>
               </div>
             ))}
           </div>

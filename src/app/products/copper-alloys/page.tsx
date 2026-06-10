@@ -42,9 +42,9 @@ export default function CopperAlloysPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav className="mb-8">
+          <nav className="mb-6 sm:mb-8">
             <ol className="flex items-center space-x-2 text-sm text-[#B8BFC4]">
               <li><Link href="/" className="hover:text-white">Home</Link></li>
               <li>/</li>
@@ -54,8 +54,8 @@ export default function CopperAlloysPage() {
             </ol>
           </nav>
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Copper Alloys & High-Melting Metals</h1>
-            <p className="text-xl text-[#B8BFC4]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Copper Alloys & High-Melting Metals</h1>
+            <p className="text-base sm:text-lg lg:text-xl text-[#B8BFC4]">
               Premium quality copper alloys and refractory metals engineered for the most demanding applications.
             </p>
           </div>
@@ -63,10 +63,10 @@ export default function CopperAlloysPage() {
       </section>
 
       {/* Introduction */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <p className="text-lg text-[#6F7B83] mb-6">
+            <p className="text-base sm:text-lg text-[#6F7B83] mb-4 sm:mb-6">
               Our copper alloys and high-melting metals are specifically developed for resistance welding,
               electrical contacts, and high-temperature applications. With decades of metallurgical expertise,
               we offer materials that deliver exceptional performance in the most challenging environments.
@@ -80,12 +80,12 @@ export default function CopperAlloysPage() {
       </section>
 
       {/* Products Grid */}
-      <section className="bg-[#F4F3EE] py-20">
+      <section className="bg-[#F4F3EE] py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-12">Product Range</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8 sm:mb-12">Product Range</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {products.map((product, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl card-hover">
+              <div key={index} className="bg-white p-4 sm:p-6 lg:p-8 rounded-xl sm:rounded-2xl card-hover">
                 <h3 className="text-xl font-semibold text-[#1D2931] mb-3">{product.name}</h3>
                 <p className="text-[#6F7B83] mb-4">{product.description}</p>
                 <ul className="space-y-2">
@@ -105,10 +105,10 @@ export default function CopperAlloysPage() {
       </section>
 
       {/* Applications */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-12">Applications</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8 sm:mb-12">Applications</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-4 bg-[#F4F3EE] rounded-full flex items-center justify-center">
                 <svg className="w-10 h-10 text-[#EF290E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,12 +151,12 @@ export default function CopperAlloysPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#1D2931] text-white py-20">
+      <section className="bg-[#1D2931] text-white py-12 sm:py-16 lg:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
             Need Technical Assistance?
           </h2>
-          <p className="text-[#B8BFC4] mb-8">
+          <p className="text-[#B8BFC4] mb-6 sm:mb-8">
             Our metallurgical experts are available to help you select the right material for your application.
           </p>
           <Link

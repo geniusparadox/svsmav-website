@@ -115,16 +115,16 @@ const options = [
 
 export default function CapChangerPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -135,10 +135,10 @@ export default function CapChangerPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Cap Changer Systems
             </h1>
-            <p className="text-xl text-[#1D2931] mb-8 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-6 sm:mb-8 max-w-3xl">
               Automatic electrode cap changing systems for high-volume resistance welding production.
               Available in mobile and stationary configurations with seamless robot integration
               for maximum production efficiency.
@@ -161,9 +161,9 @@ export default function CapChangerPage() {
             </div>
 
             {/* Product Description */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Automatic Cap Changing</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Automatic Cap Changing</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     When electrode caps reach the end of their service life, they need to be replaced
@@ -201,12 +201,12 @@ export default function CapChangerPage() {
             </section>
 
             {/* How It Works */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">How It Works</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">How It Works</h2>
               <p className="text-[#6F7B83] mb-8">
                 The cap changing process is fully automatic and completes in seconds
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {processSteps.map((item) => (
                   <div key={item.step} className="border border-gray-200 rounded-lg p-6 bg-white">
                     <div className="w-12 h-12 rounded-full bg-[#EF290E] text-white flex items-center justify-center font-bold text-xl mb-4">
@@ -220,12 +220,12 @@ export default function CapChangerPage() {
             </section>
 
             {/* Configurations */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Available Configurations</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Available Configurations</h2>
               <p className="text-[#6F7B83] mb-8">
                 Choose between mobile flexibility or stationary high-volume production
               </p>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 {variants.map((variant) => (
                   <div key={variant.name} className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                     <div className="bg-[#1D2931] text-white p-4">
@@ -270,10 +270,10 @@ export default function CapChangerPage() {
             </section>
 
             {/* Technical Specifications & Robot Integration */}
-            <section className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                   <p className="text-[#6F7B83] mb-6">
                     Our cap changer systems are engineered for reliability and performance in demanding
                     production environments. Available specifications vary by model.
@@ -295,7 +295,7 @@ export default function CapChangerPage() {
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Robot Integration</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Robot Integration</h2>
                   <div className="border border-gray-200 rounded-lg bg-white p-6 mb-6">
                     <h3 className="font-bold text-[#1D2931] mb-4">Compatible Robots</h3>
                     <p className="text-[#6F7B83] mb-4">
@@ -326,9 +326,9 @@ export default function CapChangerPage() {
             </section>
 
             {/* Options & Accessories */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Options & Accessories</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Options & Accessories</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {options.map((option) => (
                   <div key={option.title} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="font-bold text-[#1D2931] mb-2">{option.title}</h3>
@@ -339,9 +339,9 @@ export default function CapChangerPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link
                   href="/tip-dressing-units/electrode-cap-dressing-unit"
                   className="border border-gray-200 rounded-lg p-6 bg-white hover:border-[#EF290E] transition-colors group"
@@ -373,8 +373,8 @@ export default function CapChangerPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg p-8 lg:p-12 text-center bg-white">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Upgrade Your Electrode Management</h2>
+            <section className="border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-12 text-center bg-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Upgrade Your Electrode Management</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Contact us to discuss how automatic cap changing can improve your production
                 efficiency and reduce electrode-related downtime.

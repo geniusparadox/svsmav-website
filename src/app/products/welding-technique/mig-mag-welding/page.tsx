@@ -95,16 +95,16 @@ export default function MigMagWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -120,19 +120,19 @@ export default function MigMagWeldingPage() {
                 Gas Metal Arc Welding
               </span>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               MIG/MAG Welding
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               Gas Metal Arc Welding (GMAW) is one of the most versatile and widely used welding processes.
               Whether using inert gas (MIG) or active gas (MAG), this technique delivers high productivity
               and excellent weld quality for diverse applications from automotive to heavy fabrication.
             </p>
 
             {/* Process Description */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">How MIG/MAG Welding Works</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">How MIG/MAG Welding Works</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-4 sm:p-6 lg:p-8">
                 <div>
                   <p className="text-[#6F7B83] text-lg mb-4">
                     MIG (Metal Inert Gas) and MAG (Metal Active Gas) welding use a continuously fed
@@ -144,7 +144,7 @@ export default function MigMagWeldingPage() {
                     to create the weld pool. The shielding gas protects the molten metal from atmospheric
                     contamination, resulting in high-quality welds.
                   </p>
-                  <div className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="font-semibold text-[#1D2931] mb-4">MIG vs MAG:</h3>
                     <div className="space-y-4">
                       <div>
@@ -158,7 +158,7 @@ export default function MigMagWeldingPage() {
                     </div>
                   </div>
                 </div>
-                <div className="border border-gray-200 rounded-lg bg-white p-8">
+                <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-6 text-center">The Welding Process</h3>
                   <div className="space-y-4">
                     {processSteps.map((item) => (
@@ -178,10 +178,10 @@ export default function MigMagWeldingPage() {
             </div>
 
             {/* Key Parameters */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Key Parameters</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Parameters</h2>
+              <div className="overflow-x-auto max-w-full">
+                <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Parameter</th>
@@ -201,14 +201,14 @@ export default function MigMagWeldingPage() {
             </div>
 
             {/* Advantages */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Advantages of MIG/MAG Welding</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Advantages of MIG/MAG Welding</h2>
               <p className="text-[#6F7B83] text-lg mb-6">
                 MIG/MAG welding offers exceptional versatility and productivity for modern manufacturing.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
                 {advantages.map((advantage, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -222,13 +222,13 @@ export default function MigMagWeldingPage() {
             </div>
 
             {/* Applications */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
               <p className="text-[#6F7B83] text-lg mb-6">
                 MIG/MAG welding is suitable for a wide range of applications across multiple industries
                 due to its versatility and efficiency.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-4 sm:p-6 lg:p-8">
                 <div>
                   <h3 className="text-lg font-bold text-[#1D2931] mb-4">Common Applications</h3>
                   <ul className="space-y-2">
@@ -258,12 +258,12 @@ export default function MigMagWeldingPage() {
             </div>
 
             {/* Related Products */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Related Products</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Related Products</h2>
               <p className="text-[#6F7B83] text-lg mb-6">
                 SVS Maverick supplies high-quality consumables and components for MIG/MAG welding systems.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {relatedProducts.map((product, index) => (
                   <Link
                     key={index}
@@ -286,7 +286,7 @@ export default function MigMagWeldingPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
               <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Need MIG/MAG Welding Solutions?</h2>
               <p className="text-[#6F7B83] mb-6">
                 Our experts can help you select the right consumables and equipment

@@ -5,6 +5,13 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Redirect www to non-www (canonical domain)
+RewriteCond %{HTTP_HOST} ^www\.svsmav\.com$ [NC]
+RewriteRule ^(.*)$ https://svsmav.com/$1 [L,R=301]
+
+# Redirect /_next/static to /assets/static (fix Next.js RSC path mismatch)
+RewriteRule ^_next/static/(.*)$ /assets/static/$1 [L,NC]
+
 # Handle trailing slashes for directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

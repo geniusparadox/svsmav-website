@@ -125,16 +125,16 @@ const mountingOptions = [
 
 export default function CombiDresserPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -148,10 +148,10 @@ export default function CombiDresserPage() {
             <div className="inline-block px-3 py-1 bg-[#EF290E] text-white text-sm font-medium rounded-full mb-4">
               All-in-One Solution
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Combi Dresser-Changer Units
             </h1>
-            <p className="text-xl text-[#1D2931] mb-8 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-6 sm:mb-8 max-w-3xl">
               Combined tip dressing and cap changing in one space-saving unit. The ultimate
               solution for complete electrode maintenance with minimal footprint and reduced
               robot travel time.
@@ -174,12 +174,12 @@ export default function CombiDresserPage() {
             </div>
 
             {/* Key Features */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Why Choose a Combi Unit?</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Why Choose a Combi Unit?</h2>
               <p className="text-[#6F7B83] mb-8">
                 The combi dresser-changer combines the best of both worlds in one efficient package
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {keyFeatures.map((feature) => (
                   <div key={feature.title} className="border border-gray-200 rounded-lg p-6 bg-white">
                     <h3 className="text-lg font-bold text-[#1D2931] mb-2">{feature.title}</h3>
@@ -190,9 +190,9 @@ export default function CombiDresserPage() {
             </section>
 
             {/* Product Description */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Complete Electrode Maintenance</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Complete Electrode Maintenance</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     Our combi dresser-changer units integrate tip dressing and cap changing functions
@@ -234,12 +234,12 @@ export default function CombiDresserPage() {
             </section>
 
             {/* Operation Modes */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Operation Modes</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Operation Modes</h2>
               <p className="text-[#6F7B83] mb-8">
                 Flexible operation to match your electrode maintenance strategy
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {operationModes.map((mode) => (
                   <div key={mode.title} className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                     <div className="bg-[#1D2931] text-white p-4">
@@ -265,12 +265,12 @@ export default function CombiDresserPage() {
             </section>
 
             {/* Configurations */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Available Configurations</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Available Configurations</h2>
               <p className="text-[#6F7B83] mb-8">
                 Choose the configuration that matches your production volume and requirements
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {configurations.map((config) => (
                   <div
                     key={config.name}
@@ -313,10 +313,10 @@ export default function CombiDresserPage() {
             </section>
 
             {/* Technical Specifications & Mounting Options */}
-            <section className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                   <p className="text-[#6F7B83] mb-6">
                     General specifications for our combi dresser-changer range. Exact values
                     vary by configuration. Contact us for detailed specifications.
@@ -335,7 +335,7 @@ export default function CombiDresserPage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Mounting Options</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Mounting Options</h2>
                   <div className="space-y-4">
                     {mountingOptions.map((option) => (
                       <div key={option.title} className="border border-gray-200 rounded-lg bg-white p-6">
@@ -349,9 +349,9 @@ export default function CombiDresserPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link
                   href="/tip-dressing-units/electrode-cap-dressing-unit"
                   className="border border-gray-200 rounded-lg p-6 bg-white hover:border-[#EF290E] transition-colors group"
@@ -383,8 +383,8 @@ export default function CombiDresserPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg p-8 lg:p-12 text-center bg-white">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Simplify Your Electrode Maintenance</h2>
+            <section className="border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-12 text-center bg-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Simplify Your Electrode Maintenance</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Discover how a combi dresser-changer can streamline your electrode maintenance
                 and save valuable floor space in your production cell.

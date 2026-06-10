@@ -92,16 +92,16 @@ export default function ConnectionCablesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -112,16 +112,16 @@ export default function ConnectionCablesPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Welding Connection Cables
             </h1>
-            <p className="text-xl text-[#1D2931] mb-12">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-8 sm:mb-12">
               High-current flexible cables engineered for resistance welding systems.
               Deliver reliable power transfer with exceptional flexibility and durability for demanding industrial applications.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 mb-16">
+            <div className="flex flex-wrap gap-4 mb-10 sm:mb-16">
               <Link
                 href="/contact"
                 className="inline-block bg-[#EF290E] text-white px-8 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors"
@@ -137,10 +137,10 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Product Description */}
-            <div className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Reliable Power Delivery</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-6">Reliable Power Delivery</h2>
                   <p className="text-[#6F7B83] text-lg mb-6">
                     Connection cables are the vital link between welding transformers and electrode
                     assemblies, carrying the high currents needed to create quality welds. Our welding
@@ -174,9 +174,9 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Cable Types */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Cable Types</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Cable Types</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {cableTypes.map((type, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-bold text-[#1D2931] mb-3">{type.name}</h3>
@@ -195,9 +195,9 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Features Grid */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -208,10 +208,10 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Cross Section Guide */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Cross Section Selection Guide</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Cross Section Selection Guide</h2>
+              <div className="overflow-x-auto max-w-full">
+                <table className="w-full border-collapse min-w-[500px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Cross Section</th>
@@ -236,8 +236,8 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Termination Options */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Termination Options</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Termination Options</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {terminalTypes.map((terminal, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 flex items-center">
@@ -249,9 +249,9 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Construction Materials */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Construction Materials</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Construction Materials</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link href="/materials/copper-materials" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-2">ETP Copper Conductors</h3>
                   <p className="text-[#6F7B83] mb-3">High-purity copper with &gt;99.9% Cu for maximum electrical conductivity.</p>
@@ -269,12 +269,12 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Specifications and Applications */}
-            <div className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
-                  <div className="overflow-x-auto">
-                    <table className="w-full border-collapse">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
+                  <div className="overflow-x-auto max-w-full">
+                    <table className="w-full border-collapse min-w-[400px]">
                       <thead>
                         <tr className="border-b border-gray-200">
                           <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Property</th>
@@ -293,7 +293,7 @@ export default function ConnectionCablesPage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Applications</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Applications</h2>
                   <ul className="space-y-3">
                     {applications.map((app, index) => (
                       <li key={index} className="flex items-start border border-gray-200 rounded-lg bg-white p-4">
@@ -307,9 +307,9 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* Related Products */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-8">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-8">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <Link href="/products/welding-systems-lamella-shunts" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-2">Lamella Shunts</h3>
                   <p className="text-[#6F7B83] mb-3">Flexible copper conductors for current transfer in moving electrode assemblies.</p>
@@ -324,8 +324,8 @@ export default function ConnectionCablesPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">
                 Need Custom Cable Assemblies?
               </h2>
               <p className="text-[#6F7B83] mb-6 max-w-2xl">

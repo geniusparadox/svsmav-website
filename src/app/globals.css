@@ -19,8 +19,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -29,9 +27,26 @@ body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  width: 100%;
-  min-width: 100%;
-  overflow-x: hidden;
+  min-width: 320px;
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 1023px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hide-on-desktop {
+    display: none !important;
+  }
+}
+
+/* Ensure proper scrolling on mobile */
+.scroll-container {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
 }
 
 /* Custom button animation */

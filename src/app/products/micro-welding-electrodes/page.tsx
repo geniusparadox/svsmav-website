@@ -81,13 +81,13 @@ export default function MicroWeldingElectrodesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
-        <main className="flex-1 px-8 lg:px-16 py-12">
+        <main className="flex-1 px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
           {/* Breadcrumb */}
-          <nav className="text-sm mb-8">
+          <nav className="text-xs sm:text-sm mb-6 sm:mb-8">
             <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
             <span className="mx-2 text-[#6F7B83]">&gt;</span>
             <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -98,12 +98,12 @@ export default function MicroWeldingElectrodesPage() {
           </nav>
 
           {/* Title */}
-          <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
             Micro Welding Electrodes
           </h1>
 
           {/* Intro */}
-          <p className="text-xl text-[#6F7B83] mb-8 max-w-4xl">
+          <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-6 sm:mb-8 max-w-4xl">
             Precision-engineered electrodes for micro resistance welding applications.
             Deliver ultra-precise joining for electronics, medical devices, and miniature component assembly.
           </p>
@@ -125,8 +125,8 @@ export default function MicroWeldingElectrodesPage() {
           </div>
 
           {/* Product Description Section */}
-          <section className="mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-10 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div className="border border-gray-200 rounded-lg bg-white p-8">
                 <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Precision at the Micro Scale</h2>
                 <p className="text-[#6F7B83] mb-4">
@@ -164,9 +164,9 @@ export default function MicroWeldingElectrodesPage() {
           </section>
 
           {/* Electrode Categories */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Electrode Categories</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Electrode Categories</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               {electrodeCategories.map((category, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{category.name}</h3>
@@ -187,9 +187,9 @@ export default function MicroWeldingElectrodesPage() {
           </section>
 
           {/* Features Grid */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -200,9 +200,9 @@ export default function MicroWeldingElectrodesPage() {
           </section>
 
           {/* Materials Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               <Link href="/materials/copper-materials/cucr1zr" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-bold text-[#1D2931] mb-2">CuCr1Zr</h3>
                 <p className="text-[#6F7B83] mb-3">Standard choice for general micro welding applications.</p>
@@ -227,10 +227,10 @@ export default function MicroWeldingElectrodesPage() {
           </section>
 
           {/* Specifications and Applications */}
-          <section className="mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-10 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                 <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                   {specifications.map((spec, index) => (
                     <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -241,7 +241,7 @@ export default function MicroWeldingElectrodesPage() {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Applications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Applications</h2>
                 <div className="border border-gray-200 rounded-lg bg-white p-6">
                   <ul className="space-y-3">
                     {applications.map((app, index) => (
@@ -259,9 +259,9 @@ export default function MicroWeldingElectrodesPage() {
           </section>
 
           {/* Industries Served */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Industries Served</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Industries Served</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {industries.map((industry, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6 text-center">
                   <h3 className="font-semibold text-[#1D2931] mb-2">{industry.name}</h3>
@@ -272,9 +272,9 @@ export default function MicroWeldingElectrodesPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12">
+          <section className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-12">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                 Need Precision Micro Welding Solutions?
               </h2>
               <p className="text-[#6F7B83] mb-8">

@@ -97,13 +97,13 @@ export default function TigWigWeldingElectrodesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
-        <main className="flex-1 px-8 lg:px-16 py-12">
+        <main className="flex-1 px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
           {/* Breadcrumb */}
-          <nav className="mb-8">
+          <nav className="mb-6 sm:mb-8">
             <ol className="flex items-center space-x-2 text-sm text-[#6F7B83]">
               <li><Link href="/" className="hover:text-[#1D2931] transition-colors">HOME</Link></li>
               <li>&gt;</li>
@@ -116,11 +116,11 @@ export default function TigWigWeldingElectrodesPage() {
           </nav>
 
           {/* Page Title */}
-          <div className="mb-12">
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+          <div className="mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               TIG/WIG Welding Electrodes
             </h1>
-            <p className="text-lg text-[#6F7B83] max-w-3xl">
+            <p className="text-base sm:text-lg text-[#6F7B83] max-w-3xl">
               Premium tungsten electrodes for precision TIG (GTAW) and WIG welding applications.
               Our electrodes deliver stable arc performance, excellent current carrying capacity,
               and long service life for demanding welding operations.
@@ -128,7 +128,7 @@ export default function TigWigWeldingElectrodesPage() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap gap-4 mb-16">
+          <div className="flex flex-wrap gap-4 mb-10 sm:mb-16">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-[#EF290E] text-white font-semibold rounded-lg hover:bg-[#D42208] transition-colors"
@@ -144,16 +144,16 @@ export default function TigWigWeldingElectrodesPage() {
           </div>
 
           {/* Features Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
               Features & Benefits
             </h2>
-            <p className="text-[#6F7B83] mb-8 max-w-2xl">
+            <p className="text-[#6F7B83] mb-6 sm:mb-8 max-w-2xl">
               Our tungsten electrodes are manufactured to the highest quality standards for reliable welding performance.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {features.map((feature, index) => (
-                <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -167,17 +167,17 @@ export default function TigWigWeldingElectrodesPage() {
           </section>
 
           {/* Electrode Types Section */}
-          <section id="electrode-types" className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+          <section id="electrode-types" className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
               Tungsten Electrode Types
             </h2>
-            <p className="text-[#6F7B83] mb-8 max-w-3xl">
+            <p className="text-[#6F7B83] mb-6 sm:mb-8 max-w-3xl">
               We offer a complete range of tungsten electrode alloys to match your specific welding requirements.
               Each type is color-coded according to ISO standards.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {electrodeTypes.map((type, index) => (
-                <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <div className="flex items-center gap-3 mb-4">
                     <h3 className="text-lg font-semibold text-[#1D2931]">{type.name}</h3>
                     <span className="text-xs text-[#6F7B83] bg-[#F4F3EE] px-3 py-1 rounded-full">
@@ -201,14 +201,14 @@ export default function TigWigWeldingElectrodesPage() {
           </section>
 
           {/* Available Diameters Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
               Available Diameters
             </h2>
-            <p className="text-[#6F7B83] mb-8 max-w-3xl">
+            <p className="text-[#6F7B83] mb-6 sm:mb-8 max-w-3xl">
               We stock tungsten electrodes in all standard metric and imperial diameters.
             </p>
-            <div className="border border-gray-200 rounded-lg bg-white p-6">
+            <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
               <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-3">
                 {diameters.map((size) => (
                   <div key={size} className="bg-[#F4F3EE] p-3 rounded-lg text-center">
@@ -220,16 +220,16 @@ export default function TigWigWeldingElectrodesPage() {
           </section>
 
           {/* Materials Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+          <section className="mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
               Electrode Materials
             </h2>
-            <p className="text-[#6F7B83] mb-8 max-w-3xl">
+            <p className="text-[#6F7B83] mb-6 sm:mb-8 max-w-3xl">
               Our tungsten electrodes are manufactured from high-purity tungsten with precisely controlled oxide additions.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               {materials.map((material, index) => (
-                <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <h3 className="text-lg font-semibold text-[#1D2931] mb-3">{material.name}</h3>
                   <p className="text-[#6F7B83] text-sm mb-6">{material.description}</p>
                   <Link
@@ -247,11 +247,11 @@ export default function TigWigWeldingElectrodesPage() {
           </section>
 
           {/* Technical Specifications & Applications */}
-          <section className="mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <section className="mb-10 sm:mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
               {/* Technical Specifications */}
-              <div className="border border-gray-200 rounded-lg bg-white p-6">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">
                   Technical Specifications
                 </h2>
                 <div className="space-y-0">
@@ -265,8 +265,8 @@ export default function TigWigWeldingElectrodesPage() {
               </div>
 
               {/* Applications */}
-              <div className="border border-gray-200 rounded-lg bg-white p-6">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-6">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">
                   Applications
                 </h2>
                 <ul className="space-y-3">
@@ -284,12 +284,12 @@ export default function TigWigWeldingElectrodesPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="border border-gray-200 rounded-lg bg-white p-8 lg:p-12">
+          <section className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8 xl:p-12">
             <div className="max-w-2xl">
-              <h2 className="text-2xl lg:text-3xl font-bold text-[#1D2931] mb-4">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#1D2931] mb-4">
                 Need Tungsten Electrodes for Your Application?
               </h2>
-              <p className="text-[#6F7B83] mb-8">
+              <p className="text-[#6F7B83] mb-6 sm:mb-8">
                 Contact our welding specialists to find the right tungsten electrode type and size for your TIG welding needs.
                 We offer bulk pricing and technical support.
               </p>

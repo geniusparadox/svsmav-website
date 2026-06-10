@@ -54,7 +54,7 @@ export default function CenteringPositioningPinsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -62,9 +62,9 @@ export default function CenteringPositioningPinsPage() {
         {/* Main Content */}
         <main className="flex-1">
           {/* Header Section */}
-          <section className="px-8 lg:px-16 py-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-6 sm:mb-8">
               <Link href="/" className="text-gray-500 hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-gray-400">&gt;</span>
               <Link href="/products" className="text-gray-500 hover:text-[#1D2931]">PRODUCTS</Link>
@@ -75,7 +75,7 @@ export default function CenteringPositioningPinsPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] max-w-3xl leading-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] max-w-3xl leading-tight mb-4 sm:mb-6">
               Centering & Positioning Pins
             </h1>
             <p className="text-lg text-[#6F7B83] max-w-3xl">
@@ -85,7 +85,7 @@ export default function CenteringPositioningPinsPage() {
           </section>
 
           {/* Action Buttons */}
-          <section className="px-8 lg:px-16 pb-12">
+          <section className="px-4 sm:px-8 lg:px-16 pb-8 sm:pb-12">
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
@@ -104,9 +104,9 @@ export default function CenteringPositioningPinsPage() {
 
           {/* Product Description */}
           <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Precision Engineering for Projection Welding</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Precision Engineering for Projection Welding</h2>
                 <p className="text-[#6F7B83] text-lg mb-6">
                   Our centering and positioning pins are critical components in projection welding fixtures,
                   ensuring that workpieces are accurately located before the welding current is applied.
@@ -143,8 +143,8 @@ export default function CenteringPositioningPinsPage() {
 
           {/* Features Grid */}
           <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Product Features</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {features.map((feature, index) => (
                 <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                   <h3 className="text-lg font-bold text-[#EF290E] mb-3">{feature.title}</h3>
@@ -156,8 +156,8 @@ export default function CenteringPositioningPinsPage() {
 
           {/* Available Materials */}
           <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Available Materials</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Available Materials</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
               <Link href="/materials/copper-materials/cucr1zr" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow group">
                 <h3 className="text-xl font-bold text-[#1D2931] group-hover:text-[#EF290E] transition-colors mb-2">CuCr1Zr</h3>
                 <p className="text-[#6F7B83] mb-3">Standard copper alloy offering excellent balance of conductivity and hardness.</p>
@@ -193,10 +193,10 @@ export default function CenteringPositioningPinsPage() {
 
           {/* Specifications and Applications */}
           <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Specifications */}
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Technical Specifications</h2>
                 <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                   {specifications.map((spec, index) => (
                     <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -209,7 +209,7 @@ export default function CenteringPositioningPinsPage() {
 
               {/* Applications */}
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Applications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Applications</h2>
                 <ul className="space-y-3">
                   {applications.map((app, index) => (
                     <li key={index} className="flex items-start border border-gray-200 rounded-lg bg-white p-4">

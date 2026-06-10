@@ -103,16 +103,16 @@ export default function MigMagWeldingGasNozzlesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -125,17 +125,17 @@ export default function MigMagWeldingGasNozzlesPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Arc Welding Gas Nozzles
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               Premium gas nozzles engineered for optimal shielding gas coverage in MIG/MAG welding.
               Our nozzles provide reliable performance and extended service life for consistent,
               high-quality welds.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 mb-16">
+            <div className="flex flex-wrap gap-3 sm:gap-4 mb-10 sm:mb-16">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-3 bg-[#EF290E] text-white font-semibold rounded hover:bg-[#d42410] transition-colors"
@@ -151,9 +151,9 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Features Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Features & Benefits</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Features & Benefits</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded flex items-center justify-center mb-4">
@@ -169,12 +169,12 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Nozzle Types Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Nozzle Materials</h2>
-              <p className="text-[#6F7B83] text-lg mb-6 max-w-3xl">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Nozzle Materials</h2>
+              <p className="text-base sm:text-lg text-[#6F7B83] mb-4 sm:mb-6 max-w-3xl">
                 Choose from a range of materials optimized for different welding conditions and service life requirements.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {nozzleTypes.map((type, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{type.name}</h3>
@@ -185,12 +185,12 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Nozzle Shapes Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Nozzle Shapes</h2>
-              <p className="text-[#6F7B83] text-lg mb-6 max-w-3xl">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Nozzle Shapes</h2>
+              <p className="text-base sm:text-lg text-[#6F7B83] mb-4 sm:mb-6 max-w-3xl">
                 Available in various profiles to suit different joint configurations and access requirements.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {nozzleShapes.map((shape, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{shape.name}</h3>
@@ -201,13 +201,13 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Premium Materials Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Premium Materials</h2>
-              <p className="text-[#6F7B83] text-lg mb-6 max-w-3xl">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Premium Materials</h2>
+              <p className="text-base sm:text-lg text-[#6F7B83] mb-4 sm:mb-6 max-w-3xl">
                 Our gas nozzles are manufactured from carefully selected materials to ensure
                 optimal performance and durability.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {materials.map((material, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{material.name}</h3>
@@ -227,10 +227,10 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Technical Specifications */}
-            <div id="specifications" className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div id="specifications" className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Technical Specifications</h2>
+              <div className="overflow-x-auto max-w-full">
+                <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Specification</th>
@@ -250,8 +250,8 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Applications Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                 {applications.map((app, index) => (
                   <div key={index} className="flex items-start">
@@ -263,9 +263,9 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Related Products */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link
                   href="/products/mig-mag-welding-contact-tips"
                   className="border border-gray-200 rounded-lg bg-white p-6 hover:border-[#EF290E] transition-colors group"
@@ -297,10 +297,10 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* CTA Section */}
-            <div className="border border-gray-200 rounded-lg bg-white p-8 mb-16">
+            <div className="border border-gray-200 rounded-xl sm:rounded-2xl bg-white p-4 sm:p-6 lg:p-8 mb-10 sm:mb-16">
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="mb-4 md:mb-0">
-                  <h3 className="text-xl font-bold text-[#1D2931] mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-[#1D2931] mb-2">
                     Need Gas Nozzles for Your MIG/MAG Torches?
                   </h3>
                   <p className="text-[#6F7B83]">
@@ -318,9 +318,9 @@ export default function MigMagWeldingGasNozzlesPage() {
             </div>
 
             {/* Bottom CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
-              <p className="text-[#6F7B83] mb-6">
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
+              <p className="text-[#6F7B83] mb-4 sm:mb-6">
                 Contact us for pricing and availability of gas nozzles in your required specifications and quantity.
               </p>
               <div className="flex flex-wrap gap-4">

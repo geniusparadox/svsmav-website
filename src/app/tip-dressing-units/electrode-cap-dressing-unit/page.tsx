@@ -97,16 +97,16 @@ const optionsAccessories = [
 
 export default function ElectrodeCapDressingUnitPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -117,10 +117,10 @@ export default function ElectrodeCapDressingUnitPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Electrode Cap Dressing Units
             </h1>
-            <p className="text-xl text-[#1D2931] mb-8 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-6 sm:mb-8 max-w-3xl">
               Precision tip dressers that restore electrode caps to optimal geometry, ensuring
               consistent weld quality and extended electrode life. Available in handheld,
               stationary, and swing-arm configurations.
@@ -143,9 +143,9 @@ export default function ElectrodeCapDressingUnitPage() {
             </div>
 
             {/* Product Description */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Precision Electrode Maintenance</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Precision Electrode Maintenance</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     Our electrode cap dressing units are engineered to restore welding electrode caps
@@ -174,8 +174,8 @@ export default function ElectrodeCapDressingUnitPage() {
             </section>
 
             {/* How It Works */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">How It Works</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">How It Works</h2>
               <div className="border border-gray-200 rounded-lg p-6 bg-white">
                 <ol className="space-y-3">
                   {howItWorks.map((step, index) => (
@@ -191,8 +191,8 @@ export default function ElectrodeCapDressingUnitPage() {
             </section>
 
             {/* Variants */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Available Variants</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Available Variants</h2>
               <p className="text-[#6F7B83] mb-8">
                 Choose the configuration that best suits your production environment and requirements
               </p>
@@ -207,7 +207,7 @@ export default function ElectrodeCapDressingUnitPage() {
                         <h3 className="text-2xl font-bold text-[#1D2931]">{variant.name}</h3>
                       </div>
                       <p className="text-[#6F7B83] mb-6">{variant.description}</p>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <h4 className="font-semibold text-[#1D2931] mb-3">Features</h4>
                           <ul className="space-y-2">
@@ -238,10 +238,10 @@ export default function ElectrodeCapDressingUnitPage() {
             </section>
 
             {/* Technical Specifications */}
-            <section className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                   <p className="text-[#6F7B83] mb-6">
                     Our electrode cap dressing units are available with various specifications to match
                     your specific requirements. Contact us for detailed technical data sheets and
@@ -264,7 +264,7 @@ export default function ElectrodeCapDressingUnitPage() {
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Options & Accessories</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Options & Accessories</h2>
                   <div className="space-y-4">
                     {optionsAccessories.map((category) => (
                       <div key={category.title} className="border border-gray-200 rounded-lg bg-white p-6">
@@ -285,9 +285,9 @@ export default function ElectrodeCapDressingUnitPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link
                   href="/tip-dressing-units/dressing-tools"
                   className="border border-gray-200 rounded-lg p-6 bg-white hover:border-[#EF290E] transition-colors group"
@@ -319,8 +319,8 @@ export default function ElectrodeCapDressingUnitPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg p-8 lg:p-12 text-center bg-white">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need Help Selecting the Right Dresser?</h2>
+            <section className="border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-12 text-center bg-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Need Help Selecting the Right Dresser?</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Our welding specialists can help you choose the optimal electrode cap dressing unit
                 for your specific application and production requirements.

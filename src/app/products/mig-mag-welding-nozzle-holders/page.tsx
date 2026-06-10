@@ -86,16 +86,16 @@ export default function MigMagWeldingNozzleHoldersPage() {
   const compatibleBrands = ['Binzel', 'Fronius', 'Lincoln', 'Miller', 'ESAB', 'Kemppi', 'Panasonic', 'SKS', 'Dinse', 'ABICOR', 'Tregaskiss', 'Tweco'];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -106,17 +106,17 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               MIG/MAG Welding Nozzle Holders
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-3xl">
               Premium nozzle holders and tip adapters engineered for reliable MIG/MAG torch assembly.
               Our holders ensure secure nozzle mounting, optimal gas flow, and efficient current
               transfer for consistent welding performance.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 mb-16">
+            <div className="flex flex-wrap gap-4 mb-10 sm:mb-16">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#EF290E] text-white font-semibold rounded hover:bg-[#D42208] transition-colors"
@@ -132,14 +132,14 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* Features Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Features & Benefits</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Features & Benefits</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 Our nozzle holders are precision-manufactured for optimal torch assembly and welding performance.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -153,14 +153,14 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* Nozzle Holder Types */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Nozzle Holder Types</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Nozzle Holder Types</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 We offer nozzle holders in various configurations to match your specific torch design and application requirements.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {holderTypes.map((type, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{type.name}</h3>
                     <p className="text-[#6F7B83] text-sm">{type.description}</p>
                   </div>
@@ -169,15 +169,15 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* Premium Copper Alloys */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Premium Copper Alloys</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Premium Copper Alloys</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 Our nozzle holders are manufactured from high-quality copper alloys selected for optimal
                 electrical conductivity and heat resistance.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {materials.map((material, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-bold text-[#EF290E] mb-2">{material.name}</h3>
                     <p className="text-[#6F7B83] text-sm mb-4">{material.description}</p>
                     <Link
@@ -195,9 +195,9 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* Torch Compatibility */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Torch Compatibility</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Torch Compatibility</h2>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-6 sm:mb-8">
                 Our nozzle holders are compatible with all major MIG/MAG welding torch manufacturers.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -210,10 +210,10 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* Technical Specifications */}
-            <div id="specifications" className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div id="specifications" className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Technical Specifications</h2>
+              <div className="overflow-x-auto max-w-full">
+                <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Specification</th>
@@ -233,8 +233,8 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* Applications */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {applications.map((app, index) => (
                   <div key={index} className="flex items-start">
@@ -246,9 +246,9 @@ export default function MigMagWeldingNozzleHoldersPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Need Replacement Nozzle Holders?</h2>
-              <p className="text-[#6F7B83] mb-6 max-w-2xl">
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Need Replacement Nozzle Holders?</h2>
+              <p className="text-[#6F7B83] mb-4 sm:mb-6 max-w-2xl">
                 Contact our team to find the right nozzle holders for your MIG/MAG welding torches.
                 We offer bulk pricing and quick delivery.
               </p>

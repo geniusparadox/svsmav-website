@@ -100,7 +100,7 @@ export default function SeamWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -108,9 +108,9 @@ export default function SeamWeldingPage() {
         {/* Main Content */}
         <main className="flex-1">
           {/* Header Section */}
-          <section className="px-8 lg:px-16 py-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-6 sm:mb-8">
               <Link href="/" className="text-gray-500 hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-gray-400">&gt;</span>
               <Link href="/products" className="text-gray-500 hover:text-[#1D2931]">PRODUCTS</Link>
@@ -121,13 +121,13 @@ export default function SeamWeldingPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] max-w-3xl leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] max-w-3xl leading-tight">
               Seam Welding
             </h1>
           </section>
 
           {/* Process Description */}
-          <section className="px-8 lg:px-16 pb-12">
+          <section className="px-4 sm:px-8 lg:px-16 pb-8 sm:pb-12">
             <div className="max-w-4xl">
               <p className="text-lg text-[#6F7B83] mb-6">
                 Seam welding is a continuous resistance welding process that uses rotating wheel electrodes to create leak-tight, overlapping spot welds. This technique is essential for manufacturing tanks, containers, radiators, and any application requiring hermetically sealed joints with high production efficiency.
@@ -139,8 +139,8 @@ export default function SeamWeldingPage() {
           </section>
 
           {/* Seam Weld Types */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Seam Weld Types</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-6 sm:mb-8">Seam Weld Types</h2>
             <div className="space-y-4">
               {seamTypes.map((type) => (
                 <div
@@ -158,8 +158,8 @@ export default function SeamWeldingPage() {
           </section>
 
           {/* Key Parameters */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Key Parameters</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-6 sm:mb-8">Key Parameters</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {keyParameters.map((param) => (
                 <div key={param.label} className="p-6 border border-gray-200 rounded-lg bg-white">
@@ -171,12 +171,12 @@ export default function SeamWeldingPage() {
           </section>
 
           {/* Advantages */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Advantages of Seam Welding</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Advantages of Seam Welding</h2>
             <p className="text-lg text-[#6F7B83] mb-8 max-w-2xl">
               Seam welding is the go-to process for applications requiring continuous, leak-tight joints.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
               {advantages.map((advantage, index) => (
                 <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white">
                   <h3 className="text-lg font-bold text-[#EF290E] mb-3">{advantage.title}</h3>
@@ -187,11 +187,11 @@ export default function SeamWeldingPage() {
           </section>
 
           {/* Applications & Industries */}
-          <section className="px-8 lg:px-16 py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Applications */}
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Applications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Applications</h2>
                 <p className="text-[#6F7B83] mb-6">
                   Seam welding is essential for products requiring leak-proof, pressure-tight joints.
                 </p>
@@ -209,7 +209,7 @@ export default function SeamWeldingPage() {
 
               {/* Industries */}
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Industries</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Industries</h2>
                 <p className="text-[#6F7B83] mb-6">
                   Industries manufacturing sealed containers and tubular products rely on seam welding for production efficiency.
                 </p>
@@ -225,12 +225,12 @@ export default function SeamWeldingPage() {
           </section>
 
           {/* Related Products */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Related Products</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Related Products</h2>
             <p className="text-lg text-[#6F7B83] mb-8 max-w-2xl">
               SVS Maverick provides high-quality seam welding consumables and equipment.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
               {relatedProducts.map((product, index) => (
                 <Link
                   key={index}

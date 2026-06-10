@@ -86,7 +86,7 @@ export default function MigMagWeldingContactTipsPage() {
   const wireSizes = ['0.6mm', '0.8mm', '0.9mm', '1.0mm', '1.2mm', '1.4mm', '1.6mm', '2.0mm', '2.4mm', '.023"', '.030"', '.035"'];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -94,9 +94,9 @@ export default function MigMagWeldingContactTipsPage() {
         {/* Main Content */}
         <main className="flex-1">
           {/* Header Section */}
-          <section className="px-8 lg:px-16 py-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-8">
               <Link href="/" className="text-gray-500 hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-gray-400">&gt;</span>
               <Link href="/products" className="text-gray-500 hover:text-[#1D2931]">PRODUCTS</Link>
@@ -107,15 +107,15 @@ export default function MigMagWeldingContactTipsPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] max-w-4xl leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] max-w-4xl leading-tight">
               MIG/MAG Welding Contact Tips
             </h1>
           </section>
 
           {/* Introduction */}
-          <section className="px-8 lg:px-16 pb-12">
+          <section className="px-4 sm:px-8 lg:px-16 pb-8 sm:pb-12">
             <div className="max-w-4xl">
-              <p className="text-lg text-[#6F7B83] mb-6">
+              <p className="text-base sm:text-lg text-[#6F7B83] mb-4 sm:mb-6">
                 Premium contact tips engineered for reliable MIG/MAG welding performance. Our tips deliver consistent wire feeding, stable arc characteristics, and extended service life for both manual and robotic welding applications.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -136,14 +136,14 @@ export default function MigMagWeldingContactTipsPage() {
           </section>
 
           {/* Features Section */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Features & Benefits</h2>
-            <p className="text-lg text-[#6F7B83] max-w-3xl mb-8">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Features & Benefits</h2>
+            <p className="text-base sm:text-lg text-[#6F7B83] max-w-3xl mb-6 sm:mb-8">
               Our contact tips are precision-manufactured for optimal welding performance and reliability.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {features.map((feature, index) => (
-                <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white">
+                <div key={index} className="p-4 sm:p-6 border border-gray-200 rounded-lg bg-white">
                   <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -157,14 +157,14 @@ export default function MigMagWeldingContactTipsPage() {
           </section>
 
           {/* Tip Types Section */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Contact Tip Types</h2>
-            <p className="text-lg text-[#6F7B83] max-w-3xl mb-8">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Contact Tip Types</h2>
+            <p className="text-base sm:text-lg text-[#6F7B83] max-w-3xl mb-6 sm:mb-8">
               We offer contact tips in various configurations to match your specific welding torch and application requirements.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {tipTypes.map((type, index) => (
-                <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white">
+                <div key={index} className="p-4 sm:p-6 border border-gray-200 rounded-lg bg-white">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-2">{type.name}</h3>
                   <p className="text-[#6F7B83]">{type.description}</p>
                 </div>
@@ -173,9 +173,9 @@ export default function MigMagWeldingContactTipsPage() {
           </section>
 
           {/* Materials Section */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Premium Copper Alloys</h2>
-            <p className="text-lg text-[#6F7B83] max-w-3xl mb-8">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Premium Copper Alloys</h2>
+            <p className="text-base sm:text-lg text-[#6F7B83] max-w-3xl mb-6 sm:mb-8">
               Our contact tips are manufactured from high-quality copper alloys selected for optimal conductivity, wear resistance, and service life.
             </p>
             <div className="space-y-4">
@@ -210,9 +210,9 @@ export default function MigMagWeldingContactTipsPage() {
           </section>
 
           {/* Wire Size Reference Section */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Wire Size Compatibility</h2>
-            <p className="text-lg text-[#6F7B83] max-w-3xl mb-8">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Wire Size Compatibility</h2>
+            <p className="text-base sm:text-lg text-[#6F7B83] max-w-3xl mb-6 sm:mb-8">
               We stock contact tips for all common welding wire diameters in metric and imperial sizes.
             </p>
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -225,10 +225,10 @@ export default function MigMagWeldingContactTipsPage() {
           </section>
 
           {/* Specifications Section */}
-          <section id="specifications" className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <section id="specifications" className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Technical Specifications</h2>
                 <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                   {specifications.map((spec, index) => (
                     <div
@@ -242,8 +242,8 @@ export default function MigMagWeldingContactTipsPage() {
                 </div>
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Applications</h2>
-                <div className="border border-gray-200 rounded-lg bg-white p-6">
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Applications</h2>
+                <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <ul className="space-y-3">
                     {applications.map((app, index) => (
                       <li key={index} className="flex items-start">
@@ -260,10 +260,10 @@ export default function MigMagWeldingContactTipsPage() {
           </section>
 
           {/* CTA Section */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <div className="flex flex-col md:flex-row items-center justify-between p-8 border border-gray-200 rounded-lg bg-white">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <div className="flex flex-col md:flex-row items-center justify-between p-4 sm:p-6 lg:p-8 border border-gray-200 rounded-lg bg-white">
               <div className="mb-6 md:mb-0">
-                <h2 className="text-2xl font-bold text-[#1D2931] mb-2">Optimize Your MIG/MAG Welding Process</h2>
+                <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-2">Optimize Your MIG/MAG Welding Process</h2>
                 <p className="text-[#6F7B83]">
                   Contact our welding specialists to find the right contact tips for your torch and application. We offer bulk pricing and custom solutions.
                 </p>

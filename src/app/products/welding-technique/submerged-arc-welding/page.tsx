@@ -106,7 +106,7 @@ export default function SubmergedArcWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -114,9 +114,9 @@ export default function SubmergedArcWeldingPage() {
         {/* Main Content */}
         <main className="flex-1">
           {/* Header Section */}
-          <section className="px-8 lg:px-16 py-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-6 sm:mb-8">
               <Link href="/" className="text-gray-500 hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-gray-400">&gt;</span>
               <Link href="/products" className="text-gray-500 hover:text-[#1D2931]">PRODUCTS</Link>
@@ -127,13 +127,13 @@ export default function SubmergedArcWeldingPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] max-w-3xl leading-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] max-w-3xl leading-tight">
               Submerged Arc Welding
             </h1>
           </section>
 
           {/* Process Description */}
-          <section className="px-8 lg:px-16 pb-12">
+          <section className="px-4 sm:px-8 lg:px-16 pb-8 sm:pb-12">
             <div className="max-w-4xl">
               <p className="text-lg text-[#6F7B83] mb-6">
                 Submerged Arc Welding (SAW) is a high-productivity arc welding process where the arc
@@ -151,9 +151,9 @@ export default function SubmergedArcWeldingPage() {
           </section>
 
           {/* SAW Configurations */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">SAW Configurations</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-6 sm:mb-8">SAW Configurations</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
               {sawConfigurations.map((config) => (
                 <div key={config.name} className="p-6 border border-gray-200 rounded-lg bg-white">
                   <div className="flex items-center gap-3 mb-3">
@@ -167,8 +167,8 @@ export default function SubmergedArcWeldingPage() {
           </section>
 
           {/* Key Parameters */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Key Parameters</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-6 sm:mb-8">Key Parameters</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {keyParameters.map((param) => (
                 <div key={param.label} className="p-6 border border-gray-200 rounded-lg bg-white">
@@ -180,9 +180,9 @@ export default function SubmergedArcWeldingPage() {
           </section>
 
           {/* Productivity Comparison */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">SAW Productivity Comparison</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-6 sm:mb-8">SAW Productivity Comparison</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
               {productivityComparison.map((item) => (
                 <div key={item.process} className="p-6 border border-gray-200 rounded-lg bg-white text-center">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-3">{item.process}</h3>
@@ -194,12 +194,12 @@ export default function SubmergedArcWeldingPage() {
           </section>
 
           {/* Advantages */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Advantages of Submerged Arc Welding</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Advantages of Submerged Arc Welding</h2>
             <p className="text-lg text-[#6F7B83] mb-8 max-w-3xl">
               SAW offers unmatched productivity for heavy fabrication and thick-section welding.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
               {advantages.map((advantage, index) => (
                 <div key={index} className="p-6 border border-gray-200 rounded-lg bg-white">
                   <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
@@ -215,10 +215,10 @@ export default function SubmergedArcWeldingPage() {
           </section>
 
           {/* Applications */}
-          <section className="px-8 lg:px-16 py-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Applications</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Applications</h2>
                 <p className="text-[#6F7B83] mb-6">
                   SAW excels in applications requiring high deposition rates and
                   deep penetration on thick materials.
@@ -235,7 +235,7 @@ export default function SubmergedArcWeldingPage() {
                 </ul>
               </div>
               <div>
-                <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Industries</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Industries</h2>
                 <p className="text-[#6F7B83] mb-6">
                   Heavy industries rely on SAW for efficient, high-quality welding
                   of large structures and thick materials.
@@ -252,12 +252,12 @@ export default function SubmergedArcWeldingPage() {
           </section>
 
           {/* Related Products */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Related Products</h2>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Related Products</h2>
             <p className="text-lg text-[#6F7B83] mb-8 max-w-3xl">
               SVS Maverick supplies components and consumables for submerged arc welding systems.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
               {relatedProducts.map((product, index) => (
                 <Link
                   key={index}

@@ -83,15 +83,15 @@ export default function LamellaShuntsPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-white">
-          <div className="max-w-5xl mx-auto px-8 py-12">
+          <div className="max-w-5xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-8">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -102,18 +102,18 @@ export default function LamellaShuntsPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Lamella Shunts & Flexible Conductors
             </h1>
 
             {/* Intro */}
-            <p className="text-xl text-[#6F7B83] mb-8 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-6 sm:mb-8 max-w-3xl">
               High-current flexible conductors engineered for resistance welding systems.
               Enable reliable current transfer to moving electrode assemblies with exceptional flexibility and fatigue life.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 mb-12">
+            <div className="flex flex-wrap gap-4 mb-8 sm:mb-12">
               <Link
                 href="/contact"
                 className="inline-block bg-[#EF290E] text-white px-8 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors"
@@ -129,10 +129,10 @@ export default function LamellaShuntsPage() {
             </div>
 
             {/* Product Description */}
-            <section className="mb-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-8 sm:mb-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Flexible Current Transfer Solutions</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Flexible Current Transfer Solutions</h2>
                   <p className="text-[#6F7B83] text-lg mb-6">
                     Lamella shunts are essential components in resistance welding systems where current
                     must be transferred to moving electrode assemblies. Constructed from multiple thin
@@ -169,9 +169,9 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Shunt Types */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Shunt Types</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Shunt Types</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 {shuntTypes.map((type, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-xl font-bold text-[#1D2931] mb-3">{type.name}</h3>
@@ -192,9 +192,9 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Features Grid */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Product Features</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {features.map((feature, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
                     <h3 className="text-xl font-bold text-[#1D2931] mb-3">{feature.title}</h3>
@@ -205,9 +205,9 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* How Lamella Shunts Work */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-8">How Lamella Shunts Work</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">How Lamella Shunts Work</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <div className="border border-gray-200 rounded-lg bg-white p-6 text-center">
                   <div className="w-16 h-16 bg-[#EF290E] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
                   <h3 className="text-lg font-bold text-[#1D2931] mb-2">Multiple Lamellae</h3>
@@ -227,9 +227,9 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Termination Options */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Termination Options</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Termination Options</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
                 {terminationOptions.map((option, index) => (
                   <div key={index} className="border border-gray-200 rounded-lg bg-white p-5">
                     <h3 className="font-semibold text-[#1D2931] mb-2">{option.name}</h3>
@@ -240,9 +240,9 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Construction Materials */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Construction Materials</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Construction Materials</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link href="/materials/copper-materials" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-2">ETP Copper Lamellae</h3>
                   <p className="text-[#6F7B83] mb-3">High-purity electrolytic copper for maximum conductivity and flexibility.</p>
@@ -262,10 +262,10 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Specifications & Applications */}
-            <section className="mb-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-8 sm:mb-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Technical Specifications</h2>
                   <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                     {specifications.map((spec, index) => (
                       <div key={index} className={`flex justify-between p-4 ${index !== specifications.length - 1 ? 'border-b border-gray-200' : ''}`}>
@@ -276,7 +276,7 @@ export default function LamellaShuntsPage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Applications</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Applications</h2>
                   <ul className="space-y-3">
                     {applications.map((app, index) => (
                       <li key={index} className="flex items-start border border-gray-200 rounded-lg bg-white p-4">
@@ -292,11 +292,11 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Custom Design Service */}
-            <section className="mb-12">
-              <div className="border border-gray-200 rounded-lg bg-white p-8 md:p-12">
+            <section className="mb-8 sm:mb-12">
+              <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 md:p-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div>
-                    <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Custom Shunt Design Service</h2>
+                    <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Custom Shunt Design Service</h2>
                     <p className="text-[#6F7B83] mb-6">
                       Our engineering team can design lamella shunts optimized for your specific application.
                       Provide us with your current requirements, space constraints, and movement parameters
@@ -326,9 +326,9 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section className="mb-8 sm:mb-12">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-8">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <Link href="/products/welding-systems-connection-cables" className="block border border-gray-200 rounded-lg bg-white p-6 hover:shadow-lg transition-shadow">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-2">Connection Cables</h3>
                   <p className="text-[#6F7B83] mb-3">Flexible cables for transformer to electrode holder connections.</p>
@@ -343,8 +343,8 @@ export default function LamellaShuntsPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="border border-gray-200 rounded-lg bg-white p-8 md:p-12 text-center">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">
+            <section className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6 md:p-12 text-center">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">
                 Need Flexible Current Transfer Solutions?
               </h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">

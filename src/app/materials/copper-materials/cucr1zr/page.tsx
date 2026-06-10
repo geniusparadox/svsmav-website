@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function CuCr1ZrPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -35,7 +35,7 @@ export default function CuCr1ZrPage() {
             </p>
 
             {/* Standards Table */}
-            <div className="mb-10 sm:mb-16 overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+            <div className="mb-10 sm:mb-16 overflow-x-auto max-w-full -mx-4 sm:mx-0 px-4 sm:px-0">
               <table className="w-full border-collapse min-w-[600px]">
                 <thead>
                   <tr className="border-b border-gray-200">
@@ -104,7 +104,7 @@ export default function CuCr1ZrPage() {
             {/* Key Properties */}
             <div className="mb-10 sm:mb-16">
               <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Properties</h3>
-              <div className="overflow-x-auto -mx-4 sm:mx-0 px-4 sm:px-0">
+              <div className="overflow-x-auto max-w-full -mx-4 sm:mx-0 px-4 sm:px-0">
                 <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">

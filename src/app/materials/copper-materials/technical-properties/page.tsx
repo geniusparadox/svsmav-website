@@ -109,7 +109,7 @@ const selectionGuide = [
 
 export default function TechnicalPropertiesPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -117,9 +117,9 @@ export default function TechnicalPropertiesPage() {
         {/* Main Content */}
         <main className="flex-1">
           {/* Header Section */}
-          <section className="px-8 lg:px-16 py-12">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-8">
+            <nav className="text-xs sm:text-sm mb-6 sm:mb-8 flex flex-wrap gap-1">
               <Link href="/" className="text-gray-500 hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-gray-400">&gt;</span>
               <Link href="/materials" className="text-gray-500 hover:text-[#1D2931]">SEMI-FINISHED PARTS</Link>
@@ -130,19 +130,19 @@ export default function TechnicalPropertiesPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-3 sm:mb-4">
               Technical Properties
             </h1>
-            <p className="text-xl text-[#6F7B83] max-w-2xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] max-w-2xl">
               Compare the technical properties of all WIRBALIT copper alloys to find the optimal material for your resistance welding application.
             </p>
           </section>
 
           {/* Comparison Table */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Properties Comparison</h2>
-            <div className="overflow-x-auto border border-gray-200 rounded-lg">
-              <table className="w-full border-collapse">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Properties Comparison</h2>
+            <div className="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
+              <table className="w-full border-collapse min-w-[800px]">
                 <thead>
                   <tr className="border-b border-gray-200 bg-gray-50">
                     <th className="text-left p-4 font-semibold text-[#1D2931]">Alloy</th>
@@ -179,37 +179,37 @@ export default function TechnicalPropertiesPage() {
           </section>
 
           {/* Visual Comparison */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Property Highlights</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-lg font-bold text-[#1D2931] mb-4">Highest Conductivity</h3>
-                <div className="text-4xl font-bold text-[#EF290E] mb-2">CuAg0.10P</div>
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Property Highlights</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              <div className="p-4 sm:p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-base sm:text-lg font-bold text-[#1D2931] mb-3 sm:mb-4">Highest Conductivity</h3>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#EF290E] mb-2">CuAg0.10P</div>
                 <p className="text-[#6F7B83]">Up to 98% IACS electrical conductivity</p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-lg font-bold text-[#1D2931] mb-4">Highest Hardness</h3>
-                <div className="text-4xl font-bold text-[#EF290E] mb-2">CuCo2Be</div>
+              <div className="p-4 sm:p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-base sm:text-lg font-bold text-[#1D2931] mb-3 sm:mb-4">Highest Hardness</h3>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#EF290E] mb-2">CuCo2Be</div>
                 <p className="text-[#6F7B83]">Up to 400 HB for maximum wear resistance</p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-lg font-bold text-[#1D2931] mb-4">Highest Strength</h3>
-                <div className="text-4xl font-bold text-[#EF290E] mb-2">CuCo2Be</div>
+              <div className="p-4 sm:p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-base sm:text-lg font-bold text-[#1D2931] mb-3 sm:mb-4">Highest Strength</h3>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#EF290E] mb-2">CuCo2Be</div>
                 <p className="text-[#6F7B83]">Up to 1200 MPa tensile strength</p>
               </div>
-              <div className="p-6 border border-gray-200 rounded-lg">
-                <h3 className="text-lg font-bold text-[#1D2931] mb-4">Highest Temperature</h3>
-                <div className="text-4xl font-bold text-[#EF290E] mb-2">CuAl2O3</div>
+              <div className="p-4 sm:p-6 border border-gray-200 rounded-lg">
+                <h3 className="text-base sm:text-lg font-bold text-[#1D2931] mb-3 sm:mb-4">Highest Temperature</h3>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#EF290E] mb-2">CuAl2O3</div>
                 <p className="text-[#6F7B83]">900C softening temperature</p>
               </div>
             </div>
           </section>
 
           {/* Selection Guide */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Material Selection Guide</h2>
-            <div className="overflow-x-auto border border-gray-200 rounded-lg">
-              <table className="w-full border-collapse">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Material Selection Guide</h2>
+            <div className="overflow-x-auto max-w-full border border-gray-200 rounded-lg">
+              <table className="w-full border-collapse min-w-[600px]">
                 <thead>
                   <tr className="border-b border-gray-200 bg-gray-50">
                     <th className="text-left p-4 font-semibold text-[#1D2931]">Application</th>
@@ -231,9 +231,9 @@ export default function TechnicalPropertiesPage() {
           </section>
 
           {/* Alloy Cards */}
-          <section className="px-8 lg:px-16 py-12">
-            <h2 className="text-3xl font-bold text-[#1D2931] mb-8">Explore Each Alloy</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12">
+            <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6 sm:mb-8">Explore Each Alloy</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
               {alloys.map((alloy) => (
                 <Link
                   key={alloy.composition}
@@ -270,10 +270,10 @@ export default function TechnicalPropertiesPage() {
           </section>
 
           {/* CTA */}
-          <section className="px-8 lg:px-16 py-12 border-t border-gray-200">
-            <div className="text-center p-8 border border-gray-200 rounded-lg">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need Help Selecting the Right Material?</h2>
-              <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
+          <section className="px-4 sm:px-8 lg:px-16 py-8 sm:py-12 border-t border-gray-200">
+            <div className="text-center p-4 sm:p-8 border border-gray-200 rounded-lg">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-3 sm:mb-4">Need Help Selecting the Right Material?</h2>
+              <p className="text-sm sm:text-base text-[#6F7B83] mb-6 sm:mb-8 max-w-2xl mx-auto">
                 Our SVS Maverick engineering team can help you choose the optimal WIRBALIT alloy for your specific application requirements.
               </p>
               <Link

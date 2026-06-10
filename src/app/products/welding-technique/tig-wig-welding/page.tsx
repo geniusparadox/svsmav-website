@@ -85,16 +85,16 @@ export default function TigWigWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -108,10 +108,10 @@ export default function TigWigWeldingPage() {
             <div className="inline-block px-4 py-1 bg-[#EF290E] text-white text-sm font-medium rounded-full mb-6">
               Gas Tungsten Arc Welding
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               TIG/WIG Welding
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-4xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-4xl">
               Gas Tungsten Arc Welding (GTAW), known as TIG (Tungsten Inert Gas) or WIG (Wolfram Inert Gas)
               in Europe, is the premier welding process for applications requiring the highest weld quality.
               Using a non-consumable tungsten electrode and inert shielding gas, TIG welding delivers
@@ -119,8 +119,8 @@ export default function TigWigWeldingPage() {
             </p>
 
             {/* Process Description */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">How TIG/WIG Welding Works</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">How TIG/WIG Welding Works</h2>
               <div className="space-y-4">
                 <p className="text-[#6F7B83] text-lg">
                   TIG welding uses a non-consumable tungsten electrode to produce the weld arc.
@@ -137,7 +137,7 @@ export default function TigWigWeldingPage() {
               {/* TIG vs WIG Terminology */}
               <div className="border border-gray-200 rounded-lg bg-white p-6 mt-8">
                 <h3 className="font-semibold text-[#1D2931] mb-4">TIG vs WIG Terminology</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-4 sm:p-6">
                   <div>
                     <h4 className="font-medium text-[#1D2931] mb-2">TIG (Tungsten Inert Gas)</h4>
                     <p className="text-sm text-[#6F7B83]">American terminology, emphasizing the tungsten electrode and inert gas shielding.</p>
@@ -151,10 +151,10 @@ export default function TigWigWeldingPage() {
             </div>
 
             {/* Key Parameters */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Key Parameters</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Parameters</h2>
+              <div className="overflow-x-auto max-w-full">
+                <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Parameter</th>
@@ -184,11 +184,11 @@ export default function TigWigWeldingPage() {
             </div>
 
             {/* Tungsten Electrode Types */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Tungsten Electrode Types</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Tungsten Electrode Types</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {electrodeTypes.map((electrode) => (
-                  <div key={electrode.type} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={electrode.type} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-[#1D2931] font-semibold mb-2">{electrode.type}</h3>
                     <p className="text-[#EF290E] text-sm mb-2">Color Code: {electrode.color}</p>
                     <p className="text-[#6F7B83] text-sm">{electrode.use}</p>
@@ -198,14 +198,14 @@ export default function TigWigWeldingPage() {
             </div>
 
             {/* Advantages */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Advantages of TIG/WIG Welding</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Advantages of TIG/WIG Welding</h2>
+              <p className="text-[#6F7B83] text-lg mb-6 sm:mb-8">
                 TIG welding is the choice for applications where quality and precision are paramount.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
                 {advantages.map((advantage, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded-lg flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -219,10 +219,10 @@ export default function TigWigWeldingPage() {
             </div>
 
             {/* Applications & Industries */}
-            <div className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
                   <p className="text-[#6F7B83] mb-6">
                     TIG welding excels in applications requiring precision, cleanliness, and
                     exceptional weld quality.
@@ -237,7 +237,7 @@ export default function TigWigWeldingPage() {
                   </ul>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Industries</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Industries</h2>
                   <p className="text-[#6F7B83] mb-6">
                     Industries with strict quality requirements rely on TIG welding
                     for their critical fabrication needs.
@@ -254,12 +254,12 @@ export default function TigWigWeldingPage() {
             </div>
 
             {/* Related Products */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Related Products</h2>
-              <p className="text-[#6F7B83] mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Related Products</h2>
+              <p className="text-[#6F7B83] mb-6 sm:mb-8">
                 SVS Maverick supplies premium consumables and accessories for TIG/WIG welding applications.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {relatedProducts.map((product, index) => (
                   <Link
                     key={index}
@@ -282,8 +282,8 @@ export default function TigWigWeldingPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Need TIG/WIG Welding Solutions?</h2>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Need TIG/WIG Welding Solutions?</h2>
               <p className="text-[#6F7B83] mb-6">
                 Our experts can help you select the right tungsten electrodes, filler materials,
                 and accessories for your precision welding applications.

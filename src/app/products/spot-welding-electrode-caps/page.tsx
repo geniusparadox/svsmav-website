@@ -62,7 +62,7 @@ export default function SpotWeldingElectrodeCapPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
@@ -157,7 +157,7 @@ export default function SpotWeldingElectrodeCapPage() {
             {/* Technical Specifications */}
             <div id="specifications" className="mb-10 sm:mb-16">
               <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Technical Specifications</h2>
-              <div className="border border-gray-200 rounded-lg bg-white overflow-x-auto">
+              <div className="border border-gray-200 rounded-lg bg-white overflow-x-auto max-w-full">
                 <table className="w-full min-w-[350px]">
                   <tbody>
                     {specifications.map((spec, index) => (

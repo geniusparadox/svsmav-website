@@ -90,16 +90,16 @@ export default function MicroWeldingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -110,10 +110,10 @@ export default function MicroWeldingPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Micro Welding
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-4xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-4xl">
               Micro welding encompasses precision resistance welding techniques for joining miniature
               components, fine wires, and delicate assemblies. With precise control over current,
               time, and force at the micro-scale, this technology enables reliable connections in
@@ -121,9 +121,9 @@ export default function MicroWeldingPage() {
             </p>
 
             {/* Process Description */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">How Micro Welding Works</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">How Micro Welding Works</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] text-lg mb-4">
                     Micro welding applies the principles of resistance welding at a miniature scale.
@@ -137,7 +137,7 @@ export default function MicroWeldingPage() {
                     adjust parameters in real-time to ensure consistent weld quality.
                   </p>
                 </div>
-                <div className="border border-gray-200 rounded-lg bg-white p-6">
+                <div className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                   <h3 className="text-lg font-bold text-[#1D2931] mb-4">Micro Welding Methods</h3>
                   <ul className="space-y-4">
                     <li className="flex items-start">
@@ -167,8 +167,8 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* Key Parameters */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Key Parameters</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Parameters</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {keyParameters.map((param) => (
                   <div key={param.label} className="border border-gray-200 rounded-lg bg-white p-6 text-center">
@@ -180,11 +180,11 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* Advantages */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Advantages of Micro Welding</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Advantages of Micro Welding</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
                 {advantages.map((advantage, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -198,8 +198,8 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* Weldable Materials */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Weldable Materials</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Weldable Materials</h2>
               <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                 {weldableMaterials.map((material) => (
                   <div key={material} className="border border-gray-200 rounded-lg bg-white p-4 text-center">
@@ -210,9 +210,9 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* Applications */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] text-lg mb-6">
                     Micro welding is essential for precision assembly of miniature
@@ -241,16 +241,16 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* Application Details */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Industry Applications</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Industry Applications</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-4 sm:p-6">
                 {[
                   { app: 'Battery Assembly', desc: 'Tab welding for lithium-ion and other battery technologies' },
                   { app: 'Medical Devices', desc: 'Pacemakers, sensors, and surgical instruments' },
                   { app: 'Electronics', desc: 'Component leads, connectors, and circuit assemblies' },
                   { app: 'Sensors', desc: 'Thermocouples, pressure sensors, and transducers' },
                 ].map((item) => (
-                  <div key={item.app} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={item.app} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-bold text-[#1D2931] mb-2">{item.app}</h3>
                     <p className="text-[#6F7B83]">{item.desc}</p>
                   </div>
@@ -259,12 +259,12 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* Related Products */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Related Products</h2>
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Related Products</h2>
               <p className="text-[#6F7B83] text-lg mb-6">
                 SVS Maverick supplies precision electrodes and materials for micro welding applications.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {relatedProducts.map((product, index) => (
                   <Link
                     key={index}
@@ -287,8 +287,8 @@ export default function MicroWeldingPage() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Need Micro Welding Solutions?</h2>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Need Micro Welding Solutions?</h2>
               <p className="text-[#6F7B83] mb-6">
                 Our experts can help you select the right precision electrodes and materials
                 for your miniature welding applications.

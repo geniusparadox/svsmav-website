@@ -8,16 +8,16 @@ export const metadata = {
 
 export default function CuAl2O3Page() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12 flex flex-wrap gap-1">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/materials/copper-materials" className="text-[#6F7B83] hover:text-[#1D2931]">COPPER MATERIALS</Link>
@@ -26,17 +26,17 @@ export default function CuAl2O3Page() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-4">
-              WIRBALIT<sup className="text-3xl">®</sup> CA
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-3 sm:mb-4">
+              WIRBALIT<sup className="text-xl sm:text-2xl lg:text-3xl">®</sup> CA
             </h1>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#1D2931] mb-6">(CuAl2O3)</h2>
-            <p className="text-xl text-[#1D2931] mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#1D2931] mb-4 sm:mb-6">(CuAl2O3)</h2>
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-8 sm:mb-12">
               Dispersion-Strengthened Copper Semi-Finished, Finished and Drawing Parts
             </p>
 
             {/* Standards Table */}
-            <div className="mb-16 overflow-x-auto">
-              <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16 overflow-x-auto max-w-full">
+              <table className="w-full border-collapse min-w-[600px]">
                 <thead>
                   <tr className="border-b border-gray-200">
                     <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Alloy</th>
@@ -59,43 +59,43 @@ export default function CuAl2O3Page() {
             </div>
 
             {/* Description */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Semi-Finished Products & Custom Parts</h3>
-              <p className="text-[#6F7B83] text-lg mb-4">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Semi-Finished Products & Custom Parts</h3>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4">
                 WIRBALIT® CA is a unique dispersion-strengthened copper alloy where fine aluminum oxide (Al2O3) particles are uniformly distributed throughout the copper matrix. This microstructure provides exceptional resistance to softening at extreme temperatures while maintaining excellent electrical and thermal conductivity.
               </p>
-              <p className="text-[#6F7B83] text-lg mb-4">
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4">
                 Unlike conventional precipitation-hardened alloys, the oxide dispersion strengthening (ODS) mechanism ensures properties remain stable even after repeated thermal cycling. The material does not soften on reheating, making it ideal for applications with extreme thermal loads.
               </p>
-              <p className="text-[#6F7B83] text-lg">
+              <p className="text-[#6F7B83] text-base sm:text-lg">
                 We supply semi-finished stock or custom-made parts tailored to your specific technical requirements with short lead times. WIRBALIT® CA delivers 3-5x longer electrode life compared to standard copper alloys.
               </p>
             </div>
 
             {/* Key Features */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Key Features</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="border border-gray-200 p-6 rounded">
-                  <h4 className="text-lg font-bold text-[#EF290E] mb-2">Extreme Temperature Resistance</h4>
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Features</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                <div className="border border-gray-200 p-4 sm:p-6 rounded">
+                  <h4 className="text-base sm:text-lg font-bold text-[#EF290E] mb-2">Extreme Temperature Resistance</h4>
                   <p className="text-[#6F7B83]">Softening temperature above 900°C - the highest among all copper electrode materials. No property loss after repeated thermal cycling.</p>
                 </div>
-                <div className="border border-gray-200 p-6 rounded">
-                  <h4 className="text-lg font-bold text-[#EF290E] mb-2">High Conductivity</h4>
+                <div className="border border-gray-200 p-4 sm:p-6 rounded">
+                  <h4 className="text-base sm:text-lg font-bold text-[#EF290E] mb-2">High Conductivity</h4>
                   <p className="text-[#6F7B83]">Up to 92% IACS electrical conductivity combined with excellent thermal conductivity for efficient heat and current transfer.</p>
                 </div>
-                <div className="border border-gray-200 p-6 rounded">
-                  <h4 className="text-lg font-bold text-[#EF290E] mb-2">Aluminum Welding Specialist</h4>
+                <div className="border border-gray-200 p-4 sm:p-6 rounded">
+                  <h4 className="text-base sm:text-lg font-bold text-[#EF290E] mb-2">Aluminum Welding Specialist</h4>
                   <p className="text-[#6F7B83]">Minimal electrode sticking and pickup when welding aluminum alloys. Extended electrode life in demanding applications.</p>
                 </div>
               </div>
             </div>
 
             {/* Key Properties */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Key Properties</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Key Properties</h3>
+              <div className="overflow-x-auto max-w-full">
+                <table className="w-full border-collapse min-w-[400px]">
                   <thead>
                     <tr className="border-b border-gray-200">
                       <th className="py-4 px-4 text-left text-[#1D2931] font-semibold">Property</th>
@@ -129,9 +129,9 @@ export default function CuAl2O3Page() {
             </div>
 
             {/* Typical Applications */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Typical Applications</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Typical Applications</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <h4 className="text-lg font-bold text-[#1D2931] mb-4">Welding Applications</h4>
                   <ul className="space-y-2">
@@ -170,14 +170,14 @@ export default function CuAl2O3Page() {
             </div>
 
             {/* Available Forms */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Available Forms</h3>
-              <p className="text-[#6F7B83] text-lg mb-6">
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Available Forms</h3>
+              <p className="text-[#6F7B83] text-base sm:text-lg mb-4 sm:mb-6">
                 We supply WIRBALIT® CA in a wide range of standard and custom forms:
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
                 {['Round Bars', 'Flat Bars', 'Plates', 'Electrode Caps', 'Forgings', 'Profiles', 'Machined Parts', 'Custom Shapes'].map((form) => (
-                  <div key={form} className="border border-gray-200 p-4 rounded text-center">
+                  <div key={form} className="border border-gray-200 p-3 sm:p-4 rounded text-center">
                     <span className="text-[#1D2931] font-medium">{form}</span>
                   </div>
                 ))}
@@ -185,8 +185,8 @@ export default function CuAl2O3Page() {
             </div>
 
             {/* Processing Guidelines */}
-            <div className="mb-16">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-6">Processing Guidelines</h3>
+            <div className="mb-10 sm:mb-16">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Processing Guidelines</h3>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-[#EF290E] mr-3">•</span>
@@ -208,7 +208,7 @@ export default function CuAl2O3Page() {
             </div>
 
             {/* Technical Data Link */}
-            <div className="mb-16 flex flex-col md:flex-row items-center justify-between border border-gray-200 rounded p-8">
+            <div className="mb-10 sm:mb-16 flex flex-col md:flex-row items-center justify-between border border-gray-200 rounded p-4 sm:p-6 lg:p-8">
               <div className="mb-4 md:mb-0">
                 <h3 className="text-xl font-bold text-[#1D2931] mb-2">Technical Data Sheet</h3>
                 <p className="text-[#6F7B83]">Download detailed specifications and compare with other WIRBALIT® alloys.</p>
@@ -222,8 +222,8 @@ export default function CuAl2O3Page() {
             </div>
 
             {/* CTA */}
-            <div className="border-t border-gray-200 pt-12">
-              <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
               <p className="text-[#6F7B83] mb-6">
                 Contact us for pricing and availability of WIRBALIT® CA (CuAl2O3) materials in your required form and quantity. Custom parts available with short lead times.
               </p>

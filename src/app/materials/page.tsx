@@ -27,17 +27,17 @@ export default function MaterialsPage() {
       {/* Hero Section */}
       <section className="bg-[#1D2931] text-white py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Materials</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 sm:mb-6">Materials</h1>
+          <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl">
             SVS Maverick supplies premium semi-finished parts and custom components from copper alloys and refractory metals for resistance welding applications.
           </p>
         </div>
       </section>
 
       {/* Materials Grid */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 sm:py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {materials.map((material) => (
               <Link
                 key={material.title}
@@ -51,8 +51,8 @@ export default function MaterialsPage() {
                     </span>
                   </div>
                 </div>
-                <div className="p-8">
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-4 group-hover:text-[#EF290E] transition-colors">
+                <div className="p-4 sm:p-6 lg:p-8">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4 group-hover:text-[#EF290E] transition-colors">
                     {material.title}
                   </h2>
                   <p className="text-[#6F7B83] mb-4">{material.description}</p>
@@ -70,10 +70,10 @@ export default function MaterialsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#F4F3EE] py-16">
+      <section className="bg-[#F4F3EE] py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need Custom Materials?</h2>
-          <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Need Custom Materials?</h2>
+          <p className="text-[#6F7B83] mb-6 sm:mb-8 max-w-2xl mx-auto">
             Our team can help you select the right material for your specific application requirements.
           </p>
           <Link

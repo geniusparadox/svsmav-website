@@ -108,16 +108,16 @@ const whyToolQualityMatters = [
 
 export default function DressingToolsPage() {
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -128,10 +128,10 @@ export default function DressingToolsPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Dressing Tools & Cutters
             </h1>
-            <p className="text-xl text-[#1D2931] mb-8 max-w-3xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#1D2931] mb-6 sm:mb-8 max-w-3xl">
               High-quality milling tools, dressing cutters, and blades engineered for precise
               electrode tip restoration. Available in HSS and carbide with standard and custom
               profiles to match your electrode geometry.
@@ -154,9 +154,9 @@ export default function DressingToolsPage() {
             </div>
 
             {/* Product Description */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Precision Cutting Tools</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Precision Cutting Tools</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
                 <div>
                   <p className="text-[#6F7B83] mb-4">
                     The quality of your tip dressing depends directly on the quality of your cutting
@@ -194,8 +194,8 @@ export default function DressingToolsPage() {
             </section>
 
             {/* Product Categories */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Product Categories</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Product Categories</h2>
               <p className="text-[#6F7B83] mb-8">
                 Complete range of cutting tools for all tip dressing applications
               </p>
@@ -206,7 +206,7 @@ export default function DressingToolsPage() {
                       <h3 className="text-2xl font-bold text-[#1D2931] mb-3">{category.name}</h3>
                       <p className="text-[#6F7B83] mb-6">{category.description}</p>
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                         <div>
                           <h4 className="font-semibold text-[#1D2931] mb-3">Available Products</h4>
                           <ul className="space-y-2">
@@ -240,12 +240,12 @@ export default function DressingToolsPage() {
             </section>
 
             {/* Cutter Profiles */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Standard Cutter Profiles</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Standard Cutter Profiles</h2>
               <p className="text-[#6F7B83] mb-8">
                 Cutters available for all ISO standard electrode tip geometries
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 {cutterProfiles.map((profile) => (
                   <div key={profile.name} className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                     <div className="bg-[#1D2931] p-6 flex items-center justify-center">
@@ -278,10 +278,10 @@ export default function DressingToolsPage() {
             </section>
 
             {/* Technical Specifications & Tool Life Factors */}
-            <section className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <section className="mb-10 sm:mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
                   <p className="text-[#6F7B83] mb-6">
                     General specifications for our dressing tool range. Custom specifications
                     available upon request.
@@ -300,7 +300,7 @@ export default function DressingToolsPage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Tool Life Factors</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Tool Life Factors</h2>
                   <p className="text-[#6F7B83] mb-6">
                     Several factors influence the service life of dressing tools:
                   </p>
@@ -317,12 +317,12 @@ export default function DressingToolsPage() {
             </section>
 
             {/* HSS vs Carbide Comparison */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">HSS vs. Carbide Cutters</h2>
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">HSS vs. Carbide Cutters</h2>
               <p className="text-[#6F7B83] mb-8">
                 Choose the right material for your application and budget
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
                 <div className="border border-gray-200 rounded-lg bg-white p-8">
                   <h3 className="text-2xl font-bold text-[#1D2931] mb-4">High-Speed Steel (HSS)</h3>
                   <p className="text-[#6F7B83] mb-6">
@@ -413,9 +413,9 @@ export default function DressingToolsPage() {
             </section>
 
             {/* Related Products */}
-            <section className="mb-16">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-6">Related Products</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
                 <Link
                   href="/tip-dressing-units/electrode-cap-dressing-unit"
                   className="border border-gray-200 rounded-lg p-6 bg-white hover:border-[#EF290E] transition-colors group"
@@ -447,8 +447,8 @@ export default function DressingToolsPage() {
             </section>
 
             {/* CTA */}
-            <section className="border border-gray-200 rounded-lg p-8 lg:p-12 text-center bg-white">
-              <h2 className="text-3xl font-bold text-[#1D2931] mb-4">Need Help Selecting the Right Tools?</h2>
+            <section className="border border-gray-200 rounded-lg p-4 sm:p-6 lg:p-12 text-center bg-white">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4">Need Help Selecting the Right Tools?</h2>
               <p className="text-[#6F7B83] mb-8 max-w-2xl mx-auto">
                 Our team can help you select the optimal dressing tools for your electrode type,
                 production volume, and quality requirements.

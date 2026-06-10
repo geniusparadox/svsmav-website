@@ -84,16 +84,16 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F4F3EE] pt-20">
+    <div className="min-h-screen bg-[#F4F3EE]">
       <div className="flex">
         {/* Sidebar */}
         <MaterialsSidebar />
 
         {/* Main Content */}
         <main className="flex-1 bg-[#F4F3EE]">
-          <div className="px-8 lg:px-16 py-8">
+          <div className="px-4 sm:px-8 lg:px-16 py-6 sm:py-8">
             {/* Breadcrumb */}
-            <nav className="text-sm mb-12">
+            <nav className="text-xs sm:text-sm mb-8 sm:mb-12">
               <Link href="/" className="text-[#6F7B83] hover:text-[#1D2931]">HOME</Link>
               <span className="mx-2 text-[#6F7B83]">&gt;</span>
               <Link href="/products" className="text-[#6F7B83] hover:text-[#1D2931]">PRODUCTS</Link>
@@ -104,10 +104,10 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </nav>
 
             {/* Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-[#1D2931] mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1D2931] mb-4 sm:mb-6">
               Electrode Shanks & Holder Adapters
             </h1>
-            <p className="text-xl text-[#6F7B83] mb-12 max-w-4xl">
+            <p className="text-base sm:text-lg lg:text-xl text-[#6F7B83] mb-8 sm:mb-12 max-w-4xl">
               Precision-manufactured electrode shanks and holder adapters for spot welding applications.
               Our components ensure secure electrode mounting, reliable current transfer, and efficient
               cooling for consistent weld quality.
@@ -130,14 +130,14 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </div>
 
             {/* Features Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Features & Benefits</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Features & Benefits</h2>
+              <p className="text-[#6F7B83] text-lg mb-6 sm:mb-8">
                 Our shanks and holders are engineered for reliable electrode mounting and optimal electrical performance.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {features.map((feature, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <div className="w-10 h-10 bg-[#EF290E] rounded flex items-center justify-center mb-4">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -151,14 +151,14 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </div>
 
             {/* Product Types Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Product Types</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Product Types</h2>
+              <p className="text-[#6F7B83] text-lg mb-6 sm:mb-8">
                 We offer a complete range of shank and holder configurations to suit your welding system and electrode requirements.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 {productTypes.map((type, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{type.name}</h3>
                     <p className="text-[#6F7B83] text-sm">{type.description}</p>
                   </div>
@@ -167,15 +167,15 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </div>
 
             {/* Premium Materials Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Premium WIRBALIT Copper Alloys</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Premium WIRBALIT Copper Alloys</h2>
+              <p className="text-[#6F7B83] text-lg mb-6 sm:mb-8">
                 Our shanks and holders are manufactured from WIRBALIT copper alloys,
                 engineered to deliver optimal electrical and thermal performance.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-4 sm:p-6">
                 {materials.map((material, index) => (
-                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-6">
+                  <div key={index} className="border border-gray-200 rounded-lg bg-white p-4 sm:p-6">
                     <h3 className="text-lg font-bold text-[#EF290E] mb-2">{material.name}</h3>
                     <p className="text-[#6F7B83] text-sm mb-4">{material.description}</p>
                     <Link
@@ -193,12 +193,12 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </div>
 
             {/* Standard Taper Sizes Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold text-[#1D2931] mb-4">Standard Taper Sizes</h2>
-              <p className="text-[#6F7B83] text-lg mb-8">
+            <div className="mb-10 sm:mb-16">
+              <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-3 sm:mb-4">Standard Taper Sizes</h2>
+              <p className="text-[#6F7B83] text-lg mb-6 sm:mb-8">
                 We manufacture shanks and holders in all standard ISO 5821 taper sizes for maximum compatibility.
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-4 sm:p-6">
                 <div className="border border-gray-200 rounded-lg bg-white p-6 text-center">
                   <div className="text-3xl font-bold text-[#EF290E] mb-2">CM1</div>
                   <p className="text-[#1D2931] font-medium">1:10 Taper</p>
@@ -224,10 +224,10 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
 
             {/* Technical Specifications and Applications */}
             <div id="specifications" className="mb-16">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
                 {/* Specifications */}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Technical Specifications</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Technical Specifications</h2>
                   <div className="border border-gray-200 rounded-lg bg-white overflow-hidden">
                     <table className="w-full">
                       <tbody>
@@ -244,7 +244,7 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
 
                 {/* Applications */}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1D2931] mb-6">Applications</h2>
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
                   <ul className="space-y-3">
                     {applications.map((app, index) => (
                       <li key={index} className="flex items-start">
@@ -258,7 +258,7 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </div>
 
             {/* Custom Solutions CTA */}
-            <div className="mb-16 border border-gray-200 rounded-lg bg-white p-8">
+            <div className="mb-16 border border-gray-200 rounded-lg bg-white p-4 sm:p-6 lg:p-8">
               <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-xl font-bold text-[#1D2931] mb-2">Need Custom Shanks or Holders?</h3>
@@ -276,7 +276,7 @@ export default function SpotWeldingElectrodeShanksAndHoldersPage() {
             </div>
 
             {/* Bottom CTA */}
-            <div className="border-t border-gray-200 pt-12">
+            <div className="border-t border-gray-200 pt-8 sm:pt-12">
               <h3 className="text-2xl font-bold text-[#1D2931] mb-4">Request a Quote</h3>
               <p className="text-[#6F7B83] mb-6">
                 Contact us for pricing and availability of electrode shanks and holders for your welding application.
