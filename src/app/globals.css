@@ -9,7 +9,7 @@
   --muted-gray: #6F7B83;
   --porcelain: #F4F3EE;
   --dark-border: #2A3B46;
-  --background: #ffffff;
+  --background: #F4F3EE;
   --foreground: #1D2931;
 }
 
@@ -19,6 +19,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
@@ -34,6 +35,13 @@ body {
 @media (max-width: 1023px) {
   .hide-on-mobile {
     display: none !important;
+  }
+
+  /* Prevent stray horizontal overflow from revealing edges on mobile.
+     Scoped to mobile only so it cannot affect the desktop sticky sidebar. */
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
 
