@@ -4,9 +4,9 @@ import MaterialsSidebar from '@/components/MaterialsSidebar';
 export const metadata = {
   title: 'Flexible Busbars | Laminated Copper Connectors Manufacturer | SVS Maverick',
   description:
-    'Flexible busbar manufacturer in Bangalore, India. Custom laminated copper connectors up to 10,000 A for switchgear, transformers, EV battery packs, and energy storage. Global export. Request a quote.',
+    'Flexible laminated copper busbar manufacturer in Bangalore, India. Diffusion-welded busbars up to 10,000 A for solar inverters (1500V DC), BESS, EV, railway traction, UPS, and switchgear. Global export. Request a quote.',
   keywords:
-    'flexible busbar, laminated copper connector, flexible copper busbar, laminated busbar, copper flexible connector, busbar manufacturer India, flexible busbar manufacturer, copper shunt, EV busbar, switchgear busbar',
+    'flexible laminated busbar, flexible copper busbar manufacturer India, diffusion welded busbar, laminated shunt, flexible busbar for solar inverter, EV battery busbar, flexible connector for switchgear, 1500V DC busbar, copper foil busbar, flexible busbar Bangalore, laminated copper connector, laminated busbar, busbar manufacturer India, BESS busbar, railway traction busbar, bus bar, buss bar',
   alternates: {
     canonical: 'https://www.svsmav.com/products/flexible-busbars/',
   },
@@ -100,20 +100,122 @@ const breadcrumbSchema = {
 };
 
 export default function FlexibleBusbarsPage() {
-  const applications = [
+  // Segment-targeted application blocks for procurement and design engineers.
+  const segments = [
     {
-      title: 'Switchgear & Transformers',
-      description:
-        'Flexible connections for power distribution equipment, compensating for thermal expansion and vibration.',
-      href: '/products/flexible-busbars/switchgear',
-      features: ['Thermal expansion compensation', 'Vibration isolation', 'Easy installation', 'Long service life'],
+      id: 'solar',
+      tag: 'Utility-Scale Solar',
+      short: 'Solar Inverters',
+      title: 'Flexible Busbars for Solar Inverters — 1500 V DC Central & String Inverters',
+      body: [
+        'For central and string inverters in the 1–4 MW class, our diffusion-welded flexible laminated busbars carry high DC and AC currents between capacitor banks, IGBT/SiC modules, DC links, and output terminals while absorbing the thermal expansion and vibration that rigid bars cannot.',
+        'Our 1500 V DC busbars are in series production in megawatt-class central inverters deployed at a 100 MW solar plant — proven under continuous field duty and thermal cycling. Low contact resistance keeps junction temperatures and I²R losses down, directly protecting inverter efficiency and lifetime. Each flexible busbar for solar inverter applications is built to your drawing.',
+      ],
+      points: [
+        '1500 V DC rated, series-production proven',
+        'Capacitor-bank, DC-link and module interconnects',
+        'Absorbs thermal cycling & outdoor vibration',
+        'Low I²R loss protects inverter efficiency',
+      ],
     },
     {
-      title: 'EV Battery Packs & Energy Storage',
-      description:
-        'High-current connections for electric vehicle battery modules, packs, and stationary energy storage with optimized space efficiency.',
+      id: 'bess',
+      tag: 'Energy Storage',
+      short: 'BESS & PCS',
+      title: 'Flexible Laminated Busbars for BESS and PCS Cabinets',
+      body: [
+        'Battery energy storage systems and power conversion system (PCS) cabinets pack high continuous currents into dense enclosures where rigid copper cannot accommodate stack tolerances or module movement. Our flexible copper busbars provide compliant, low-resistance links between battery racks, DC combiners, PCS modules, and AC output.',
+        'Diffusion-welded copper foil construction gives the current capacity of solid copper with the flexibility to absorb assembly misalignment, thermal growth, and vibration over thousands of charge/discharge cycles. Stable contact resistance limits heat rise at the joints — a critical safety and derating factor in sealed BESS cabinets. Built to your cabinet drawing with plating and insulation to meet creepage and clearance.',
+      ],
+      points: [
+        'Rack-to-PCS and DC-combiner links',
+        'Stable contact resistance limits cabinet heat rise',
+        'Withstands thousands of charge/discharge cycles',
+        'Insulation options for creepage & clearance',
+      ],
+    },
+    {
+      id: 'ev',
+      tag: 'E-Mobility',
+      short: 'EV & Traction',
+      title: 'EV Battery Busbars, Traction Inverters & DC Fast Chargers',
+      body: [
+        'Electric-vehicle powertrains and charging infrastructure demand high current density in minimal space, with tolerance for continuous vibration and thermal cycling. Our EV battery busbars connect modules, packs, traction inverters, and DC fast-charger power stages with a compact, low-inductance laminated profile.',
+        'We currently supply a specialist EV fast-charging technology company with flexible copper busbars engineered for high continuous current and rapid thermal cycling. Nickel or tin plating supports reliable jointing, while the flexible copper-foil construction resists fatigue where rigid bars would crack under automotive shock and vibration. Every busbar is manufactured to your drawing.',
+      ],
+      points: [
+        'Module, pack, traction-inverter & DC-charger links',
+        'High current density in minimal volume',
+        'Supplied to an EV fast-charging technology company',
+        'Fatigue-resistant under automotive vibration',
+      ],
       href: '/products/flexible-busbars/ev-battery-pack',
-      features: ['High current capacity', 'Compact design', 'Thermal management', 'Weight optimization'],
+    },
+    {
+      id: 'rail',
+      tag: 'Rail Traction',
+      short: 'Railway Traction',
+      title: 'Flexible Busbars for Railway Traction & Auxiliary Converters',
+      body: [
+        'Railway traction and auxiliary converters run under some of the harshest electrical and mechanical duty in the industry: high currents, constant vibration, shock, and wide thermal swings. Our flexible laminated busbars provide durable, low-resistance connections inside traction converters, auxiliary power units, and DC-link assemblies.',
+        'We supply a leading Indian rail traction OEM with flexible copper busbars built to withstand this environment. Diffusion-welded foil construction — with no filler and no brazed joints — eliminates the weak points that fail under sustained vibration, delivering the long service life rolling-stock programmes require. Each busbar is built to your converter drawing with ISO 9001:2015 quality control and traceability.',
+      ],
+      points: [
+        'Traction & auxiliary converter interconnects',
+        'Supplied to a leading Indian rail traction OEM',
+        'Diffusion-welded — no filler, no brazed weak points',
+        'ISO 9001:2015 quality with traceability',
+      ],
+    },
+    {
+      id: 'ups',
+      tag: 'Critical Power',
+      short: 'UPS & Data Center',
+      title: 'Flexible Copper Busbars for UPS and Data-Center Power Systems',
+      body: [
+        'Uninterruptible power supplies and data-center power distribution demand connections that stay cool and reliable under continuous, non-stop load. Our flexible copper busbars link rectifier and inverter stages, battery strings, static bypass, and output distribution with low, stable contact resistance that minimises heat rise and energy loss.',
+        'In critical power, every watt of joint loss becomes waste heat the cooling system must remove. Diffusion-welded laminated construction delivers consistent low-resistance joints that hold up over years of uninterrupted operation, while the flexible profile absorbs thermal expansion in densely packed cabinets and busduct. Built to your UPS or PDU drawing, with pan-India delivery.',
+      ],
+      points: [
+        'Rectifier, inverter, battery & bypass links',
+        'Low joint loss reduces cooling load',
+        'Stable under continuous 24/7 duty',
+        'For UPS, PDU and busduct assemblies',
+      ],
+    },
+    {
+      id: 'switchgear',
+      tag: 'Switchgear & Panels',
+      short: 'Switchgear & Panels',
+      title: 'Flexible Connectors for Switchgear, Panel Builders & Busduct',
+      body: [
+        'Panel builders, switchgear manufacturers, and busduct producers use our flexible connectors to join rigid busbars where thermal expansion, vibration, and installation tolerances would otherwise stress a bolted rigid joint. The result is faster assembly and a joint that stays tight over the equipment’s service life.',
+        'Our flexible laminated busbars and laminated shunts act as expansion links between rigid bars, transformers, breakers, and busway sections. Diffusion-welded copper foil provides high current capacity with the compliance to absorb movement — without the resistance drift of braided or bolted alternatives. Every flexible connector is manufactured to your drawing with your choice of plating and insulation.',
+      ],
+      points: [
+        'Expansion links between rigid busbars',
+        'Faster assembly, joints that stay tight',
+        'For switchgear, panels, transformers & busduct',
+        'Built to drawing with LME-linked pricing',
+      ],
+      href: '/products/flexible-busbars/switchgear',
+    },
+    {
+      id: 'welding',
+      tag: 'Welding Machines',
+      short: 'Resistance Welding',
+      title: 'Laminated Shunts & Flexible Busbars for Resistance Welding Machines',
+      body: [
+        'Resistance welding machines and inverter power sources carry very high secondary currents across moving arms and transformer secondaries, where flexibility and fatigue life are as important as conductivity. Our laminated shunts and flexible busbars provide the compliant, high-current links these machines depend on.',
+        'Built from 99.9% pure electrolytic copper foils and joined by solid-state diffusion welding, our laminated shunts flex millions of cycles without the fatigue cracking that ends the life of lesser connectors. This is core SVS Schweisstechnik heritage — the same flexible-conductor technology proven in welding equipment for decades. Each shunt is built to your machine drawing.',
+      ],
+      points: [
+        'Secondary links, arms & transformer connections',
+        'Millions of flex cycles without fatigue cracking',
+        'Core SVS Schweisstechnik welding heritage',
+        'Built to your machine drawing',
+      ],
+      href: '/products/welding-systems-lamella-shunts',
     },
   ];
 
@@ -319,29 +421,84 @@ export default function FlexibleBusbarsPage() {
               </div>
             </section>
 
-            {/* Applications */}
+            {/* Applications by segment */}
             <section className="mb-10 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">Applications</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-                {applications.map((app) => (
-                  <Link
-                    key={app.title}
-                    href={app.href}
-                    className="border border-gray-200 rounded-lg bg-white p-6 hover:border-[#EF290E] transition-colors group"
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">
+                Flexible Busbars by Application
+              </h2>
+              <p className="text-[#6F7B83] mb-6 max-w-3xl">
+                We engineer diffusion-welded flexible laminated busbars and laminated shunts for the
+                power-electronics segments below — each built to your drawing, with proven references
+                in solar, e-mobility, and rail.
+              </p>
+              {/* On-page index */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+                {segments.map((seg) => (
+                  <a
+                    key={seg.id}
+                    href={`#${seg.id}`}
+                    className="border border-gray-200 rounded-lg bg-white p-4 hover:border-[#EF290E] transition-colors group"
                   >
-                    <h3 className="text-xl font-bold text-[#1D2931] mb-3 group-hover:text-[#EF290E] transition-colors">
-                      {app.title}
-                    </h3>
-                    <p className="text-[#6F7B83] mb-4">{app.description}</p>
-                    <ul className="space-y-2">
-                      {app.features.map((feature, index) => (
-                        <li key={index} className="flex items-center text-sm text-[#6F7B83]">
-                          <span className="w-1.5 h-1.5 bg-[#EF290E] rounded-full mr-2"></span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </Link>
+                    <span className="block text-xs text-[#EF290E] font-semibold mb-1 uppercase tracking-wide">
+                      {seg.tag}
+                    </span>
+                    <span className="text-sm font-medium text-[#1D2931] group-hover:text-[#EF290E] transition-colors">
+                      {seg.short}
+                    </span>
+                  </a>
+                ))}
+              </div>
+              {/* Segment blocks */}
+              <div className="space-y-8">
+                {segments.map((seg) => (
+                  <div
+                    key={seg.id}
+                    id={seg.id}
+                    className="scroll-mt-24 border border-gray-200 rounded-lg bg-white p-6 sm:p-8"
+                  >
+                    <span className="block text-sm text-[#EF290E] font-semibold mb-2 uppercase tracking-wide">
+                      {seg.tag}
+                    </span>
+                    <h3 className="text-xl sm:text-2xl font-bold text-[#1D2931] mb-4">{seg.title}</h3>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+                      <div className="lg:col-span-2">
+                        {seg.body.map((para, i) => (
+                          <p key={i} className="text-[#6F7B83] mb-4">
+                            {para}
+                          </p>
+                        ))}
+                        <div className="flex flex-wrap items-center gap-3 mt-2">
+                          <Link
+                            href="/contact"
+                            className="inline-block bg-[#EF290E] text-white px-6 py-3 rounded font-semibold hover:bg-[#d42410] transition-colors"
+                          >
+                            Request a Quote
+                          </Link>
+                          {seg.href && (
+                            <Link
+                              href={seg.href}
+                              className="inline-flex items-center text-[#1D2931] font-semibold hover:text-[#EF290E] transition-colors"
+                            >
+                              Learn more &rarr;
+                            </Link>
+                          )}
+                        </div>
+                      </div>
+                      <div className="border border-gray-200 rounded-lg bg-[#F4F3EE] p-6">
+                        <h4 className="text-sm font-semibold text-[#1D2931] mb-4 uppercase tracking-wide">
+                          At a glance
+                        </h4>
+                        <ul className="space-y-3">
+                          {seg.points.map((point, i) => (
+                            <li key={i} className="flex items-start text-sm text-[#6F7B83]">
+                              <span className="w-2 h-2 bg-[#EF290E] rounded-full mr-3 mt-1.5 flex-shrink-0" />
+                              {point}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 ))}
               </div>
             </section>
