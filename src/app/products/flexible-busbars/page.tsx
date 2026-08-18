@@ -359,68 +359,6 @@ export default function FlexibleBusbarsPage() {
               transformers, EV battery packs, and energy storage systems.
             </p>
 
-            {/* What Are Flexible Busbars */}
-            <section className="mb-10 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">What Is a Flexible Busbar?</h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-                <div>
-                  <p className="text-[#6F7B83] mb-4">
-                    A flexible busbar - also called a laminated busbar, flexible copper connector,
-                    copper laminated flexible, or flexible shunt - is an electrical conductor made
-                    from multiple thin copper foils or strips stacked together and fused into solid
-                    contact pads at each end. This construction delivers the high current-carrying
-                    capacity of solid copper while the laminated body bends, twists, and flexes.
-                  </p>
-                  <p className="text-[#6F7B83] mb-4">
-                    Unlike rigid busbars, flexible busbars absorb mechanical stresses from thermal
-                    expansion, vibration, and installation tolerances. This makes them the standard
-                    choice for connections between fixed and moving components, between equipment
-                    that expands at different rates, or wherever precise alignment is difficult to
-                    achieve.
-                  </p>
-                  <p className="text-[#6F7B83]">
-                    SVS Maverick flexible busbars are manufactured from 99.9%+ purity electrolytic
-                    copper using a diffusion welding process, with optional plating and insulation
-                    to match each application&apos;s electrical, thermal, and environmental
-                    requirements.
-                  </p>
-                </div>
-                <div className="border border-gray-200 rounded-lg bg-white p-8">
-                  <h3 className="text-xl font-bold text-[#1D2931] mb-4">Construction</h3>
-                  <ul className="space-y-3">
-                    {[
-                      'Multiple thin copper laminations (0.1-0.5 mm each)',
-                      'Diffusion-welded solid copper terminal ends',
-                      'Optional insulation over the flexible body',
-                      'Tin, nickel, or silver plating for corrosion protection',
-                      'Custom bend profiles and lengths',
-                      'Drilled, punched, or threaded terminal options',
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start text-[#6F7B83]">
-                        <span className="w-2 h-2 bg-[#EF290E] rounded-full mr-3 mt-2"></span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* Manufacturing Process */}
-            <section className="mb-10 sm:mb-16">
-              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">
-                How Flexible Busbars Are Manufactured
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {manufacturingSteps.map((item) => (
-                  <div key={item.step} className="border border-gray-200 rounded-lg bg-white p-6">
-                    <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{item.step}</h3>
-                    <p className="text-[#6F7B83] text-sm">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
             {/* Applications by segment */}
             <section className="mb-10 sm:mb-16">
               <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">
@@ -498,6 +436,68 @@ export default function FlexibleBusbarsPage() {
                         </ul>
                       </div>
                     </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* What Are Flexible Busbars */}
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">What Is a Flexible Busbar?</h2>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+                <div>
+                  <p className="text-[#6F7B83] mb-4">
+                    A flexible busbar - also called a laminated busbar, flexible copper connector,
+                    copper laminated flexible, or flexible shunt - is an electrical conductor made
+                    from multiple thin copper foils or strips stacked together and fused into solid
+                    contact pads at each end. This construction delivers the high current-carrying
+                    capacity of solid copper while the laminated body bends, twists, and flexes.
+                  </p>
+                  <p className="text-[#6F7B83] mb-4">
+                    Unlike rigid busbars, flexible busbars absorb mechanical stresses from thermal
+                    expansion, vibration, and installation tolerances. This makes them the standard
+                    choice for connections between fixed and moving components, between equipment
+                    that expands at different rates, or wherever precise alignment is difficult to
+                    achieve.
+                  </p>
+                  <p className="text-[#6F7B83]">
+                    SVS Maverick flexible busbars are manufactured from 99.9%+ purity electrolytic
+                    copper using a diffusion welding process, with optional plating and insulation
+                    to match each application&apos;s electrical, thermal, and environmental
+                    requirements.
+                  </p>
+                </div>
+                <div className="border border-gray-200 rounded-lg bg-white p-8">
+                  <h3 className="text-xl font-bold text-[#1D2931] mb-4">Construction</h3>
+                  <ul className="space-y-3">
+                    {[
+                      'Multiple thin copper laminations (0.1-0.5 mm each)',
+                      'Diffusion-welded solid copper terminal ends',
+                      'Optional insulation over the flexible body',
+                      'Tin, nickel, or silver plating for corrosion protection',
+                      'Custom bend profiles and lengths',
+                      'Drilled, punched, or threaded terminal options',
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start text-[#6F7B83]">
+                        <span className="w-2 h-2 bg-[#EF290E] rounded-full mr-3 mt-2"></span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Manufacturing Process */}
+            <section className="mb-10 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#1D2931] mb-4 sm:mb-6">
+                How Flexible Busbars Are Manufactured
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                {manufacturingSteps.map((item) => (
+                  <div key={item.step} className="border border-gray-200 rounded-lg bg-white p-6">
+                    <h3 className="text-lg font-semibold text-[#1D2931] mb-2">{item.step}</h3>
+                    <p className="text-[#6F7B83] text-sm">{item.description}</p>
                   </div>
                 ))}
               </div>
