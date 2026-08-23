@@ -35,9 +35,6 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="flex gap-6 text-sm">
-              <a href="tel:+917204057172" className="text-[#1D2931] hover:text-[#EF290E] transition-colors">
-                +91 72040 57172
-              </a>
               <a href="mailto:sales@svsmav.com" className="text-[#1D2931] hover:text-[#EF290E] transition-colors">
                 sales@svsmav.com
               </a>

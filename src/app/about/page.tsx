@@ -223,9 +223,6 @@ export default function AboutPage() {
                 </p>
                 <div className="mt-4 pt-4 border-t border-[#F4F3EE]">
                   <p className="text-[#6F7B83]">
-                    <strong>Phone:</strong> <a href="tel:+917204057172" className="text-[#EF290E]">+91 72040 57172</a>
-                  </p>
-                  <p className="text-[#6F7B83]">
                     <strong>Email:</strong> <a href="mailto:sales@svsmav.com" className="text-[#EF290E]">sales@svsmav.com</a>
                   </p>
                 </div>

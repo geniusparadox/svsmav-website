@@ -32,7 +32,6 @@ const organizationSchema = {
   url: "https://www.svsmav.com",
   logo: "https://www.svsmav.com/logo-v3.png",
   email: "sales@svsmav.com",
-  telephone: "+91-72040-57172",
   address: {
     "@type": "PostalAddress",
     streetAddress:
